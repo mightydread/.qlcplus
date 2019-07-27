@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.1</Version>
+  <Author>mighty</Author>
+ </Creator>
+ <Manufacturer>Yara</Manufacturer>
+ <Model>CLF</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="Hue" Preset="IntensityHue"/>
+ <Channel Name="Saturation" Preset="IntensitySaturation"/>
+ <Channel Name="Value" Preset="IntensityValue"/>
+ <Channel Name="Intensity" Preset="IntensityDimmer"/>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Channel Name="White" Preset="IntensityWhite"/>
+ <Channel Name="Shutter">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="24">open</Capability>
+  <Capability Min="25" Max="64">strobe f &gt; s</Capability>
+  <Capability Min="65" Max="69">open</Capability>
+  <Capability Min="70" Max="84">open pulse f &gt; s</Capability>
+  <Capability Min="85" Max="89">open</Capability>
+  <Capability Min="90" Max="104">closing pulse s &gt; f</Capability>
+  <Capability Min="105" Max="109">open</Capability>
+  <Capability Min="110" Max="124">random strobe f &gt; s</Capability>
+  <Capability Min="125" Max="129">open</Capability>
+  <Capability Min="130" Max="144">random open pulse f &gt; s</Capability>
+  <Capability Min="145" Max="149">open</Capability>
+  <Capability Min="150" Max="164">random closing pulse f &gt; s</Capability>
+  <Capability Min="165" Max="169">open</Capability>
+  <Capability Min="170" Max="184">burst pulse f &gt; s</Capability>
+  <Capability Min="185" Max="189">open</Capability>
+  <Capability Min="190" Max="204">random burst pulse f &gt; s</Capability>
+  <Capability Min="205" Max="209">open</Capability>
+  <Capability Min="210" Max="224">sine wave f &gt; s</Capability>
+  <Capability Min="225" Max="229">open</Capability>
+  <Capability Min="230" Max="244">burst f &gt; s</Capability>
+  <Capability Min="245" Max="255">open</Capability>
+ </Channel>
+ <Channel Name="CCT">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="9">No function</Capability>
+  <Capability Min="10" Max="255">8000K - 2000K</Capability>
+ </Channel>
+ <Channel Name="Color wheel" Preset="ColorWheel"/>
+ <Channel Name="Auto program">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="9">No function</Capability>
+  <Capability Min="10" Max="19">Auto 1</Capability>
+  <Capability Min="20" Max="29">Auto 2</Capability>
+  <Capability Min="30" Max="39">Auto 3</Capability>
+  <Capability Min="40" Max="49">Auto 4</Capability>
+  <Capability Min="50" Max="59">Auto 5</Capability>
+  <Capability Min="60" Max="69">Auto 6</Capability>
+  <Capability Min="70" Max="79">Auto 7</Capability>
+  <Capability Min="80" Max="89">Auto 8</Capability>
+  <Capability Min="90" Max="99">Auto 9</Capability>
+  <Capability Min="100" Max="109">Auto 10 (cycle 1-10)</Capability>
+  <Capability Min="110" Max="119">Custom 1</Capability>
+  <Capability Min="120" Max="129">Custom 2</Capability>
+  <Capability Min="130" Max="139">Custom 3</Capability>
+  <Capability Min="140" Max="149">Custom 4</Capability>
+  <Capability Min="150" Max="159">Custom 5</Capability>
+  <Capability Min="160" Max="169">Custom 6</Capability>
+  <Capability Min="170" Max="179">Custom 7</Capability>
+  <Capability Min="180" Max="189">Custom 8</Capability>
+  <Capability Min="190" Max="199">Custom 9</Capability>
+  <Capability Min="200" Max="255">Custom 10</Capability>
+ </Channel>
+ <Channel Name="Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">AUTO or Dimmer Speed</Capability>
+ </Channel>
+ <Channel Name="Settings">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="94">No function</Capability>
+  <Capability Min="95" Max="99">Manual calibration output</Capability>
+  <Capability Min="100" Max="104">Raw color output</Capability>
+  <Capability Min="105" Max="109">No function</Capability>
+  <Capability Min="110" Max="114">Normal dimming</Capability>
+  <Capability Min="115" Max="119">No function</Capability>
+  <Capability Min="120" Max="124">Smooth dimming</Capability>
+  <Capability Min="125" Max="129">No function</Capability>
+  <Capability Min="130" Max="134">600Hz</Capability>
+  <Capability Min="135" Max="139">1200Hz</Capability>
+  <Capability Min="140" Max="144">2400Hz</Capability>
+  <Capability Min="145" Max="149">4800Hz</Capability>
+  <Capability Min="150" Max="249">No function</Capability>
+  <Capability Min="250" Max="255">illuminate display</Capability>
+ </Channel>
+ <Mode Name="HSV">
+  <Channel Number="0">Hue</Channel>
+  <Channel Number="1">Saturation</Channel>
+  <Channel Number="2">Value</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="HSI">
+  <Channel Number="0">Hue</Channel>
+  <Channel Number="1">Saturation</Channel>
+  <Channel Number="2">Intensity</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="4ch">
+  <Channel Number="0">Red</Channel>
+  <Channel Number="1">Green</Channel>
+  <Channel Number="2">Blue</Channel>
+  <Channel Number="3">White</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="6ch">
+  <Channel Number="0">Intensity</Channel>
+  <Channel Number="1">Red</Channel>
+  <Channel Number="2">Green</Channel>
+  <Channel Number="3">Blue</Channel>
+  <Channel Number="4">White</Channel>
+  <Channel Number="5">Shutter</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="7ch">
+  <Channel Number="0">Intensity</Channel>
+  <Channel Number="1">Red</Channel>
+  <Channel Number="2">Green</Channel>
+  <Channel Number="3">Blue</Channel>
+  <Channel Number="4">White</Channel>
+  <Channel Number="5">Shutter</Channel>
+  <Channel Number="6">CCT</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="11ch">
+  <Channel Number="0">Intensity</Channel>
+  <Channel Number="1">Red</Channel>
+  <Channel Number="2">Green</Channel>
+  <Channel Number="3">Blue</Channel>
+  <Channel Number="4">White</Channel>
+  <Channel Number="5">Shutter</Channel>
+  <Channel Number="6">CCT</Channel>
+  <Channel Number="7">Color wheel</Channel>
+  <Channel Number="8">Auto program</Channel>
+  <Channel Number="9">Speed</Channel>
+  <Channel Number="10">Settings</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+   <Channel>8</Channel>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+  </Head>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="3.8" Width="179" Height="290" Depth="259"/>
+  <Lens Name="Other" DegreesMin="15" DegreesMax="15"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="105" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>

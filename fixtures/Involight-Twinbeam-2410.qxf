@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.1</Version>
+  <Author>mighty,</Author>
+ </Creator>
+ <Manufacturer>Involight</Manufacturer>
+ <Model>Twinbeam 2410</Model>
+ <Type>Scanner</Type>
+ <Channel Name="mode">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="10">manual</Capability>
+  <Capability Min="11" Max="120">effect 1</Capability>
+  <Capability Min="121" Max="244">effect 2</Capability>
+  <Capability Min="245" Max="255">sound</Capability>
+ </Channel>
+ <Channel Name="effect speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">speed</Capability>
+ </Channel>
+ <Channel Name="color effects">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="10">manual</Capability>
+  <Capability Min="11" Max="127">color combo</Capability>
+  <Capability Min="128" Max="160">color jump</Capability>
+  <Capability Min="161" Max="200">color grad 1</Capability>
+  <Capability Min="201" Max="255">color grad 2</Capability>
+ </Channel>
+ <Channel Name="color speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">color speed</Capability>
+ </Channel>
+ <Channel Name="Barrel1" Preset="PositionPan"/>
+ <Channel Name="Barrel2" Preset="PositionPan"/>
+ <Channel Name="Pan/Tilt speed" Preset="SpeedPanTiltSlowFast"/>
+ <Channel Name="Master dimmer fine" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="1-1" Preset="IntensityDimmer"/>
+ <Channel Name="1-2" Preset="IntensityDimmer"/>
+ <Channel Name="1-3" Preset="IntensityDimmer"/>
+ <Channel Name="1-4" Preset="IntensityDimmer"/>
+ <Channel Name="2-1" Preset="IntensityDimmer"/>
+ <Channel Name="2-2" Preset="IntensityDimmer"/>
+ <Channel Name="2-3">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Channel Name="2-4" Preset="IntensityDimmer"/>
+ <Channel Name="reset">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="149"></Capability>
+  <Capability Min="150" Max="255">reset</Capability>
+ </Channel>
+ <Mode Name="18ch">
+  <Channel Number="0">mode</Channel>
+  <Channel Number="1">effect speed</Channel>
+  <Channel Number="2">color effects</Channel>
+  <Channel Number="3">color speed</Channel>
+  <Channel Number="4">Barrel1</Channel>
+  <Channel Number="5">Barrel2</Channel>
+  <Channel Number="6">Pan/Tilt speed</Channel>
+  <Channel Number="7">Master dimmer fine</Channel>
+  <Channel Number="8">Strobe</Channel>
+  <Channel Number="9">1-1</Channel>
+  <Channel Number="10">1-2</Channel>
+  <Channel Number="11">1-3</Channel>
+  <Channel Number="12">1-4</Channel>
+  <Channel Number="13">2-1</Channel>
+  <Channel Number="14">2-2</Channel>
+  <Channel Number="15">2-3</Channel>
+  <Channel Number="16">2-4</Channel>
+  <Channel Number="17">reset</Channel>
+  <Head>
+   <Channel>9</Channel>
+  </Head>
+  <Head>
+   <Channel>10</Channel>
+  </Head>
+  <Head>
+   <Channel>11</Channel>
+  </Head>
+  <Head>
+   <Channel>12</Channel>
+  </Head>
+  <Head>
+   <Channel>13</Channel>
+  </Head>
+  <Head>
+   <Channel>14</Channel>
+  </Head>
+  <Head>
+   <Channel>15</Channel>
+  </Head>
+  <Head>
+   <Channel>16</Channel>
+  </Head>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Barrel" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>

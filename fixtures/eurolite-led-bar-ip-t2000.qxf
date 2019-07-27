@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.1</Version>
+  <Author>mighty,</Author>
+ </Creator>
+ <Manufacturer>Eurolite</Manufacturer>
+ <Model>LED BAR IP T2000</Model>
+ <Type>LED Bar (Beams)</Type>
+ <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Channel Name="Amber" Preset="IntensityAmber"/>
+ <Channel Name="White" Preset="IntensityWhite"/>
+ <Channel Name="UV" Preset="IntensityUV"/>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="5">No Function</Capability>
+  <Capability Min="6" Max="20">async</Capability>
+  <Capability Min="21" Max="60">sync</Capability>
+  <Capability Min="61" Max="100">sinus</Capability>
+  <Capability Min="101" Max="140">rnd</Capability>
+  <Capability Min="141" Max="180">pulse open</Capability>
+  <Capability Min="181" Max="220">pulse close</Capability>
+ </Channel>
+ <Channel Name="presets">
+  <Group Byte="0">Maintenance</Group>
+ </Channel>
+ <Channel Name="preset speed">
+  <Group Byte="0">Maintenance</Group>
+ </Channel>
+ <Channel Name="color fade">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="dimmer curve">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="10">default</Capability>
+  <Capability Min="11" Max="20">linear led</Capability>
+  <Capability Min="21" Max="30">exponential led</Capability>
+  <Capability Min="31" Max="40">inv.exponenial led</Capability>
+  <Capability Min="41" Max="50">s curve led</Capability>
+  <Capability Min="51" Max="60">linear halogen</Capability>
+  <Capability Min="61" Max="70">exponential halogen</Capability>
+  <Capability Min="71" Max="80">inv.exponential halogen</Capability>
+  <Capability Min="81" Max="90">s curve halogen</Capability>
+  <Capability Min="91" Max="255">default</Capability>
+ </Channel>
+ <Mode Name="12 ch">
+  <Channel Number="0">Master dimmer</Channel>
+  <Channel Number="1">Red</Channel>
+  <Channel Number="2">Green</Channel>
+  <Channel Number="3">Blue</Channel>
+  <Channel Number="4">Amber</Channel>
+  <Channel Number="5">White</Channel>
+  <Channel Number="6">UV</Channel>
+  <Channel Number="7">Strobe</Channel>
+  <Channel Number="8">presets</Channel>
+  <Channel Number="9">preset speed</Channel>
+  <Channel Number="10">color fade</Channel>
+  <Channel Number="11">dimmer curve</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+   <Channel>8</Channel>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+   <Channel>11</Channel>
+  </Head>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="1009" Height="159" Depth="125"/>
+  <Lens Name="Other" DegreesMin="30" DegreesMax="30"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Layout Width="18" Height="1"/>
+  <Technical PowerConsumption="140" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>

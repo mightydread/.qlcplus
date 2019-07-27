@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.1</Version>
+  <Author>mighty,</Author>
+ </Creator>
+ <Manufacturer>Cameo</Manufacturer>
+ <Model>Nano Wash 400</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Pan fine" Preset="PositionPanFine"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Tilt fine" Preset="PositionTiltFine"/>
+ <Channel Name="Pan/Tilt speed" Preset="SpeedPanTiltFastSlow"/>
+ <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="5">Open</Capability>
+  <Capability Min="6" Max="10">Closed</Capability>
+  <Capability Min="11" Max="33">pulse rnd s&gt;f</Capability>
+  <Capability Min="34" Max="56">ramp up rnd s&gt;f</Capability>
+  <Capability Min="57" Max="79">ramp down s&gt;f</Capability>
+  <Capability Min="80" Max="102">strobe rnd s&gt;f</Capability>
+  <Capability Min="103" Max="127">strobe break s&gt;f</Capability>
+  <Capability Min="128" Max="250">strobe s&gt;f</Capability>
+  <Capability Min="251" Max="255">open</Capability>
+ </Channel>
+ <Channel Name="Color macros">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="5">off</Capability>
+  <Capability Min="6" Max="13">red</Capability>
+  <Capability Min="14" Max="21">amber</Capability>
+  <Capability Min="22" Max="29">yellow warm</Capability>
+  <Capability Min="30" Max="37">yellow</Capability>
+  <Capability Min="38" Max="45">green</Capability>
+  <Capability Min="46" Max="53">turquoise</Capability>
+  <Capability Min="54" Max="61">cyan</Capability>
+  <Capability Min="62" Max="69">blue</Capability>
+  <Capability Min="70" Max="77">lavender</Capability>
+  <Capability Min="78" Max="85">mauve</Capability>
+  <Capability Min="86" Max="93">magenta</Capability>
+  <Capability Min="94" Max="101">pink</Capability>
+  <Capability Min="102" Max="109">warm white</Capability>
+  <Capability Min="110" Max="117">white</Capability>
+  <Capability Min="118" Max="125">cold white</Capability>
+  <Capability Min="126" Max="127">colour jumping stop</Capability>
+  <Capability Min="128" Max="191">colour jumping speed s&gt;f</Capability>
+  <Capability Min="192" Max="255">color fading speed s&gt;f</Capability>
+ </Channel>
+ <Channel Name="Auto">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="5">manual mode</Capability>
+  <Capability Min="6" Max="29">mode 1</Capability>
+  <Capability Min="30" Max="53">mode 2</Capability>
+  <Capability Min="54" Max="77">mode 3</Capability>
+  <Capability Min="78" Max="101">mode 4</Capability>
+  <Capability Min="102" Max="125">mode 5</Capability>
+  <Capability Min="126" Max="149">mode 6</Capability>
+  <Capability Min="150" Max="173">mode 7</Capability>
+  <Capability Min="174" Max="197">mode 8</Capability>
+  <Capability Min="198" Max="221">sound mode</Capability>
+  <Capability Min="222" Max="245">reset</Capability>
+  <Capability Min="246" Max="255">sync</Capability>
+ </Channel>
+ <Channel Name="mic/auto speed">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Generic</Colour>
+  <Capability Min="0" Max="255">mic/auto speed</Capability>
+ </Channel>
+ <Channel Name="Red 1" Preset="IntensityRed"/>
+ <Channel Name="Green 1" Preset="IntensityGreen"/>
+ <Channel Name="Blue 1" Preset="IntensityBlue"/>
+ <Channel Name="White 1" Preset="IntensityWhite"/>
+ <Channel Name="Red 2" Preset="IntensityRed"/>
+ <Channel Name="Green 2" Preset="IntensityGreen"/>
+ <Channel Name="Blue 2" Preset="IntensityBlue"/>
+ <Channel Name="White 2" Preset="IntensityWhite"/>
+ <Channel Name="Red 3" Preset="IntensityRed"/>
+ <Channel Name="Green 3" Preset="IntensityGreen"/>
+ <Channel Name="Blue 3" Preset="IntensityBlue"/>
+ <Channel Name="White 3" Preset="IntensityWhite"/>
+ <Channel Name="Red 4" Preset="IntensityRed"/>
+ <Channel Name="Green 4" Preset="IntensityGreen"/>
+ <Channel Name="Blue 4" Preset="IntensityBlue"/>
+ <Channel Name="White 4" Preset="IntensityWhite"/>
+ <Mode Name="26 channel">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt fine</Channel>
+  <Channel Number="4">Pan/Tilt speed</Channel>
+  <Channel Number="5">Master dimmer</Channel>
+  <Channel Number="6">Strobe</Channel>
+  <Channel Number="7">Color macros</Channel>
+  <Channel Number="8">Auto</Channel>
+  <Channel Number="9">mic/auto speed</Channel>
+  <Channel Number="10">Red 1</Channel>
+  <Channel Number="11">Green 1</Channel>
+  <Channel Number="12">Blue 1</Channel>
+  <Channel Number="13">White 1</Channel>
+  <Channel Number="14">Red 2</Channel>
+  <Channel Number="15">Green 2</Channel>
+  <Channel Number="16">Blue 2</Channel>
+  <Channel Number="17">White 2</Channel>
+  <Channel Number="18">Red 3</Channel>
+  <Channel Number="19">Green 3</Channel>
+  <Channel Number="20">Blue 3</Channel>
+  <Channel Number="21">White 3</Channel>
+  <Channel Number="22">Red 4</Channel>
+  <Channel Number="23">Green 4</Channel>
+  <Channel Number="24">Blue 4</Channel>
+  <Channel Number="25">White 4</Channel>
+  <Head>
+   <Channel>5</Channel>
+   <Channel>10</Channel>
+   <Channel>11</Channel>
+   <Channel>12</Channel>
+   <Channel>13</Channel>
+  </Head>
+  <Head>
+   <Channel>5</Channel>
+   <Channel>14</Channel>
+   <Channel>15</Channel>
+   <Channel>16</Channel>
+   <Channel>17</Channel>
+  </Head>
+  <Head>
+   <Channel>5</Channel>
+   <Channel>18</Channel>
+   <Channel>19</Channel>
+   <Channel>20</Channel>
+   <Channel>21</Channel>
+  </Head>
+  <Head>
+   <Channel>22</Channel>
+   <Channel>23</Channel>
+   <Channel>24</Channel>
+   <Channel>25</Channel>
+   <Channel>5</Channel>
+  </Head>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+   <Channel>8</Channel>
+   <Channel>9</Channel>
+  </Head>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="540" TiltMax="270"/>
+  <Layout Width="2" Height="2"/>
+  <Technical PowerConsumption="0" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
