@@ -3,7 +3,7 @@
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.1</Version>
+  <Version>4.12.2</Version>
   <Author>mighty</Author>
  </Creator>
  <Manufacturer>Involight</Manufacturer>
@@ -17,34 +17,34 @@
  <Channel Name="Color wheel">
   <Group Byte="0">Colour</Group>
   <Capability Min="0" Max="6" Preset="ColorMacro" Res1="#ffffff">White</Capability>
-  <Capability Min="7" Max="13" Preset="ColorMacro" Res1="#fce94f">yellow</Capability>
-  <Capability Min="14" Max="20" Preset="ColorMacro" Res1="#75507b">pink</Capability>
-  <Capability Min="21" Max="27" Preset="ColorMacro" Res1="#73d216">green</Capability>
-  <Capability Min="28" Max="34" Preset="ColorMacro" Res1="#cc0000">red</Capability>
-  <Capability Min="35" Max="41" Preset="ColorMacro" Res1="#729fcf">light blue</Capability>
-  <Capability Min="42" Max="48" Preset="ColorMacro" Res1="#8ae234">light green</Capability>
-  <Capability Min="49" Max="55" Preset="ColorMacro" Res1="#f57900">orange</Capability>
-  <Capability Min="56" Max="63" Preset="ColorMacro" Res1="#204a87">dark blue</Capability>
-  <Capability Min="64" Max="70" Preset="ColorDoubleMacro" Res1="#ffffff" Res2="#edd400">w+y</Capability>
-  <Capability Min="71" Max="77" Preset="ColorDoubleMacro" Res1="#edd400" Res2="#75507b">y+p</Capability>
-  <Capability Min="78" Max="84" Preset="ColorDoubleMacro" Res1="#75507b" Res2="#73d216">p+g</Capability>
-  <Capability Min="85" Max="91" Preset="ColorDoubleMacro" Res1="#73d216" Res2="#cc0000">g+r</Capability>
-  <Capability Min="92" Max="98" Preset="ColorDoubleMacro" Res1="#cc0000" Res2="#729fcf">r+lb</Capability>
-  <Capability Min="99" Max="105" Preset="ColorDoubleMacro" Res1="#729fcf" Res2="#8ae234">lb+lg</Capability>
-  <Capability Min="106" Max="112" Preset="ColorDoubleMacro" Res1="#8ae234" Res2="#f57900">lg+o</Capability>
-  <Capability Min="113" Max="119" Preset="ColorDoubleMacro" Res1="#f57900" Res2="#204a87">o+db</Capability>
-  <Capability Min="120" Max="127" Preset="ColorDoubleMacro" Res1="#204a87" Res2="#ffffff">db+w</Capability>
-  <Capability Min="128" Max="191">positive rainbow</Capability>
-  <Capability Min="192" Max="255">negative rainbow</Capability>
+  <Capability Min="7" Max="13" Preset="ColorMacro" Res1="#fce94f">Yellow</Capability>
+  <Capability Min="14" Max="20" Preset="ColorMacro" Res1="#75507b">Purple</Capability>
+  <Capability Min="21" Max="27" Preset="ColorMacro" Res1="#73d216">Green</Capability>
+  <Capability Min="28" Max="34" Preset="ColorMacro" Res1="#cc0000">Red</Capability>
+  <Capability Min="35" Max="41" Preset="ColorMacro" Res1="#729fcf">Light Blue</Capability>
+  <Capability Min="42" Max="48" Preset="ColorMacro" Res1="#8ae234">Light Green</Capability>
+  <Capability Min="49" Max="55" Preset="ColorMacro" Res1="#f57900">Orange</Capability>
+  <Capability Min="56" Max="63" Preset="ColorMacro" Res1="#204a87">Dark Blue</Capability>
+  <Capability Min="64" Max="70" Preset="ColorDoubleMacro" Res1="#ffffff" Res2="#edd400">White + Yellow</Capability>
+  <Capability Min="71" Max="77" Preset="ColorDoubleMacro" Res1="#edd400" Res2="#75507b">Yellow + Purple</Capability>
+  <Capability Min="78" Max="84" Preset="ColorDoubleMacro" Res1="#75507b" Res2="#73d216">Purple + Green</Capability>
+  <Capability Min="85" Max="91" Preset="ColorDoubleMacro" Res1="#73d216" Res2="#cc0000">Green + Red</Capability>
+  <Capability Min="92" Max="98" Preset="ColorDoubleMacro" Res1="#cc0000" Res2="#729fcf">Red + Light Blue</Capability>
+  <Capability Min="99" Max="105" Preset="ColorDoubleMacro" Res1="#729fcf" Res2="#8ae234">Light Blue + Light Green</Capability>
+  <Capability Min="106" Max="112" Preset="ColorDoubleMacro" Res1="#8ae234" Res2="#f57900">Light Green + Orange</Capability>
+  <Capability Min="113" Max="119" Preset="ColorDoubleMacro" Res1="#f57900" Res2="#204a87">Orange + Dark Blue</Capability>
+  <Capability Min="120" Max="127" Preset="ColorDoubleMacro" Res1="#204a87" Res2="#ffffff">Dark Blue + White</Capability>
+  <Capability Min="128" Max="191" Preset="GoboMacro" Res1="Others/rainbow.png">Clockwise Color Rotation</Capability>
+  <Capability Min="192" Max="255" Preset="GoboMacro" Res1="Others/rainbow.png">Counterclockwise Color Rotation</Capability>
  </Channel>
  <Channel Name="Shutter">
   <Group Byte="0">Shutter</Group>
-  <Capability Min="0" Max="3">close</Capability>
-  <Capability Min="4" Max="7">open</Capability>
-  <Capability Min="8" Max="76">shutter inc speed</Capability>
-  <Capability Min="77" Max="145">pulse</Capability>
-  <Capability Min="146" Max="215">rnd</Capability>
-  <Capability Min="216" Max="255">open</Capability>
+  <Capability Min="0" Max="3" Preset="ShutterClose">Closed</Capability>
+  <Capability Min="4" Max="7" Preset="ShutterOpen">Open</Capability>
+  <Capability Min="8" Max="76" Preset="StrobeSlowToFast">Strobe slow to fast</Capability>
+  <Capability Min="77" Max="145" Preset="PulseSlowToFast">Pulse</Capability>
+  <Capability Min="146" Max="215" Preset="StrobeRandom">Random</Capability>
+  <Capability Min="216" Max="255" Preset="ShutterOpen">Open</Capability>
  </Channel>
  <Channel Name="Dimmer" Preset="IntensityMasterDimmer"/>
  <Channel Name="Gobo">
@@ -66,7 +66,7 @@
   <Capability Min="128" Max="191">positive rainbow</Capability>
   <Capability Min="192" Max="255">neg rainbow</Capability>
  </Channel>
- <Channel Name="function">
+ <Channel Name="Function">
   <Group Byte="0">Maintenance</Group>
   <Capability Min="0" Max="7">reserved</Capability>
   <Capability Min="8" Max="15">blackout while pan/tilt</Capability>
@@ -78,13 +78,13 @@
   <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="255"></Capability>
  </Channel>
- <Channel Name="prism">
-  <Group Byte="0">Beam</Group>
-  <Capability Min="0" Max="7">open</Capability>
-  <Capability Min="8" Max="12">prism</Capability>
-  <Capability Min="13" Max="130">+rot</Capability>
-  <Capability Min="131" Max="247">-rot</Capability>
-  <Capability Min="248" Max="255">prism</Capability>
+ <Channel Name="Prism">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="7" Preset="PrismEffectOff">Off</Capability>
+  <Capability Min="8" Max="12" Preset="PrismEffectOn" Res1="8">Prism</Capability>
+  <Capability Min="13" Max="130" Preset="RotationClockwiseSlowToFast">Prism CW Rotation</Capability>
+  <Capability Min="131" Max="247" Preset="RotationCounterClockwiseSlowToFast">Prism CCW Rotation</Capability>
+  <Capability Min="248" Max="255" Preset="PrismEffectOn" Res1="8">Prism</Capability>
  </Channel>
  <Mode Name="12ch">
   <Channel Number="0">Pan</Channel>
@@ -96,9 +96,9 @@
   <Channel Number="6">Shutter</Channel>
   <Channel Number="7">Dimmer</Channel>
   <Channel Number="8">Gobo</Channel>
-  <Channel Number="9">function</Channel>
+  <Channel Number="9">Function</Channel>
   <Channel Number="10">program</Channel>
-  <Channel Number="11">prism</Channel>
+  <Channel Number="11">Prism</Channel>
  </Mode>
  <Physical>
   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>

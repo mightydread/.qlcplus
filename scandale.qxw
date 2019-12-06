@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="SimpleDesk">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.2</Version>
-  <Author></Author>
+  <Author>Mighty Dread</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" Line="0">
-     <PluginParameters UniverseChannels="156"/>
-    </Output>
+    <Output Plugin="DMX USB" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -100,29 +98,12 @@
   <ChannelsGroup ID="2" Name="MH Shutter Group" Value="0">0,6,1,6,2,6,3,5</ChannelsGroup>
   <ChannelsGroup ID="3" Name="MH Pan Group" Value="0">0,0,1,0,2,0,3,0</ChannelsGroup>
   <ChannelsGroup ID="4" Name="MH Tilt Group" Value="0">0,1,1,1,2,1,3,2</ChannelsGroup>
-  <Function ID="0" Type="Scene" Name="MH Center Floor">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,107,1,68,2,0,3,0</FixtureVal>
-   <FixtureVal ID="0">0,156,1,66,2,0,3,0</FixtureVal>
-   <FixtureVal ID="3">0,141,1,0,2,59,3,0,4,211</FixtureVal>
-   <FixtureVal ID="2">0,154,1,65,2,0,3,0</FixtureVal>
-  </Function>
-  <Function ID="1" Type="Scene" Name="MH X Floor">
+  <Function ID="1" Type="Scene" Name="">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,107,1,39,2,0,3,0</FixtureVal>
    <FixtureVal ID="0">0,156,1,36,2,0,3,0</FixtureVal>
    <FixtureVal ID="3">0,141,1,0,2,32,3,0,4,211</FixtureVal>
    <FixtureVal ID="2">0,154,1,36,2,0,3,0</FixtureVal>
-  </Function>
-  <Function ID="2" Type="Scene" Name="MH R X">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="0">0,171,1,47,2,0,3,0</FixtureVal>
-   <FixtureVal ID="2">0,169,1,50,2,0,3,0</FixtureVal>
-  </Function>
-  <Function ID="3" Type="Scene" Name="MH L X">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,94,1,53,2,0,3,0</FixtureVal>
-   <FixtureVal ID="3">0,129,1,0,2,44,3,0,4,211</FixtureVal>
   </Function>
   <Function ID="4" Type="EFX" Name="New EFX 4">
    <Fixture>
@@ -174,30 +155,646 @@
     <Phase>0</Phase>
    </Axis>
   </Function>
-  <Function ID="5" Type="Scene" Name="Orange">
+  <Function ID="8" Type="Scene" Name="MH75B blackout on color change" Path="Settings">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,51</FixtureVal>
-   <FixtureVal ID="0">5,51</FixtureVal>
-   <FixtureVal ID="3">7,21</FixtureVal>
-   <FixtureVal ID="2">5,51</FixtureVal>
-   <FixtureVal ID="4">0,0,1,0,2,0,3,0,4,255,5,0</FixtureVal>
+   <FixtureVal ID="1">9,16</FixtureVal>
+   <FixtureVal ID="0">9,16</FixtureVal>
+   <FixtureVal ID="2">9,16</FixtureVal>
   </Function>
-  <Function ID="6" Type="Scene" Name="Blue">
+  <Function ID="10" Type="Scene" Name="MH75B blackout on gobo change" Path="Settings">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">9,16</FixtureVal>
+   <FixtureVal ID="0">9,16</FixtureVal>
+   <FixtureVal ID="2">9,24</FixtureVal>
+  </Function>
+  <Function ID="11" Type="Scene" Name="No strobe (shutter closed) - LED MH77B" Path="Shutter/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">5,1</FixtureVal>
+  </Function>
+  <Function ID="12" Type="Scene" Name="Strobe med - LED MH77B" Path="Shutter/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">5,127</FixtureVal>
+  </Function>
+  <Function ID="13" Type="Scene" Name="No strobe (shutter open) - LED MH77B" Path="Shutter/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">5,253</FixtureVal>
+  </Function>
+  <Function ID="15" Type="Scene" Name="White - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,2</FixtureVal>
+  </Function>
+  <Function ID="16" Type="Scene" Name="White &amp; Red - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,7</FixtureVal>
+  </Function>
+  <Function ID="17" Type="Scene" Name="Red - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,12</FixtureVal>
+  </Function>
+  <Function ID="18" Type="Scene" Name="Red &amp; Orange - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,17</FixtureVal>
+  </Function>
+  <Function ID="19" Type="Scene" Name="Orange - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,22</FixtureVal>
+  </Function>
+  <Function ID="20" Type="Scene" Name="Orange &amp; Green - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,27</FixtureVal>
+  </Function>
+  <Function ID="21" Type="Scene" Name="Green - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,32</FixtureVal>
+  </Function>
+  <Function ID="22" Type="Scene" Name="Green &amp; Light blue - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,37</FixtureVal>
+  </Function>
+  <Function ID="23" Type="Scene" Name="Light blue - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,42</FixtureVal>
+  </Function>
+  <Function ID="24" Type="Scene" Name="Light blue &amp; Purple - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,47</FixtureVal>
+  </Function>
+  <Function ID="25" Type="Scene" Name="Purple - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,52</FixtureVal>
+  </Function>
+  <Function ID="26" Type="Scene" Name="Purple &amp; Yellow - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,57</FixtureVal>
+  </Function>
+  <Function ID="27" Type="Scene" Name="Yellow - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,62</FixtureVal>
+  </Function>
+  <Function ID="28" Type="Scene" Name="Yellow &amp; Blue - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,67</FixtureVal>
+  </Function>
+  <Function ID="29" Type="Scene" Name="Blue - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,72</FixtureVal>
+  </Function>
+  <Function ID="30" Type="Scene" Name="Blue &amp; Magenta - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,77</FixtureVal>
+  </Function>
+  <Function ID="31" Type="Scene" Name="Magenta - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,82</FixtureVal>
+  </Function>
+  <Function ID="32" Type="Scene" Name="Magenta &amp; White - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,87</FixtureVal>
+  </Function>
+  <Function ID="33" Type="Scene" Name="Rainbow with speed controll - LED MH77B" Path="Color/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">7,172</FixtureVal>
+  </Function>
+  <Function ID="35" Type="Scene" Name="Open - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,2</FixtureVal>
+  </Function>
+  <Function ID="36" Type="Scene" Name="Gobo 1 - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,7</FixtureVal>
+  </Function>
+  <Function ID="37" Type="Scene" Name="Gobo 2 - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,12</FixtureVal>
+  </Function>
+  <Function ID="38" Type="Scene" Name="Gobo 3 - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,17</FixtureVal>
+  </Function>
+  <Function ID="39" Type="Scene" Name="Gobo 4 - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,22</FixtureVal>
+  </Function>
+  <Function ID="40" Type="Scene" Name="Gobo 5 - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,27</FixtureVal>
+  </Function>
+  <Function ID="41" Type="Scene" Name="Gobo 6 - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,32</FixtureVal>
+  </Function>
+  <Function ID="42" Type="Scene" Name="Gobo 7 - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,37</FixtureVal>
+  </Function>
+  <Function ID="43" Type="Scene" Name="Gobo 8 - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,42</FixtureVal>
+  </Function>
+  <Function ID="44" Type="Scene" Name="Goboflow-Effect, speed decending - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,87</FixtureVal>
+  </Function>
+  <Function ID="45" Type="Scene" Name="Goboflow-Effect, speed ascending - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,175</FixtureVal>
+  </Function>
+  <Function ID="46" Type="Scene" Name="Gobo 1 Shake, speed controll - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,218</FixtureVal>
+  </Function>
+  <Function ID="47" Type="Scene" Name="Gobo 2 Shake, speed controll - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,223</FixtureVal>
+  </Function>
+  <Function ID="48" Type="Scene" Name="Gobo 3 Shake, speed controll - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,228</FixtureVal>
+  </Function>
+  <Function ID="49" Type="Scene" Name="Gobo 4 Shake, speed controll - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,233</FixtureVal>
+  </Function>
+  <Function ID="50" Type="Scene" Name="Gobo 5 Shake, speed controll - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,238</FixtureVal>
+  </Function>
+  <Function ID="51" Type="Scene" Name="Gobo 6 Shake, speed controll - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,243</FixtureVal>
+  </Function>
+  <Function ID="52" Type="Scene" Name="Gobo 7 Shake, speed controll - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,248</FixtureVal>
+  </Function>
+  <Function ID="53" Type="Scene" Name="Gobo 8 Shake, speed controll - LED MH77B" Path="Gobo/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">8,253</FixtureVal>
+  </Function>
+  <Function ID="99" Type="Scene" Name="White - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,3</FixtureVal>
+  </Function>
+  <Function ID="100" Type="Scene" Name="Yellow - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,10</FixtureVal>
+  </Function>
+  <Function ID="101" Type="Scene" Name="Purple - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,17</FixtureVal>
+  </Function>
+  <Function ID="102" Type="Scene" Name="Green - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,24</FixtureVal>
+  </Function>
+  <Function ID="103" Type="Scene" Name="Red - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,31</FixtureVal>
+  </Function>
+  <Function ID="104" Type="Scene" Name="Light Blue - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,38</FixtureVal>
+  </Function>
+  <Function ID="105" Type="Scene" Name="Light Green - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,45</FixtureVal>
+  </Function>
+  <Function ID="106" Type="Scene" Name="Orange - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,52</FixtureVal>
+  </Function>
+  <Function ID="107" Type="Scene" Name="Dark Blue - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,59</FixtureVal>
+  </Function>
+  <Function ID="108" Type="Scene" Name="White + Yellow - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,67</FixtureVal>
+  </Function>
+  <Function ID="109" Type="Scene" Name="Yellow + Purple - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,74</FixtureVal>
+  </Function>
+  <Function ID="110" Type="Scene" Name="Purple + Green - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,81</FixtureVal>
+  </Function>
+  <Function ID="111" Type="Scene" Name="Green + Red - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,88</FixtureVal>
+  </Function>
+  <Function ID="112" Type="Scene" Name="Red + Light Blue - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,95</FixtureVal>
+  </Function>
+  <Function ID="113" Type="Scene" Name="Light Blue + Light Green - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,102</FixtureVal>
+  </Function>
+  <Function ID="114" Type="Scene" Name="Light Green + Orange - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,109</FixtureVal>
+  </Function>
+  <Function ID="115" Type="Scene" Name="Orange + Dark Blue - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,116</FixtureVal>
+  </Function>
+  <Function ID="116" Type="Scene" Name="Dark Blue + White - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,123</FixtureVal>
+  </Function>
+  <Function ID="117" Type="Scene" Name="Clockwise Color Rotation - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,159</FixtureVal>
+  </Function>
+  <Function ID="118" Type="Scene" Name="Counterclockwise Color Rotation - LED MH75B" Path="Color/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">5,223</FixtureVal>
+  </Function>
+  <Function ID="120" Type="Scene" Name="Closed - LED MH75B" Path="Shutter/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">6,1</FixtureVal>
+  </Function>
+  <Function ID="121" Type="Scene" Name="Open - LED MH75B" Path="Shutter/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">6,5</FixtureVal>
+  </Function>
+  <Function ID="122" Type="Scene" Name="Strobe med - LED MH75B" Path="Shutter/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">6,42</FixtureVal>
+  </Function>
+  <Function ID="123" Type="Scene" Name="Pulse - LED MH75B" Path="Shutter/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">6,111</FixtureVal>
+  </Function>
+  <Function ID="124" Type="Scene" Name="Random - LED MH75B" Path="Shutter/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">6,180</FixtureVal>
+  </Function>
+  <Function ID="126" Type="Scene" Name="White - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,3</FixtureVal>
+  </Function>
+  <Function ID="127" Type="Scene" Name="Yellow - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,10</FixtureVal>
+  </Function>
+  <Function ID="128" Type="Scene" Name="Purple - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,17</FixtureVal>
+  </Function>
+  <Function ID="129" Type="Scene" Name="Green - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,24</FixtureVal>
+  </Function>
+  <Function ID="130" Type="Scene" Name="Red - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,31</FixtureVal>
+  </Function>
+  <Function ID="131" Type="Scene" Name="Light Blue - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,38</FixtureVal>
+  </Function>
+  <Function ID="132" Type="Scene" Name="Light Green - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,45</FixtureVal>
+  </Function>
+  <Function ID="133" Type="Scene" Name="Orange - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,52</FixtureVal>
+  </Function>
+  <Function ID="134" Type="Scene" Name="Dark Blue - LED MH75B" Path="Color/MH HL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,59</FixtureVal>
-   <FixtureVal ID="0">5,59</FixtureVal>
-   <FixtureVal ID="3">7,71</FixtureVal>
-   <FixtureVal ID="2">5,59</FixtureVal>
-   <FixtureVal ID="4">0,0,1,0,2,255,3,0,4,0,5,0</FixtureVal>
   </Function>
-  <Function ID="7" Type="Scene" Name="Yellow">
+  <Function ID="135" Type="Scene" Name="White + Yellow - LED MH75B" Path="Color/MH HL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,9</FixtureVal>
-   <FixtureVal ID="0">5,9</FixtureVal>
-   <FixtureVal ID="3">7,61</FixtureVal>
-   <FixtureVal ID="2">5,9</FixtureVal>
-   <FixtureVal ID="4">0,0,1,0,2,0,3,0,4,0,5,255</FixtureVal>
+   <FixtureVal ID="1">5,67</FixtureVal>
   </Function>
+  <Function ID="136" Type="Scene" Name="Yellow + Purple - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,74</FixtureVal>
+  </Function>
+  <Function ID="137" Type="Scene" Name="Purple + Green - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,81</FixtureVal>
+  </Function>
+  <Function ID="138" Type="Scene" Name="Green + Red - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,88</FixtureVal>
+  </Function>
+  <Function ID="139" Type="Scene" Name="Red + Light Blue - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,95</FixtureVal>
+  </Function>
+  <Function ID="140" Type="Scene" Name="Light Blue + Light Green - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,102</FixtureVal>
+  </Function>
+  <Function ID="141" Type="Scene" Name="Light Green + Orange - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,109</FixtureVal>
+  </Function>
+  <Function ID="142" Type="Scene" Name="Orange + Dark Blue - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,116</FixtureVal>
+  </Function>
+  <Function ID="143" Type="Scene" Name="Dark Blue + White - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,123</FixtureVal>
+  </Function>
+  <Function ID="144" Type="Scene" Name="Clockwise Color Rotation - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,159</FixtureVal>
+  </Function>
+  <Function ID="145" Type="Scene" Name="Counterclockwise Color Rotation - LED MH75B" Path="Color/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,223</FixtureVal>
+  </Function>
+  <Function ID="147" Type="Scene" Name="Closed - LED MH75B" Path="Shutter/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">6,1</FixtureVal>
+  </Function>
+  <Function ID="148" Type="Scene" Name="Open - LED MH75B" Path="Shutter/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">6,5</FixtureVal>
+  </Function>
+  <Function ID="149" Type="Scene" Name="Strobe med - LED MH75B" Path="Shutter/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">6,42</FixtureVal>
+  </Function>
+  <Function ID="150" Type="Scene" Name="Pulse - LED MH75B" Path="Shutter/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">6,111</FixtureVal>
+  </Function>
+  <Function ID="151" Type="Scene" Name="Random - LED MH75B" Path="Shutter/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">6,180</FixtureVal>
+  </Function>
+  <Function ID="153" Type="Scene" Name="White - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,3</FixtureVal>
+  </Function>
+  <Function ID="154" Type="Scene" Name="Yellow - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,10</FixtureVal>
+  </Function>
+  <Function ID="155" Type="Scene" Name="Purple - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,17</FixtureVal>
+  </Function>
+  <Function ID="156" Type="Scene" Name="Green - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,24</FixtureVal>
+  </Function>
+  <Function ID="157" Type="Scene" Name="Red - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,31</FixtureVal>
+  </Function>
+  <Function ID="158" Type="Scene" Name="Light Blue - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,38</FixtureVal>
+  </Function>
+  <Function ID="159" Type="Scene" Name="Light Green - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,45</FixtureVal>
+  </Function>
+  <Function ID="160" Type="Scene" Name="Orange - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,52</FixtureVal>
+  </Function>
+  <Function ID="161" Type="Scene" Name="Dark Blue - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,59</FixtureVal>
+  </Function>
+  <Function ID="162" Type="Scene" Name="White + Yellow - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,67</FixtureVal>
+  </Function>
+  <Function ID="163" Type="Scene" Name="Yellow + Purple - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,74</FixtureVal>
+  </Function>
+  <Function ID="164" Type="Scene" Name="Purple + Green - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,81</FixtureVal>
+  </Function>
+  <Function ID="165" Type="Scene" Name="Green + Red - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,88</FixtureVal>
+  </Function>
+  <Function ID="166" Type="Scene" Name="Red + Light Blue - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,95</FixtureVal>
+  </Function>
+  <Function ID="167" Type="Scene" Name="Light Blue + Light Green - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,102</FixtureVal>
+  </Function>
+  <Function ID="168" Type="Scene" Name="Light Green + Orange - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,109</FixtureVal>
+  </Function>
+  <Function ID="169" Type="Scene" Name="Orange + Dark Blue - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,116</FixtureVal>
+  </Function>
+  <Function ID="170" Type="Scene" Name="Dark Blue + White - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,123</FixtureVal>
+  </Function>
+  <Function ID="171" Type="Scene" Name="Clockwise Color Rotation - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,159</FixtureVal>
+  </Function>
+  <Function ID="172" Type="Scene" Name="Counterclockwise Color Rotation - LED MH75B" Path="Color/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">5,223</FixtureVal>
+  </Function>
+  <Function ID="174" Type="Scene" Name="Closed - LED MH75B" Path="Shutter/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">6,1</FixtureVal>
+  </Function>
+  <Function ID="175" Type="Scene" Name="Open - LED MH75B" Path="Shutter/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">6,5</FixtureVal>
+  </Function>
+  <Function ID="176" Type="Scene" Name="Strobe med - LED MH75B" Path="Shutter/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">6,42</FixtureVal>
+  </Function>
+  <Function ID="177" Type="Scene" Name="Pulse - LED MH75B" Path="Shutter/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">6,111</FixtureVal>
+  </Function>
+  <Function ID="178" Type="Scene" Name="Random - LED MH75B" Path="Shutter/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">6,180</FixtureVal>
+  </Function>
+  <Function ID="179" Type="Collection" Name="MH Blue" Path="MH Colors">
+   <Step Number="0">134</Step>
+   <Step Number="1">161</Step>
+   <Step Number="2">29</Step>
+   <Step Number="3">107</Step>
+  </Function>
+  <Function ID="180" Type="Collection" Name="MH Green" Path="MH Colors">
+   <Step Number="0">129</Step>
+   <Step Number="1">156</Step>
+   <Step Number="2">21</Step>
+   <Step Number="3">102</Step>
+  </Function>
+  <Function ID="181" Type="Collection" Name="MH Light Blue">
+   <Step Number="0">131</Step>
+   <Step Number="1">158</Step>
+   <Step Number="2">23</Step>
+   <Step Number="3">104</Step>
+  </Function>
+  <Function ID="182" Type="Collection" Name="MH Orange">
+   <Step Number="0">133</Step>
+   <Step Number="1">160</Step>
+   <Step Number="2">19</Step>
+   <Step Number="3">106</Step>
+  </Function>
+  <Function ID="183" Type="Collection" Name="MH Purple">
+   <Step Number="0">128</Step>
+   <Step Number="1">155</Step>
+   <Step Number="2">25</Step>
+   <Step Number="3">101</Step>
+  </Function>
+  <Function ID="184" Type="Collection" Name="MH Red">
+   <Step Number="0">130</Step>
+   <Step Number="1">157</Step>
+   <Step Number="2">17</Step>
+   <Step Number="3">103</Step>
+  </Function>
+  <Function ID="185" Type="Collection" Name="MH Yellow">
+   <Step Number="0">127</Step>
+   <Step Number="1">154</Step>
+   <Step Number="2">27</Step>
+   <Step Number="3">100</Step>
+  </Function>
+  <Function ID="186" Type="Collection" Name="MH White" Path="MH Colors">
+   <Step Number="0">126</Step>
+   <Step Number="1">153</Step>
+   <Step Number="2">99</Step>
+   <Step Number="3">15</Step>
+  </Function>
+  <Function ID="187" Type="Collection" Name="MH Open" Path="MH Shutters">
+   <Step Number="0">148</Step>
+   <Step Number="1">175</Step>
+   <Step Number="2">13</Step>
+   <Step Number="3">121</Step>
+  </Function>
+  <Function ID="188" Type="Collection" Name="MH Strobe Slow" Path="MH Shutters">
+   <Step Number="0">192</Step>
+   <Step Number="1">195</Step>
+   <Step Number="2">196</Step>
+   <Step Number="3">198</Step>
+  </Function>
+  <Function ID="189" Type="Collection" Name="MH Strobe Med" Path="MH Shutters">
+   <Step Number="0">149</Step>
+   <Step Number="1">176</Step>
+   <Step Number="2">12</Step>
+   <Step Number="3">122</Step>
+  </Function>
+  <Function ID="190" Type="Collection" Name="MH Strobe Fast" Path="MH Shutters">
+   <Step Number="0">193</Step>
+   <Step Number="1">194</Step>
+   <Step Number="2">197</Step>
+   <Step Number="3">199</Step>
+  </Function>
+  <Function ID="191" Type="Collection" Name="MH Closed" Path="MH Shutters">
+   <Step Number="0">147</Step>
+   <Step Number="1">174</Step>
+   <Step Number="2">11</Step>
+   <Step Number="3">120</Step>
+  </Function>
+  <Function ID="192" Type="Scene" Name="Strobe slow - LED MH75B" Path="Shutter/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">6,8</FixtureVal>
+  </Function>
+  <Function ID="193" Type="Scene" Name="Strobe fast - LED MH75B" Path="Shutter/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">6,76</FixtureVal>
+  </Function>
+  <Function ID="194" Type="Scene" Name="Strobe fast - LED MH75B" Path="Shutter/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">6,76</FixtureVal>
+  </Function>
+  <Function ID="195" Type="Scene" Name="Strobe slow - LED MH75B" Path="Shutter/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">6,8</FixtureVal>
+  </Function>
+  <Function ID="196" Type="Scene" Name="Strobe slow - LED MH77B" Path="Shutter/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">5,4</FixtureVal>
+  </Function>
+  <Function ID="197" Type="Scene" Name="Strobe fast - LED MH77B" Path="Shutter/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">5,251</FixtureVal>
+  </Function>
+  <Function ID="198" Type="Scene" Name="Strobe slow - LED MH75B" Path="Shutter/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">6,8</FixtureVal>
+  </Function>
+  <Function ID="199" Type="Scene" Name="Strobe fast - LED MH75B" Path="Shutter/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">6,76</FixtureVal>
+  </Function>
+  <Function ID="200" Type="Scene" Name="MH77B Speed adjust" Path="Settings">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">4,200</FixtureVal>
+  </Function>
+  <Function ID="201" Type="Scene" Name="MH HL Center Floor" Path="Position/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,107,1,68,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="202" Type="Scene" Name="MH HR Center Floor" Path="Position/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,156,1,66,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="203" Type="Scene" Name="MH VL Center Floor" Path="Position/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,141,1,0,2,59,3,0</FixtureVal>
+  </Function>
+  <Function ID="204" Type="Scene" Name="MH VR Center Floor" Path="Position/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,154,1,65,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="205" Type="Scene" Name="MH HL X Floor" Path="Position/MH HL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,107,1,39,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="206" Type="Scene" Name="MH HR X Floor" Path="Position/MH HR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,156,1,36,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="207" Type="Scene" Name="MH VL X Floor" Path="Position/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,141,1,0,2,32,3,0</FixtureVal>
+  </Function>
+  <Function ID="208" Type="Scene" Name="MH VR X Floor" Path="Position/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,154,1,36,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="209" Type="Collection" Name="MH Center Floor" Path="MH Posistions">
+   <Step Number="0">201</Step>
+   <Step Number="1">202</Step>
+   <Step Number="2">203</Step>
+   <Step Number="3">204</Step>
+  </Function>
+  <Function ID="210" Type="Collection" Name="MH X Floor" Path="MH Posistions">
+   <Step Number="0">205</Step>
+   <Step Number="1">206</Step>
+   <Step Number="2">207</Step>
+   <Step Number="3">208</Step>
+  </Function>
+  <Monitor DisplayMode="0" ShowLabels="0">
+   <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
+   <ChannelStyle>0</ChannelStyle>
+   <ValueStyle>0</ValueStyle>
+   <Grid Width="5" Height="3" Depth="5" Units="0"/>
+  </Monitor>
  </Engine>
  <VirtualConsole>
   <Frame Caption="">
@@ -208,8 +805,8 @@
     <BackgroundImage>None</BackgroundImage>
     <Font>Default</Font>
    </Appearance>
-   <AudioTriggers BarsNumber="16" Caption="" ID="0">
-    <WindowState Visible="False" X="865" Y="95" Width="300" Height="200"/>
+   <AudioTriggers BarsNumber="6" Caption="S2L" ID="0">
+    <WindowState Visible="False" X="0" Y="0" Width="440" Height="215"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -218,6 +815,751 @@
      <Font>Default</Font>
     </Appearance>
    </AudioTriggers>
+   <Frame Caption="MH VL" ID="1">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="False" X="0" Y="740" Width="760" Height="270"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <SoloFrame Caption="Presets solo frame" ID="2">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="False" X="10" Y="40" Width="190" Height="70"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="No strobe (shutter closed)" ID="3" Icon="">
+      <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="11"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Strobe" ID="4" Icon="">
+      <WindowState Visible="False" X="70" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="12"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="No strobe (shutter open)" ID="5" Icon="">
+      <WindowState Visible="False" X="130" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="13"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </SoloFrame>
+    <SoloFrame Caption="Presets solo frame" ID="8">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="False" X="200" Y="40" Width="550" Height="70"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="" ID="9" Icon="">
+      <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294967295</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="15"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="11" Icon="">
+      <WindowState Visible="False" X="70" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294901760</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="17"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="13" Icon="">
+      <WindowState Visible="False" X="130" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294923520</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="19"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="15" Icon="">
+      <WindowState Visible="False" X="190" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278255360</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="21"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="17" Icon="">
+      <WindowState Visible="False" X="250" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278233855</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="23"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="19" Icon="">
+      <WindowState Visible="False" X="310" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4289331455</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="25"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="21" Icon="">
+      <WindowState Visible="False" X="430" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294967040</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="27"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="23" Icon="">
+      <WindowState Visible="False" X="370" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278190335</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="29"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="25" Icon="">
+      <WindowState Visible="False" X="490" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294901887</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="31"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </SoloFrame>
+    <SoloFrame Caption="Presets solo frame" ID="30">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="False" X="200" Y="110" Width="550" Height="150"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="" ID="31" Icon="">
+      <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>/usr/share/qlcplus/gobos/Others/open.svg</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="35"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="32" Icon="">
+      <WindowState Visible="False" X="70" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>/usr/share/qlcplus/gobos/Chauvet/gobo00025.svg</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="36"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="33" Icon="">
+      <WindowState Visible="False" X="130" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>/usr/share/qlcplus/gobos/Chauvet/gobo00024.svg</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="37"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="34" Icon="">
+      <WindowState Visible="False" X="190" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>/usr/share/qlcplus/gobos/Chauvet/gobo00023.svg</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="38"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="35" Icon="">
+      <WindowState Visible="False" X="250" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>/usr/share/qlcplus/gobos/Others/gobo00042.svg</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="39"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="36" Icon="">
+      <WindowState Visible="False" X="310" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>/usr/share/qlcplus/gobos/Robe/gobo00025.svg</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="40"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="37" Icon="">
+      <WindowState Visible="False" X="370" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>/usr/share/qlcplus/gobos/Others/gobo00027.svg</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="41"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="38" Icon="">
+      <WindowState Visible="False" X="430" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>/usr/share/qlcplus/gobos/ClayPaky/gobo00004.svg</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="42"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="39" Icon="">
+      <WindowState Visible="False" X="490" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>/usr/share/qlcplus/gobos/ClayPaky/gobo00003.svg</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="43"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="42" Icon="">
+      <WindowState Visible="False" X="70" Y="90" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>/usr/share/qlcplus/gobos/Chauvet/gobo00025.svg</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="46"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="43" Icon="">
+      <WindowState Visible="False" X="130" Y="90" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>/usr/share/qlcplus/gobos/Chauvet/gobo00024.svg</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="47"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="44" Icon="">
+      <WindowState Visible="False" X="190" Y="90" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>/usr/share/qlcplus/gobos/Chauvet/gobo00023.svg</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="48"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="45" Icon="">
+      <WindowState Visible="False" X="250" Y="90" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>/usr/share/qlcplus/gobos/Others/gobo00042.svg</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="49"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="46" Icon="">
+      <WindowState Visible="False" X="310" Y="90" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>/usr/share/qlcplus/gobos/Robe/gobo00025.svg</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="50"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="47" Icon="">
+      <WindowState Visible="False" X="370" Y="90" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>/usr/share/qlcplus/gobos/Others/gobo00027.svg</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="51"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="48" Icon="">
+      <WindowState Visible="False" X="430" Y="90" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>/usr/share/qlcplus/gobos/ClayPaky/gobo00004.svg</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="52"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="49" Icon="">
+      <WindowState Visible="False" X="490" Y="90" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>/usr/share/qlcplus/gobos/ClayPaky/gobo00003.svg</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="53"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Label Caption="↑ Gobo / Shake ↓" ID="51">
+      <WindowState Visible="False" X="10" Y="65" Width="530" Height="20"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+     </Label>
+    </SoloFrame>
+   </Frame>
+   <Frame Caption="MH" ID="52">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="False" X="490" Y="255" Width="500" Height="185"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <SoloFrame Caption="Presets solo frame" ID="62">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="False" X="5" Y="40" Width="490" Height="70"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="" ID="53" Icon="">
+      <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294967295</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="186"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="54" Icon="">
+      <WindowState Visible="False" X="70" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294901760</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="184"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="55" Icon="">
+      <WindowState Visible="False" X="130" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294923520</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="182"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="56" Icon="">
+      <WindowState Visible="False" X="190" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278255360</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="180"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="57" Icon="">
+      <WindowState Visible="False" X="250" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278233855</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="181"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="58" Icon="">
+      <WindowState Visible="False" X="310" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4289331455</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="183"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="59" Icon="">
+      <WindowState Visible="False" X="430" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294967040</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="185"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="" ID="60" Icon="">
+      <WindowState Visible="False" X="370" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278190335</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="179"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </SoloFrame>
+    <SoloFrame Caption="" ID="63">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="False" X="5" Y="110" Width="310" Height="70"/>
+     <AllowChildren>False</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="MH Closed" ID="64" Icon="">
+      <WindowState Visible="False" X="10" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="191"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="MH Open" ID="65" Icon="">
+      <WindowState Visible="False" X="250" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="187"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="MH Strobe Fast" ID="66" Icon="">
+      <WindowState Visible="False" X="190" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="190"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="MH Strobe Med" ID="67" Icon="">
+      <WindowState Visible="False" X="130" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="189"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="MH Strobe Slow" ID="68" Icon="">
+      <WindowState Visible="False" X="70" Y="10" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="188"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </SoloFrame>
+   </Frame>
+   <Frame Caption="" ID="69">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="False" X="450" Y="10" Width="305" Height="75"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>False</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <SoloFrame Caption="" ID="70">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="False" X="0" Y="0" Width="195" Height="75"/>
+     <AllowChildren>False</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="MH75B blackout on color change" ID="71" Icon="">
+      <WindowState Visible="False" X="10" Y="10" Width="80" Height="55"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="8"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="MH75B blackout on gobo change" ID="72" Icon="">
+      <WindowState Visible="False" X="100" Y="10" Width="85" Height="55"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="10"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </SoloFrame>
+    <Button Caption="MH77B Speed adjust" ID="73" Icon="">
+     <WindowState Visible="False" X="205" Y="10" Width="90" Height="55"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="200"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </Frame>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
