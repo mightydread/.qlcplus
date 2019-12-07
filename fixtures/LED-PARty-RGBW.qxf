@@ -20,13 +20,15 @@
   <Capability Min="51" Max="200">Color Macros</Capability>
   <Capability Min="201" Max="255">No function</Capability>
  </Channel>
- <Mode Name="6 Channel">
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Mode Name="7 Channel">
   <Channel Number="0">Dimmer</Channel>
   <Channel Number="1">Red</Channel>
   <Channel Number="2">Green</Channel>
   <Channel Number="3">Blue</Channel>
   <Channel Number="4">White</Channel>
   <Channel Number="5">Control</Channel>
+  <Channel Number="6">Strobe</Channel>
  </Mode>
  <Physical>
   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>

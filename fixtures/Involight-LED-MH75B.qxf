@@ -49,22 +49,22 @@
  <Channel Name="Dimmer" Preset="IntensityMasterDimmer"/>
  <Channel Name="Gobo">
   <Group Byte="0">Gobo</Group>
-  <Capability Min="0" Max="7">Wide</Capability>
-  <Capability Min="8" Max="15">Med</Capability>
-  <Capability Min="16" Max="23">narrow</Capability>
-  <Capability Min="24" Max="31">star</Capability>
-  <Capability Min="32" Max="39">circle</Capability>
-  <Capability Min="40" Max="47">triangle</Capability>
-  <Capability Min="48" Max="63">stars</Capability>
-  <Capability Min="64" Max="79">triag shake</Capability>
-  <Capability Min="80" Max="87">circle shake</Capability>
-  <Capability Min="88" Max="95">star shake</Capability>
-  <Capability Min="96" Max="103">narrow shake</Capability>
-  <Capability Min="104" Max="111">med shake</Capability>
-  <Capability Min="112" Max="119">wide shake</Capability>
-  <Capability Min="120" Max="127">open</Capability>
+  <Capability Min="0" Max="7" Preset="GoboMacro" Res1="Others/open.svg">Wide</Capability>
+  <Capability Min="8" Max="15" Preset="GoboMacro" Res1="Chauvet/gobo00025.svg">Medium</Capability>
+  <Capability Min="16" Max="23" Preset="GoboMacro" Res1="Chauvet/gobo00024.svg">Narrow</Capability>
+  <Capability Min="24" Max="31" Preset="GoboMacro" Res1="Others/gobo00042.svg">Star</Capability>
+  <Capability Min="32" Max="39" Preset="GoboMacro" Res1="Others/gobo00014.svg">Circle</Capability>
+  <Capability Min="40" Max="47" Preset="GoboMacro" Res1="Others/gobo00027.svg">Triangle</Capability>
+  <Capability Min="48" Max="63" Preset="GoboMacro" Res1="Others/gobo00033.svg">Stars</Capability>
+  <Capability Min="64" Max="79" Preset="GoboShakeMacro" Res1="Others/gobo00033.svg">Stars Shake</Capability>
+  <Capability Min="80" Max="87" Preset="GoboShakeMacro" Res1="Others/gobo00027.svg">Triangle Shake</Capability>
+  <Capability Min="88" Max="95" Preset="GoboShakeMacro" Res1="Others/gobo00014.svg">Circle Shake</Capability>
+  <Capability Min="96" Max="103" Preset="GoboShakeMacro" Res1="Others/gobo00042.svg">Star Shake</Capability>
+  <Capability Min="104" Max="111" Preset="GoboShakeMacro" Res1="Chauvet/gobo00024.svg">Narrow Shake</Capability>
+  <Capability Min="112" Max="119" Preset="GoboShakeMacro" Res1="Chauvet/gobo00025.svg">Medium Shake</Capability>
+  <Capability Min="120" Max="127" Preset="GoboMacro" Res1="Others/open.svg">Open</Capability>
   <Capability Min="128" Max="191">positive rainbow</Capability>
-  <Capability Min="192" Max="255">neg rainbow</Capability>
+  <Capability Min="192" Max="255" Preset="GoboMacro" Res1="">neg rainbow</Capability>
  </Channel>
  <Channel Name="Function">
   <Group Byte="0">Maintenance</Group>
@@ -81,10 +81,10 @@
  <Channel Name="Prism">
   <Group Byte="0">Prism</Group>
   <Capability Min="0" Max="7" Preset="PrismEffectOff">Off</Capability>
-  <Capability Min="8" Max="12" Preset="PrismEffectOn" Res1="8">Prism</Capability>
+  <Capability Min="8" Max="12" Preset="PrismEffectOn" Res1="3">Prism</Capability>
   <Capability Min="13" Max="130" Preset="RotationClockwiseSlowToFast">Prism CW Rotation</Capability>
   <Capability Min="131" Max="247" Preset="RotationCounterClockwiseSlowToFast">Prism CCW Rotation</Capability>
-  <Capability Min="248" Max="255" Preset="PrismEffectOn" Res1="8">Prism</Capability>
+  <Capability Min="248" Max="255" Preset="PrismEffectOn" Res1="3">Prism</Capability>
  </Channel>
  <Mode Name="12ch">
   <Channel Number="0">Pan</Channel>

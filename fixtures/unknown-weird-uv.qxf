@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.2</Version>
+  <Author>mighty</Author>
+ </Creator>
+ <Manufacturer>unknown</Manufacturer>
+ <Model>weird uv</Model>
+ <Type>Dimmer</Type>
+ <Channel Name="Effects">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="10">Off</Capability>
+  <Capability Min="11" Max="50">On</Capability>
+  <Capability Min="51" Max="100">Flickr</Capability>
+  <Capability Min="101" Max="150">Breathe</Capability>
+  <Capability Min="151" Max="200">Off?</Capability>
+  <Capability Min="201" Max="255">Strobe</Capability>
+ </Channel>
+ <Channel Name="Effect Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">CH1 Effect Speed</Capability>
+ </Channel>
+ <Channel Name="???">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Mode Name="3 CH">
+  <Channel Number="0">Effects</Channel>
+  <Channel Number="1">???</Channel>
+  <Channel Number="2">Effect Speed</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
