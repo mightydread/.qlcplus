@@ -4,16 +4,39 @@
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.2</Version>
-  <Author>Mighty Dread</Author>
+  <Author></Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" Line="0"/>
+    <Output Plugin="DMX USB" Line="0">
+     <PluginParameters UniverseChannels="208"/>
+    </Output>
    </Universe>
-   <Universe Name="Universe 2" ID="1"/>
-   <Universe Name="Universe 3" ID="2"/>
-   <Universe Name="Universe 4" ID="3"/>
+   <Universe Name="Universe 2" ID="1">
+    <Input Plugin="MIDI" Line="3" Profile="Akai APC20">
+     <PluginParameters initmessage="APC20 Ableton mode 2" midichannel="16"/>
+    </Input>
+    <Feedback Plugin="MIDI" Line="3">
+     <PluginParameters initmessage="APC20 Ableton mode 2" midichannel="16"/>
+    </Feedback>
+   </Universe>
+   <Universe Name="Universe 3" ID="2">
+    <Input Plugin="MIDI" Line="2" Profile="KORG nanoKONTROL">
+     <PluginParameters midichannel="16"/>
+    </Input>
+    <Feedback Plugin="MIDI" Line="2">
+     <PluginParameters midichannel="16"/>
+    </Feedback>
+   </Universe>
+   <Universe Name="Universe 4" ID="3">
+    <Input Plugin="MIDI" Line="1" Profile="AKAI LPD8">
+     <PluginParameters initmessage="None" midichannel="16" mode="Note Velocity"/>
+    </Input>
+    <Feedback Plugin="MIDI" Line="1">
+     <PluginParameters midichannel="16" mode="Note Velocity"/>
+    </Feedback>
+   </Universe>
   </InputOutputMap>
   <Fixture>
    <Manufacturer>Involight</Manufacturer>
@@ -219,7 +242,7 @@
    <Step Number="2">290</Step>
    <Step Number="3">307</Step>
   </Function>
-  <Function ID="4" Type="EFX" Name="New EFX 4">
+  <Function ID="4" Type="EFX" Name="Sweep">
    <Fixture>
     <ID>1</ID>
     <Head>0</Head>
@@ -249,12 +272,12 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="6272"/>
    <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm>Circle</Algorithm>
-   <Width>10</Width>
-   <Height>10</Height>
+   <RunOrder>PingPong</RunOrder>
+   <Algorithm>Line2</Algorithm>
+   <Width>13</Width>
+   <Height>0</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>1</IsRelative>
@@ -313,7 +336,7 @@
   </Function>
   <Function ID="12" Type="Scene" Name="Strobe med - LED MH77B" Path="Shutter/MH VL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="3">5,220</FixtureVal>
+   <FixtureVal ID="3">5,214</FixtureVal>
   </Function>
   <Function ID="13" Type="Scene" Name="No strobe (shutter open) - LED MH77B" Path="Shutter/MH VL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -490,7 +513,7 @@
    <Step Number="3">308</Step>
   </Function>
   <Function ID="55" Type="Chaser" Name="Wand RW">
-   <Speed FadeIn="0" FadeOut="0" Duration="300"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="203"/>
    <Direction>Backward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -505,7 +528,7 @@
    <Step Number="8" FadeIn="0" Hold="300" FadeOut="0">355</Step>
   </Function>
   <Function ID="56" Type="Chaser" Name="Wand Random">
-   <Speed FadeIn="0" FadeOut="0" Duration="300"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="203"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -520,15 +543,15 @@
    <Step Number="8" FadeIn="0" Hold="300" FadeOut="0">355</Step>
   </Function>
   <Function ID="57" Type="Chaser" Name="Wand UV/RGB">
-   <Speed FadeIn="0" FadeOut="0" Duration="300"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="203"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">357</Step>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">356</Step>
+   <Step Number="0" FadeIn="0" Hold="454" FadeOut="0">217</Step>
+   <Step Number="1" FadeIn="0" Hold="454" FadeOut="0">218</Step>
   </Function>
   <Function ID="58" Type="Chaser" Name="Wand RGB FW">
-   <Speed FadeIn="0" FadeOut="0" Duration="300"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="203"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -539,7 +562,7 @@
    <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">355</Step>
   </Function>
   <Function ID="59" Type="Chaser" Name="Wand RGB RW">
-   <Speed FadeIn="0" FadeOut="0" Duration="300"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="203"/>
    <Direction>Backward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -550,7 +573,7 @@
    <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">355</Step>
   </Function>
   <Function ID="60" Type="Chaser" Name="Wand UV FW">
-   <Speed FadeIn="0" FadeOut="0" Duration="300"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="203"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -560,7 +583,7 @@
    <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">354</Step>
   </Function>
   <Function ID="61" Type="Chaser" Name="Wand UV RW">
-   <Speed FadeIn="0" FadeOut="0" Duration="300"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="203"/>
    <Direction>Backward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -570,8 +593,8 @@
    <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">354</Step>
   </Function>
   <Function ID="62" Type="Collection" Name="Wand ALL" Path="Wand">
-   <Step Number="0">357</Step>
-   <Step Number="1">356</Step>
+   <Step Number="0">217</Step>
+   <Step Number="1">218</Step>
   </Function>
   <Function ID="63" Type="Collection" Name="Wand ALL off" Path="Wand">
    <Step Number="0">314</Step>
@@ -668,7 +691,7 @@
    <Step Number="8" FadeIn="0" Hold="0" FadeOut="0" Note="9" Values="9">14:0,255</Step>
   </Function>
   <Function ID="73" Type="Chaser" Name="Wand FW">
-   <Speed FadeIn="0" FadeOut="0" Duration="300"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="203"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -746,25 +769,25 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,93,1,54,2,0,3,0</FixtureVal>
   </Function>
-  <Function ID="90" Type="Collection" Name="MH LH" Path="MH Posistions">
+  <Function ID="90" Type="Collection" Name="MH LH" Path="MH Positions">
    <Step Number="0">74</Step>
    <Step Number="1">75</Step>
    <Step Number="2">76</Step>
    <Step Number="3">77</Step>
   </Function>
-  <Function ID="91" Type="Collection" Name="MH RH" Path="MH Posistions">
+  <Function ID="91" Type="Collection" Name="MH RH" Path="MH Positions">
    <Step Number="0">81</Step>
    <Step Number="1">80</Step>
    <Step Number="2">79</Step>
    <Step Number="3">78</Step>
   </Function>
-  <Function ID="92" Type="Collection" Name="MH RV" Path="MH Posistions">
+  <Function ID="92" Type="Collection" Name="MH RV" Path="MH Positions">
    <Step Number="0">82</Step>
    <Step Number="1">83</Step>
    <Step Number="2">84</Step>
    <Step Number="3">85</Step>
   </Function>
-  <Function ID="93" Type="Collection" Name="MH LV" Path="MH Posistions">
+  <Function ID="93" Type="Collection" Name="MH LV" Path="MH Positions">
    <Step Number="0">89</Step>
    <Step Number="1">88</Step>
    <Step Number="2">87</Step>
@@ -773,6 +796,28 @@
   <Function ID="94" Type="Scene" Name="MH HL on" Path="Dimmer/MH">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">7,255</FixtureVal>
+  </Function>
+  <Function ID="95" Type="EFX" Name="New EFX 95">
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
   </Function>
   <Function ID="96" Type="Scene" Name="MH VL on" Path="Dimmer/MH">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1212,7 +1257,7 @@
   </Function>
   <Function ID="197" Type="Scene" Name="Strobe fast - LED MH77B" Path="Shutter/MH VL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="3">5,251</FixtureVal>
+   <FixtureVal ID="3">5,222</FixtureVal>
   </Function>
   <Function ID="198" Type="Scene" Name="Strobe slow - LED MH75B" Path="Shutter/MH VR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1244,7 +1289,7 @@
   </Function>
   <Function ID="205" Type="Scene" Name="MH HL Disco" Path="Position/MH HL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,104,1,31,2,109,3,172</FixtureVal>
+   <FixtureVal ID="1">0,103,1,31,2,109,3,172</FixtureVal>
   </Function>
   <Function ID="206" Type="Scene" Name="MH HR Disco" Path="Position/MH HR">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1258,13 +1303,13 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">0,151,1,27,2,201,3,223</FixtureVal>
   </Function>
-  <Function ID="209" Type="Collection" Name="MH Center Floor" Path="MH Posistions">
+  <Function ID="209" Type="Collection" Name="MH Center Floor" Path="MH Positions">
    <Step Number="0">201</Step>
    <Step Number="1">202</Step>
    <Step Number="2">203</Step>
    <Step Number="3">204</Step>
   </Function>
-  <Function ID="210" Type="Collection" Name="MH Disco" Path="MH Posistions">
+  <Function ID="210" Type="Collection" Name="MH Disco" Path="MH Positions">
    <Step Number="0">205</Step>
    <Step Number="1">206</Step>
    <Step Number="2">207</Step>
@@ -1273,6 +1318,149 @@
   <Function ID="211" Type="Scene" Name="MH VR off" Path="Dimmer/MH">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">7,0</FixtureVal>
+  </Function>
+  <Function ID="212" Type="EFX" Name="Sweep Overhead">
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>9</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Line</Algorithm>
+   <Width>8</Width>
+   <Height>8</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>145</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>72</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="213" Type="Scene" Name="X Overhead" Path="Position">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,105,1,40,2,0,3,0</FixtureVal>
+   <FixtureVal ID="0">0,157,1,37,2,0,3,0</FixtureVal>
+   <FixtureVal ID="3">0,141,1,0,2,31,3,0</FixtureVal>
+   <FixtureVal ID="2">0,153,1,37,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="214" Type="EFX" Name="lissa">
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="6272"/>
+   <Direction>Forward</Direction>
+   <RunOrder>PingPong</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>18</Width>
+   <Height>16</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>1</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="215" Type="Scene" Name="Prism Rot">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">11,131</FixtureVal>
+   <FixtureVal ID="0">11,131</FixtureVal>
+   <FixtureVal ID="3">10,147,11,173</FixtureVal>
+   <FixtureVal ID="2">11,131</FixtureVal>
+  </Function>
+  <Function ID="216" Type="Scene" Name="Prism Rot off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">11,0</FixtureVal>
+   <FixtureVal ID="0">11,0</FixtureVal>
+   <FixtureVal ID="3">10,0,11,0</FixtureVal>
+   <FixtureVal ID="2">11,0</FixtureVal>
+  </Function>
+  <Function ID="217" Type="Collection" Name="W RGB (Copy)" Path="Wand">
+   <Step Number="0">313</Step>
+   <Step Number="1">316</Step>
+   <Step Number="2">317</Step>
+   <Step Number="3">320</Step>
+   <Step Number="4">322</Step>
+   <Step Number="5">325</Step>
+   <Step Number="6">326</Step>
+   <Step Number="7">331</Step>
+   <Step Number="8">329</Step>
+  </Function>
+  <Function ID="218" Type="Collection" Name="W UV (Copy)" Path="Wand">
+   <Step Number="0">314</Step>
+   <Step Number="1">315</Step>
+   <Step Number="2">318</Step>
+   <Step Number="3">319</Step>
+   <Step Number="4">323</Step>
+   <Step Number="5">324</Step>
+   <Step Number="6">327</Step>
+   <Step Number="7">328</Step>
+   <Step Number="8">330</Step>
   </Function>
   <Function ID="263" Type="Scene" Name="Wide - LED MH75B" Path="Gobo/MH HL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1602,7 +1790,7 @@
    <Step Number="3">211</Step>
   </Function>
   <Function ID="342" Type="Chaser" Name="MH CW">
-   <Speed FadeIn="0" FadeOut="0" Duration="200"/>
+   <Speed FadeIn="0" FadeOut="364" Duration="1568"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -1612,7 +1800,7 @@
    <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">334</Step>
   </Function>
   <Function ID="343" Type="Chaser" Name="MH CCW">
-   <Speed FadeIn="0" FadeOut="0" Duration="200"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1568"/>
    <Direction>Backward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -1622,7 +1810,7 @@
    <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">334</Step>
   </Function>
   <Function ID="344" Type="Chaser" Name="MH Corners">
-   <Speed FadeIn="0" FadeOut="0" Duration="200"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1568"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -1630,15 +1818,15 @@
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">341</Step>
   </Function>
   <Function ID="345" Type="Chaser" Name="MH LR">
-   <Speed FadeIn="0" FadeOut="0" Duration="200"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1568"/>
    <Direction>Forward</Direction>
-   <RunOrder>SingleShot</RunOrder>
+   <RunOrder>PingPong</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">338</Step>
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">340</Step>
   </Function>
   <Function ID="346" Type="Chaser" Name="MH HV">
-   <Speed FadeIn="0" FadeOut="0" Duration="200"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1568"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -1791,6 +1979,9 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
+    <Input Universe="1" Channel="209"/>
+    <SpectrumBar Name="#1 (0Hz - 833Hz)" Type="2" MinThreshold="25" MaxThreshold="102" Divisor="1" Index="0" FunctionID="342"/>
+    <SpectrumBar Name="#4 (2500Hz - 3333Hz)" Type="2" MinThreshold="51" MaxThreshold="204" Divisor="1" Index="3" FunctionID="56"/>
    </AudioTriggers>
    <Frame Caption="MH VL" ID="1">
     <Appearance>
@@ -1917,6 +2108,7 @@
       <Function ID="15"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="182"/>
      </Button>
      <Button Caption="" ID="11" Icon="">
       <WindowState Visible="True" X="55" Y="5" Width="50" Height="50"/>
@@ -1930,6 +2122,7 @@
       <Function ID="17"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="4278"/>
      </Button>
      <Button Caption="" ID="13" Icon="">
       <WindowState Visible="True" X="105" Y="5" Width="50" Height="50"/>
@@ -1943,6 +2136,7 @@
       <Function ID="19"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="8374"/>
      </Button>
      <Button Caption="" ID="15" Icon="">
       <WindowState Visible="True" X="155" Y="5" Width="50" Height="50"/>
@@ -1956,6 +2150,7 @@
       <Function ID="21"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="12470"/>
      </Button>
      <Button Caption="" ID="17" Icon="">
       <WindowState Visible="True" X="205" Y="5" Width="50" Height="50"/>
@@ -1969,6 +2164,7 @@
       <Function ID="23"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="16566"/>
      </Button>
      <Button Caption="" ID="19" Icon="">
       <WindowState Visible="True" X="255" Y="5" Width="50" Height="50"/>
@@ -1982,6 +2178,7 @@
       <Function ID="25"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="20662"/>
      </Button>
      <Button Caption="" ID="21" Icon="">
       <WindowState Visible="True" X="355" Y="5" Width="50" Height="50"/>
@@ -1995,6 +2192,7 @@
       <Function ID="27"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="28854"/>
      </Button>
      <Button Caption="" ID="23" Icon="">
       <WindowState Visible="True" X="305" Y="5" Width="50" Height="50"/>
@@ -2008,6 +2206,7 @@
       <Function ID="29"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="24758"/>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="MH VL Gobos" ID="30">
@@ -2302,6 +2501,7 @@
       <Function ID="186"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="183"/>
      </Button>
      <Button Caption="" ID="54" Icon="">
       <WindowState Visible="True" X="55" Y="5" Width="50" Height="50"/>
@@ -2315,6 +2515,7 @@
       <Function ID="184"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="4279"/>
      </Button>
      <Button Caption="" ID="55" Icon="">
       <WindowState Visible="True" X="105" Y="5" Width="50" Height="50"/>
@@ -2328,6 +2529,7 @@
       <Function ID="182"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="8375"/>
      </Button>
      <Button Caption="" ID="56" Icon="">
       <WindowState Visible="True" X="155" Y="5" Width="50" Height="50"/>
@@ -2341,6 +2543,7 @@
       <Function ID="180"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="12471"/>
      </Button>
      <Button Caption="" ID="57" Icon="">
       <WindowState Visible="True" X="205" Y="5" Width="50" Height="50"/>
@@ -2354,6 +2557,7 @@
       <Function ID="181"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="16567"/>
      </Button>
      <Button Caption="" ID="58" Icon="">
       <WindowState Visible="True" X="255" Y="5" Width="50" Height="50"/>
@@ -2367,6 +2571,7 @@
       <Function ID="183"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="20663"/>
      </Button>
      <Button Caption="" ID="59" Icon="">
       <WindowState Visible="True" X="355" Y="5" Width="50" Height="50"/>
@@ -2380,6 +2585,7 @@
       <Function ID="185"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="28855"/>
      </Button>
      <Button Caption="" ID="60" Icon="">
       <WindowState Visible="True" X="305" Y="5" Width="50" Height="50"/>
@@ -2393,6 +2599,7 @@
       <Function ID="179"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="24759"/>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="MH ALL Strobe" ID="63">
@@ -2423,6 +2630,7 @@
       <Function ID="191"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="211"/>
      </Button>
      <Button Caption="Open" ID="65" Icon="">
       <WindowState Visible="True" X="5" Y="5" Width="50" Height="50"/>
@@ -2436,6 +2644,7 @@
       <Function ID="187"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="210"/>
      </Button>
      <Button Caption="Strobe fast" ID="66" Icon="">
       <WindowState Visible="True" X="105" Y="5" Width="50" Height="50"/>
@@ -2449,6 +2658,7 @@
       <Function ID="190"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="212"/>
      </Button>
      <Button Caption="Strobe med" ID="67" Icon="">
       <WindowState Visible="True" X="155" Y="5" Width="50" Height="50"/>
@@ -2462,6 +2672,7 @@
       <Function ID="189"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="213"/>
      </Button>
      <Button Caption="Strobe slow" ID="68" Icon="">
       <WindowState Visible="True" X="205" Y="5" Width="50" Height="50"/>
@@ -2475,6 +2686,7 @@
       <Function ID="188"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="214"/>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="MH ALL Gobos" ID="93">
@@ -2505,6 +2717,7 @@
       <Function ID="5"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="8370"/>
      </Button>
      <Button Caption="" ID="95" Icon="">
       <WindowState Visible="True" X="95" Y="55" Width="50" Height="50"/>
@@ -2518,6 +2731,7 @@
       <Function ID="7"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="12466"/>
      </Button>
      <Button Caption="" ID="96" Icon="">
       <WindowState Visible="True" X="5" Y="5" Width="50" Height="50"/>
@@ -2531,6 +2745,7 @@
       <Function ID="34"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="178"/>
      </Button>
      <Button Caption="" ID="97" Icon="">
       <WindowState Visible="True" X="95" Y="5" Width="50" Height="50"/>
@@ -2544,6 +2759,7 @@
       <Function ID="54"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="4274"/>
      </Button>
      <Button Caption="" ID="98" Icon="">
       <WindowState Visible="True" X="5" Y="155" Width="50" Height="50"/>
@@ -2557,6 +2773,7 @@
       <Function ID="1"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="24754"/>
      </Button>
      <Button Caption="" ID="99" Icon="">
       <WindowState Visible="True" X="95" Y="155" Width="50" Height="50"/>
@@ -2570,6 +2787,7 @@
       <Function ID="3"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="28850"/>
      </Button>
      <Button Caption="" ID="100" Icon="">
       <WindowState Visible="True" X="5" Y="105" Width="50" Height="50"/>
@@ -2583,6 +2801,7 @@
       <Function ID="9"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="16562"/>
      </Button>
      <Button Caption="" ID="101" Icon="">
       <WindowState Visible="True" X="95" Y="105" Width="50" Height="50"/>
@@ -2596,6 +2815,7 @@
       <Function ID="14"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="20658"/>
      </Button>
      <Label Caption="← Gobo Shake →" ID="184">
       <WindowState Visible="True" X="55" Y="5" Width="40" Height="200"/>
@@ -2633,6 +2853,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
+      <Input Universe="1" Channel="8199"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
@@ -2651,6 +2872,7 @@
       <Function ID="125"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="8368"/>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="HL Dimmer" ID="156">
@@ -2678,6 +2900,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
+      <Input Universe="1" Channel="12295"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
@@ -2696,6 +2919,7 @@
       <Function ID="152"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="12464"/>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="HL Dimmer" ID="180">
@@ -2723,6 +2947,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
+      <Input Universe="1" Channel="16391"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
@@ -2741,6 +2966,7 @@
       <Function ID="173"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="16560"/>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="HL Dimmer" ID="159">
@@ -2768,6 +2994,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
+      <Input Universe="1" Channel="20487"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
@@ -2786,6 +3013,7 @@
       <Function ID="211"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="20656"/>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="HL Dimmer" ID="183">
@@ -2831,6 +3059,7 @@
       <Function ID="119"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="176"/>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="MH Solo" ID="185">
@@ -2930,6 +3159,7 @@
       <Function ID="343"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="177"/>
      </Button>
      <Button Caption="⤫" ID="192" Icon="">
       <WindowState Visible="True" X="110" Y="10" Width="50" Height="50"/>
@@ -2943,6 +3173,7 @@
       <Function ID="344"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="8369"/>
      </Button>
      <Button Caption="↻" ID="193" Icon="">
       <WindowState Visible="True" X="60" Y="10" Width="50" Height="50"/>
@@ -2956,6 +3187,7 @@
       <Function ID="342"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="4273"/>
      </Button>
      <Button Caption="↕" ID="194" Icon="">
       <WindowState Visible="True" X="10" Y="60" Width="50" Height="50"/>
@@ -2969,6 +3201,7 @@
       <Function ID="346"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="12465"/>
      </Button>
      <Button Caption="↔" ID="195" Icon="">
       <WindowState Visible="True" X="60" Y="60" Width="50" Height="50"/>
@@ -2982,6 +3215,7 @@
       <Function ID="345"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="16561"/>
      </Button>
      <Button Caption="Button 196" ID="196" Icon="">
       <WindowState Visible="True" X="110" Y="60" Width="50" Height="50"/>
@@ -2996,7 +3230,7 @@
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
-     <Button Caption="Button 197" ID="197" Icon="">
+     <Button Caption="Prism Rot" ID="197" Icon="">
       <WindowState Visible="True" X="10" Y="110" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
@@ -3005,11 +3239,12 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="4294967295"/>
+      <Function ID="215"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="2" Channel="29"/>
      </Button>
-     <Button Caption="Button 198" ID="198" Icon="">
+     <Button Caption="Prism Rot off" ID="198" Icon="">
       <WindowState Visible="True" X="60" Y="110" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
@@ -3018,9 +3253,10 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="4294967295"/>
+      <Function ID="216"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="2" Channel="39"/>
      </Button>
      <Button Caption="Button 199" ID="199" Icon="">
       <WindowState Visible="True" X="110" Y="110" Width="50" Height="50"/>
@@ -3276,6 +3512,7 @@
       <Function ID="134"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="24757"/>
      </Button>
      <Button Caption="" ID="75" Icon="">
       <WindowState Visible="True" X="155" Y="5" Width="50" Height="50"/>
@@ -3289,6 +3526,7 @@
       <Function ID="129"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="12469"/>
      </Button>
      <Button Caption="" ID="76" Icon="">
       <WindowState Visible="True" X="205" Y="5" Width="50" Height="50"/>
@@ -3302,6 +3540,7 @@
       <Function ID="131"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="16565"/>
      </Button>
      <Button Caption="" ID="77" Icon="">
       <WindowState Visible="True" X="105" Y="5" Width="50" Height="50"/>
@@ -3315,6 +3554,7 @@
       <Function ID="133"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="8373"/>
      </Button>
      <Button Caption="" ID="78" Icon="">
       <WindowState Visible="True" X="255" Y="5" Width="50" Height="50"/>
@@ -3328,6 +3568,7 @@
       <Function ID="128"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="20661"/>
      </Button>
      <Button Caption="" ID="79" Icon="">
       <WindowState Visible="True" X="55" Y="5" Width="50" Height="50"/>
@@ -3341,6 +3582,7 @@
       <Function ID="130"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="4277"/>
      </Button>
      <Button Caption="" ID="80" Icon="">
       <WindowState Visible="True" X="5" Y="5" Width="50" Height="50"/>
@@ -3354,6 +3596,7 @@
       <Function ID="126"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="181"/>
      </Button>
      <Button Caption="" ID="81" Icon="">
       <WindowState Visible="True" X="355" Y="5" Width="50" Height="50"/>
@@ -3367,6 +3610,7 @@
       <Function ID="127"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="28853"/>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="MH HL Strobe" ID="82">
@@ -3717,6 +3961,7 @@
       <Function ID="161"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="24761"/>
      </Button>
      <Button Caption="" ID="7" Icon="">
       <WindowState Visible="True" X="155" Y="5" Width="50" Height="50"/>
@@ -3730,6 +3975,7 @@
       <Function ID="156"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="12473"/>
      </Button>
      <Button Caption="" ID="10" Icon="">
       <WindowState Visible="True" X="205" Y="5" Width="50" Height="50"/>
@@ -3743,6 +3989,7 @@
       <Function ID="158"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="16569"/>
      </Button>
      <Button Caption="" ID="12" Icon="">
       <WindowState Visible="True" X="105" Y="5" Width="50" Height="50"/>
@@ -3756,6 +4003,7 @@
       <Function ID="160"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="8377"/>
      </Button>
      <Button Caption="" ID="14" Icon="">
       <WindowState Visible="True" X="255" Y="5" Width="50" Height="50"/>
@@ -3769,6 +4017,7 @@
       <Function ID="155"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="20665"/>
      </Button>
      <Button Caption="" ID="16" Icon="">
       <WindowState Visible="True" X="55" Y="5" Width="50" Height="50"/>
@@ -3782,6 +4031,7 @@
       <Function ID="157"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="4281"/>
      </Button>
      <Button Caption="" ID="18" Icon="">
       <WindowState Visible="True" X="5" Y="5" Width="50" Height="50"/>
@@ -3795,6 +4045,7 @@
       <Function ID="153"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="185"/>
      </Button>
      <Button Caption="" ID="20" Icon="">
       <WindowState Visible="True" X="355" Y="5" Width="50" Height="50"/>
@@ -3808,6 +4059,7 @@
       <Function ID="154"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="28857"/>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="MH VR Strobo" ID="24">
@@ -4158,6 +4410,7 @@
       <Function ID="107"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="24760"/>
      </Button>
      <Button Caption="" ID="162" Icon="">
       <WindowState Visible="True" X="155" Y="5" Width="50" Height="50"/>
@@ -4171,6 +4424,7 @@
       <Function ID="102"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="12472"/>
      </Button>
      <Button Caption="" ID="163" Icon="">
       <WindowState Visible="True" X="205" Y="5" Width="50" Height="50"/>
@@ -4184,6 +4438,7 @@
       <Function ID="104"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="16568"/>
      </Button>
      <Button Caption="" ID="165" Icon="">
       <WindowState Visible="True" X="105" Y="5" Width="50" Height="50"/>
@@ -4197,6 +4452,7 @@
       <Function ID="106"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="8376"/>
      </Button>
      <Button Caption="" ID="166" Icon="">
       <WindowState Visible="True" X="255" Y="5" Width="50" Height="50"/>
@@ -4210,6 +4466,7 @@
       <Function ID="101"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="20664"/>
      </Button>
      <Button Caption="" ID="167" Icon="">
       <WindowState Visible="True" X="55" Y="5" Width="50" Height="50"/>
@@ -4223,6 +4480,7 @@
       <Function ID="103"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="4280"/>
      </Button>
      <Button Caption="" ID="168" Icon="">
       <WindowState Visible="True" X="5" Y="5" Width="50" Height="50"/>
@@ -4236,6 +4494,7 @@
       <Function ID="99"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="184"/>
      </Button>
      <Button Caption="" ID="169" Icon="">
       <WindowState Visible="True" X="355" Y="5" Width="50" Height="50"/>
@@ -4249,6 +4508,7 @@
       <Function ID="100"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="28856"/>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="MH HR Strobe" ID="171">
@@ -4403,6 +4663,7 @@
       <Function ID="6"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="24756"/>
      </Button>
      <Button Caption="" ID="203" Icon="">
       <WindowState Visible="True" X="155" Y="5" Width="50" Height="50"/>
@@ -4416,6 +4677,7 @@
       <Function ID="66"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="12468"/>
      </Button>
      <Button Caption="" ID="204" Icon="">
       <WindowState Visible="True" X="205" Y="5" Width="50" Height="50"/>
@@ -4429,6 +4691,7 @@
       <Function ID="67"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="16564"/>
      </Button>
      <Button Caption="" ID="205" Icon="">
       <WindowState Visible="True" X="105" Y="5" Width="50" Height="50"/>
@@ -4442,6 +4705,7 @@
       <Function ID="65"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="8372"/>
      </Button>
      <Button Caption="" ID="206" Icon="">
       <WindowState Visible="True" X="255" Y="5" Width="50" Height="50"/>
@@ -4455,6 +4719,7 @@
       <Function ID="70"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="20660"/>
      </Button>
      <Button Caption="" ID="207" Icon="">
       <WindowState Visible="True" X="55" Y="5" Width="50" Height="50"/>
@@ -4468,6 +4733,7 @@
       <Function ID="68"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="4276"/>
      </Button>
      <Button Caption="" ID="208" Icon="">
       <WindowState Visible="True" X="5" Y="5" Width="50" Height="50"/>
@@ -4481,6 +4747,7 @@
       <Function ID="64"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="180"/>
      </Button>
      <Button Caption="" ID="209" Icon="">
       <WindowState Visible="True" X="355" Y="5" Width="50" Height="50"/>
@@ -4494,6 +4761,7 @@
       <Function ID="69"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="28852"/>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="Wand Chasers" ID="210">
@@ -4524,6 +4792,7 @@
       <Function ID="73"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="179"/>
      </Button>
      <Button Caption="Random" ID="213" Icon="">
       <WindowState Visible="True" X="105" Y="5" Width="50" Height="50"/>
@@ -4537,6 +4806,7 @@
       <Function ID="56"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="8371"/>
      </Button>
      <Button Caption="RGB ↑" ID="214" Icon="">
       <WindowState Visible="True" X="205" Y="5" Width="50" Height="50"/>
@@ -4550,6 +4820,7 @@
       <Function ID="58"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="16563"/>
      </Button>
      <Button Caption="RGB ↓" ID="215" Icon="">
       <WindowState Visible="True" X="155" Y="5" Width="50" Height="50"/>
@@ -4563,6 +4834,7 @@
       <Function ID="59"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="12467"/>
      </Button>
      <Button Caption="↓" ID="216" Icon="">
       <WindowState Visible="True" X="55" Y="5" Width="50" Height="50"/>
@@ -4576,6 +4848,7 @@
       <Function ID="55"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="4275"/>
      </Button>
      <Button Caption="UV ↑" ID="217" Icon="">
       <WindowState Visible="True" X="255" Y="5" Width="50" Height="50"/>
@@ -4589,6 +4862,7 @@
       <Function ID="60"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="20659"/>
      </Button>
      <Button Caption="UV ↓" ID="218" Icon="">
       <WindowState Visible="True" X="305" Y="5" Width="50" Height="50"/>
@@ -4602,6 +4876,7 @@
       <Function ID="61"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="24755"/>
      </Button>
      <Button Caption="UV ↔ RGB" ID="219" Icon="">
       <WindowState Visible="True" X="355" Y="5" Width="50" Height="50"/>
@@ -4615,6 +4890,7 @@
       <Function ID="57"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="1" Channel="28851"/>
      </Button>
      <Button Caption="ALL" ID="220" Icon="">
       <WindowState Visible="True" X="105" Y="75" Width="50" Height="50"/>
@@ -4664,7 +4940,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="4294967295"/>
+      <Function ID="356"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
@@ -4688,7 +4964,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="440" Y="40" Width="520" Height="310"/>
+    <WindowState Visible="True" X="435" Y="40" Width="520" Height="310"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -5083,9 +5359,9 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="175" Y="75" Width="120" Height="170"/>
-     <AllowChildren>False</AllowChildren>
-     <AllowResize>False</AllowResize>
+     <WindowState Visible="True" X="175" Y="40" Width="120" Height="220"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
      <ShowHeader>False</ShowHeader>
      <ShowEnableButton>True</ShowEnableButton>
      <Mixing>False</Mixing>
@@ -5103,6 +5379,7 @@
       <Function ID="209"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="3" Channel="4257"/>
      </Button>
      <Button Caption="∗" ID="257" Icon="">
       <WindowState Visible="True" X="60" Y="60" Width="50" Height="50"/>
@@ -5116,6 +5393,7 @@
       <Function ID="210"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="3" Channel="4261"/>
      </Button>
      <Button Caption="↖" ID="258" Icon="">
       <WindowState Visible="True" X="10" Y="10" Width="50" Height="50"/>
@@ -5129,6 +5407,7 @@
       <Function ID="90"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="3" Channel="4260"/>
      </Button>
      <Button Caption="↙" ID="259" Icon="">
       <WindowState Visible="True" X="10" Y="110" Width="50" Height="50"/>
@@ -5142,6 +5421,7 @@
       <Function ID="93"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="3" Channel="4256"/>
      </Button>
      <Button Caption="↗" ID="260" Icon="">
       <WindowState Visible="True" X="60" Y="10" Width="50" Height="50"/>
@@ -5155,6 +5435,7 @@
       <Function ID="91"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
+      <Input Universe="3" Channel="4263"/>
      </Button>
      <Button Caption="↘" ID="261" Icon="">
       <WindowState Visible="True" X="60" Y="110" Width="50" Height="50"/>
@@ -5166,6 +5447,105 @@
        <Font>Default</Font>
       </Appearance>
       <Function ID="92"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="3" Channel="4259"/>
+     </Button>
+     <Button Caption="x overhead" ID="103" Icon="">
+      <WindowState Visible="True" X="10" Y="160" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="213"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="3" Channel="4262"/>
+     </Button>
+    </SoloFrame>
+    <SoloFrame Caption="" ID="265">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="460" Y="40" Width="60" Height="260"/>
+     <AllowChildren>False</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="lissa" ID="266" Icon="">
+      <WindowState Visible="True" X="5" Y="5" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="214"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="2" Channel="31"/>
+     </Button>
+     <Button Caption="Sweep" ID="267" Icon="">
+      <WindowState Visible="True" X="5" Y="55" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+      <Input Universe="2" Channel="30"/>
+     </Button>
+     <Button Caption="Button 268" ID="268" Icon="">
+      <WindowState Visible="True" X="5" Y="105" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 269" ID="269" Icon="">
+      <WindowState Visible="True" X="5" Y="155" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Button 270" ID="270" Icon="">
+      <WindowState Visible="True" X="5" Y="205" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
@@ -5243,10 +5623,145 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
    </Frame>
+   <SpeedDial Caption="MH timings" ID="25">
+    <WindowState Visible="True" X="405" Y="870" Width="200" Height="175"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4287138437</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Visibility>65663</Visibility>
+    <AbsoluteValue Minimum="0" Maximum="1000">
+     <Input Universe="2" Channel="14"/>
+    </AbsoluteValue>
+    <Mult>
+     <Input Universe="2" Channel="23"/>
+    </Mult>
+    <Div>
+     <Input Universe="2" Channel="33"/>
+    </Div>
+    <Time>784</Time>
+    <Function FadeIn="0" FadeOut="0" Duration="8">4</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">345</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">346</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">342</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">344</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">343</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="8">214</Function>
+   </SpeedDial>
+   <SpeedDial Caption="Wand Timings" ID="69">
+    <WindowState Visible="True" X="635" Y="865" Width="200" Height="175"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4287138437</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Visibility>65663</Visibility>
+    <AbsoluteValue Minimum="0" Maximum="1000">
+     <Input Universe="2" Channel="15"/>
+    </AbsoluteValue>
+    <Mult>
+     <Input Universe="2" Channel="24"/>
+    </Mult>
+    <Div>
+     <Input Universe="2" Channel="34"/>
+    </Div>
+    <Time>203</Time>
+    <Function FadeIn="0" FadeOut="0" Duration="6">57</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">61</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">60</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">55</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">59</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">58</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">56</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">73</Function>
+   </SpeedDial>
+   <Frame Caption="" ID="271">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="25" Y="850" Width="260" Height="220"/>
+    <AllowChildren>False</AllowChildren>
+    <AllowResize>False</AllowResize>
+    <ShowHeader>False</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Slider Caption="Slider 272" ID="272" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="10" Y="10" Width="60" Height="200"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0"/>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="Slider 273" ID="273" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="70" Y="10" Width="60" Height="200"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0"/>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="Slider 274" ID="274" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="130" Y="10" Width="60" Height="200"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0"/>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="Slider 275" ID="275" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="190" Y="10" Width="60" Height="200"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0"/>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+   </Frame>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
-   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal">
+    <Input Universe="1" Channel="14"/>
+   </GrandMaster>
   </Properties>
  </VirtualConsole>
  <SimpleDesk>
