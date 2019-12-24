@@ -9,33 +9,19 @@
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" Line="0">
-     <PluginParameters UniverseChannels="208"/>
-    </Output>
+    <Output Plugin="DMX USB" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1">
-    <Input Plugin="MIDI" Line="3" Profile="Akai APC20">
-     <PluginParameters initmessage="APC20 Ableton mode 2" midichannel="16"/>
-    </Input>
-    <Feedback Plugin="MIDI" Line="3">
-     <PluginParameters initmessage="APC20 Ableton mode 2" midichannel="16"/>
-    </Feedback>
+    <Input Plugin="MIDI" Line="3" Profile="Akai APC20"/>
+    <Feedback Plugin="MIDI" Line="3"/>
    </Universe>
    <Universe Name="Universe 3" ID="2">
-    <Input Plugin="MIDI" Line="2" Profile="KORG nanoKONTROL">
-     <PluginParameters midichannel="16"/>
-    </Input>
-    <Feedback Plugin="MIDI" Line="2">
-     <PluginParameters midichannel="16"/>
-    </Feedback>
+    <Input Plugin="MIDI" Line="2" Profile="KORG nanoKONTROL"/>
+    <Feedback Plugin="MIDI" Line="2"/>
    </Universe>
    <Universe Name="Universe 4" ID="3">
-    <Input Plugin="MIDI" Line="1" Profile="AKAI LPD8">
-     <PluginParameters initmessage="None" midichannel="16" mode="Note Velocity"/>
-    </Input>
-    <Feedback Plugin="MIDI" Line="1">
-     <PluginParameters midichannel="16" mode="Note Velocity"/>
-    </Feedback>
+    <Input Plugin="MIDI" Line="1" Profile="AKAI LPD8"/>
+    <Feedback Plugin="MIDI" Line="1"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -79,6 +65,16 @@
    <Channels>15</Channels>
   </Fixture>
   <Fixture>
+   <Manufacturer>Uking</Manufacturer>
+   <Model>RGBW</Model>
+   <Mode>8 CH</Mode>
+   <ID>4</ID>
+   <Name>RGBW L1</Name>
+   <Universe>0</Universe>
+   <Address>209</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
    <Manufacturer>Briteq</Manufacturer>
    <Model>Giga Flash</Model>
    <Mode>13 Channel</Mode>
@@ -93,7 +89,7 @@
    <Model>LED PARty RGBW</Model>
    <Mode>7 Channel</Mode>
    <ID>6</ID>
-   <Name>RGBW #1</Name>
+   <Name>RGBW R1</Name>
    <Universe>0</Universe>
    <Address>151</Address>
    <Channels>7</Channels>
@@ -103,7 +99,7 @@
    <Model>LED PARty RGBW</Model>
    <Mode>7 Channel</Mode>
    <ID>7</ID>
-   <Name>RGBW #2</Name>
+   <Name>RGBW R2</Name>
    <Universe>0</Universe>
    <Address>163</Address>
    <Channels>7</Channels>
@@ -113,7 +109,7 @@
    <Model>LED PARty RGBW</Model>
    <Mode>7 Channel</Mode>
    <ID>8</ID>
-   <Name>RGBW #3</Name>
+   <Name>RGBW R3</Name>
    <Universe>0</Universe>
    <Address>176</Address>
    <Channels>7</Channels>
@@ -123,7 +119,7 @@
    <Model>LED PARty RGBW</Model>
    <Mode>6 Channel</Mode>
    <ID>9</ID>
-   <Name>RGBW #4</Name>
+   <Name>RGBW R4</Name>
    <Universe>0</Universe>
    <Address>189</Address>
    <Channels>6</Channels>
@@ -131,52 +127,162 @@
   <Fixture>
    <Manufacturer>unknown</Manufacturer>
    <Model>weird uv</Model>
-   <Mode>3 CH</Mode>
+   <Mode>4 CH</Mode>
    <ID>10</ID>
    <Name>UV #1</Name>
    <Universe>0</Universe>
    <Address>158</Address>
-   <Channels>3</Channels>
+   <Channels>4</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>unknown</Manufacturer>
    <Model>weird uv</Model>
-   <Mode>3 CH</Mode>
+   <Mode>4 CH</Mode>
    <ID>11</ID>
    <Name>UV #2</Name>
    <Universe>0</Universe>
    <Address>170</Address>
-   <Channels>3</Channels>
+   <Channels>4</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>unknown</Manufacturer>
    <Model>weird uv</Model>
-   <Mode>3 CH</Mode>
+   <Mode>4 CH</Mode>
    <ID>12</ID>
    <Name>UV #3</Name>
    <Universe>0</Universe>
    <Address>183</Address>
-   <Channels>3</Channels>
+   <Channels>4</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>unknown</Manufacturer>
    <Model>weird uv</Model>
-   <Mode>3 CH</Mode>
+   <Mode>4 CH</Mode>
    <ID>13</ID>
    <Name>UV #4</Name>
    <Universe>0</Universe>
    <Address>195</Address>
-   <Channels>3</Channels>
+   <Channels>4</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>Unknown</Manufacturer>
    <Model>LED PARty RGBW</Model>
    <Mode>7 Channel</Mode>
    <ID>14</ID>
-   <Name>RGBW #5</Name>
+   <Name>RGBW R5</Name>
    <Universe>0</Universe>
    <Address>201</Address>
    <Channels>7</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Uking</Manufacturer>
+   <Model>RGBW</Model>
+   <Mode>8 CH</Mode>
+   <ID>15</ID>
+   <Name>RGBW L2</Name>
+   <Universe>0</Universe>
+   <Address>225</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Uking</Manufacturer>
+   <Model>RGBW</Model>
+   <Mode>8 CH</Mode>
+   <ID>16</ID>
+   <Name>RGBW L3</Name>
+   <Universe>0</Universe>
+   <Address>241</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Uking</Manufacturer>
+   <Model>RGBW</Model>
+   <Mode>8 CH</Mode>
+   <ID>17</ID>
+   <Name>RGBW L4</Name>
+   <Universe>0</Universe>
+   <Address>257</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Uking</Manufacturer>
+   <Model>UV</Model>
+   <Mode>8CH</Mode>
+   <ID>18</ID>
+   <Name>UV L1</Name>
+   <Universe>0</Universe>
+   <Address>217</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Uking</Manufacturer>
+   <Model>UV</Model>
+   <Mode>8CH</Mode>
+   <ID>19</ID>
+   <Name>UV L2</Name>
+   <Universe>0</Universe>
+   <Address>233</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Uking</Manufacturer>
+   <Model>UV</Model>
+   <Mode>8CH</Mode>
+   <ID>20</ID>
+   <Name>UV L3</Name>
+   <Universe>0</Universe>
+   <Address>249</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Uking</Manufacturer>
+   <Model>UV</Model>
+   <Mode>8CH</Mode>
+   <ID>21</ID>
+   <Name>UV L4</Name>
+   <Universe>0</Universe>
+   <Address>265</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Uking</Manufacturer>
+   <Model>UV</Model>
+   <Mode>8CH</Mode>
+   <ID>25</ID>
+   <Name>UV R1</Name>
+   <Universe>0</Universe>
+   <Address>273</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Uking</Manufacturer>
+   <Model>UV</Model>
+   <Mode>8CH</Mode>
+   <ID>26</ID>
+   <Name>UV R2</Name>
+   <Universe>0</Universe>
+   <Address>281</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Uking</Manufacturer>
+   <Model>UV</Model>
+   <Mode>8CH</Mode>
+   <ID>27</ID>
+   <Name>UV R3</Name>
+   <Universe>0</Universe>
+   <Address>289</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Uking</Manufacturer>
+   <Model>UV</Model>
+   <Mode>8CH</Mode>
+   <ID>28</ID>
+   <Name>UV R4</Name>
+   <Universe>0</Universe>
+   <Address>297</Address>
+   <Channels>8</Channels>
   </Fixture>
   <FixtureGroup ID="0">
    <Name>MH</Name>
@@ -185,6 +291,9 @@
    <Head X="1" Y="0" Fixture="0">0</Head>
    <Head X="0" Y="1" Fixture="3">0</Head>
    <Head X="1" Y="1" Fixture="2">0</Head>
+   <Head X="0" Y="2" Fixture="18">0</Head>
+   <Head X="1" Y="2" Fixture="20">0</Head>
+   <Head X="0" Y="3" Fixture="21">0</Head>
   </FixtureGroup>
   <FixtureGroup ID="1">
    <Name>Wand</Name>
@@ -206,10 +315,6 @@
   <ChannelsGroup ID="4" Name="MH Tilt Group" Value="0">0,1,1,1,2,1,3,2</ChannelsGroup>
   <Function ID="0" Type="Scene" Name="test">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="10">0,13</FixtureVal>
-   <FixtureVal ID="11">0,24</FixtureVal>
-   <FixtureVal ID="12">0,11</FixtureVal>
-   <FixtureVal ID="13">0,19</FixtureVal>
    <FixtureVal ID="5"/>
    <FixtureVal ID="6">0,255,2,255</FixtureVal>
    <FixtureVal ID="7">0,255,2,255</FixtureVal>
@@ -220,6 +325,18 @@
    <FixtureVal ID="0">5,23,6,4,7,255</FixtureVal>
    <FixtureVal ID="3">5,252,6,255,7,31,8,0</FixtureVal>
    <FixtureVal ID="2">5,23,6,4,7,255</FixtureVal>
+   <FixtureVal ID="15">3,255,5,255</FixtureVal>
+   <FixtureVal ID="4">3,255,5,255</FixtureVal>
+   <FixtureVal ID="16">3,255,5,255</FixtureVal>
+   <FixtureVal ID="17">3,255,5,255</FixtureVal>
+   <FixtureVal ID="18">3,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="19">3,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="20">3,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="21">3,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="25">3,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="26">3,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="27">3,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="28">3,255,4,255,5,255,6,255,7,255</FixtureVal>
   </Function>
   <Function ID="1" Type="Collection" Name="MH Star" Path="MH Gobos">
    <Step Number="0">266</Step>
@@ -305,6 +422,10 @@
    <FixtureVal ID="8">1,0,2,0,3,255,4,0</FixtureVal>
    <FixtureVal ID="14">1,0,2,0,3,255,4,0</FixtureVal>
    <FixtureVal ID="9">0,0,1,0,2,255,3,0</FixtureVal>
+   <FixtureVal ID="4">4,0,5,0,6,255,7,0</FixtureVal>
+   <FixtureVal ID="15">4,0,5,0,6,255,7,0</FixtureVal>
+   <FixtureVal ID="17">4,0,5,0,6,255,7,0</FixtureVal>
+   <FixtureVal ID="16">4,0,5,0,6,255,7,0</FixtureVal>
   </Function>
   <Function ID="7" Type="Collection" Name="MH Circle Shake" Path="MH Gobos">
    <Step Number="0">50</Step>
@@ -614,6 +735,10 @@
    <FixtureVal ID="8">1,0,2,0,3,0,4,255</FixtureVal>
    <FixtureVal ID="14">1,0,2,0,3,0,4,255</FixtureVal>
    <FixtureVal ID="9">0,0,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="4">4,0,5,0,6,0,7,255</FixtureVal>
+   <FixtureVal ID="15">4,0,5,0,6,0,7,255</FixtureVal>
+   <FixtureVal ID="16">4,0,5,0,6,0,7,255</FixtureVal>
+   <FixtureVal ID="17">4,0,5,0,6,0,7,255</FixtureVal>
   </Function>
   <Function ID="65" Type="Scene" Name="Scene Orange - LED PARty RGBW" Path="Color/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -622,6 +747,10 @@
    <FixtureVal ID="8">1,255,2,20,3,0,4,0</FixtureVal>
    <FixtureVal ID="14">1,255,2,20,3,0,4,0</FixtureVal>
    <FixtureVal ID="9">0,255,1,20,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">4,255,5,20,6,0,7,0</FixtureVal>
+   <FixtureVal ID="15">4,255,5,20,6,0,7,0</FixtureVal>
+   <FixtureVal ID="17">4,255,5,20,6,0,7,0</FixtureVal>
+   <FixtureVal ID="16">4,255,5,20,6,0,7,0</FixtureVal>
   </Function>
   <Function ID="66" Type="Scene" Name="Scene Green - LED PARty RGBW" Path="Color/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -630,6 +759,10 @@
    <FixtureVal ID="8">1,0,2,255,3,0,4,0</FixtureVal>
    <FixtureVal ID="14">1,0,2,255,3,0,4,0</FixtureVal>
    <FixtureVal ID="9">0,0,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">4,0,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="15">4,0,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="16">4,0,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="17">4,0,5,255,6,0,7,0</FixtureVal>
   </Function>
   <Function ID="67" Type="Scene" Name="Scene Light Blue - LED PARty RGBW" Path="Color/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -638,6 +771,10 @@
    <FixtureVal ID="8">1,0,2,253,3,255,4,0</FixtureVal>
    <FixtureVal ID="14">1,0,2,253,3,255,4,0</FixtureVal>
    <FixtureVal ID="9">0,0,1,134,2,255,3,0</FixtureVal>
+   <FixtureVal ID="4">4,0,5,134,6,255,7,0</FixtureVal>
+   <FixtureVal ID="15">4,0,5,134,6,255,7,0</FixtureVal>
+   <FixtureVal ID="16">4,0,5,134,6,255,7,0</FixtureVal>
+   <FixtureVal ID="17">4,0,5,134,6,255,7,0</FixtureVal>
   </Function>
   <Function ID="68" Type="Scene" Name="Scene Red - LED PARty RGBW" Path="Color/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -646,6 +783,10 @@
    <FixtureVal ID="8">1,255,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="14">1,255,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="9">0,255,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">4,255,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="15">4,255,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="16">4,255,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="17">4,255,5,0,6,0,7,0</FixtureVal>
   </Function>
   <Function ID="69" Type="Scene" Name="Scene Yellow - LED PARty RGBW" Path="Color/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -654,6 +795,10 @@
    <FixtureVal ID="8">1,255,2,255,3,0,4,0</FixtureVal>
    <FixtureVal ID="14">1,255,2,255,3,0,4,0</FixtureVal>
    <FixtureVal ID="9">0,255,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">4,255,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="15">4,255,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="16">4,255,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="17">4,255,5,255,6,0,7,0</FixtureVal>
   </Function>
   <Function ID="70" Type="Scene" Name="Scene Purple - LED PARty RGBW" Path="Color/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -662,6 +807,10 @@
    <FixtureVal ID="8">1,255,2,0,3,255,4,0</FixtureVal>
    <FixtureVal ID="14">1,255,2,0,3,255,4,0</FixtureVal>
    <FixtureVal ID="9">0,154,1,0,2,255,3,0</FixtureVal>
+   <FixtureVal ID="4">4,154,5,0,6,255,7,0</FixtureVal>
+   <FixtureVal ID="15">4,154,5,0,6,255,7,0</FixtureVal>
+   <FixtureVal ID="16">4,154,5,0,6,255,7,0</FixtureVal>
+   <FixtureVal ID="17">4,154,5,0,6,255,7,0</FixtureVal>
   </Function>
   <Function ID="71" Type="Scene" Name="Wand Chaser" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1462,6 +1611,25 @@
    <Step Number="7">328</Step>
    <Step Number="8">330</Step>
   </Function>
+  <Function ID="219" Type="Scene" Name="MH VL DJ" Path="Position/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,188,1,0,2,32,3,0</FixtureVal>
+  </Function>
+  <Function ID="220" Type="Scene" Name="MH VR DJ" Path="Position/MH VR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,97,1,30,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="221" Type="Scene" Name="MH VL Dancer" Path="Position/MH VL">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,158,1,0,2,28,3,0</FixtureVal>
+  </Function>
+  <Function ID="222" Type="Collection" Name="MH Dancer" Path="MH Positions">
+   <Step Number="0">221</Step>
+  </Function>
+  <Function ID="223" Type="Collection" Name="MH DJ" Path="MH Positions">
+   <Step Number="0">219</Step>
+   <Step Number="1">220</Step>
+  </Function>
   <Function ID="263" Type="Scene" Name="Wide - LED MH75B" Path="Gobo/MH HL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">8,3</FixtureVal>
@@ -1657,34 +1825,42 @@
   <Function ID="313" Type="Scene" Name="W 1 on" Path="Dimmer/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="6">0,255</FixtureVal>
+   <FixtureVal ID="4">3,255</FixtureVal>
   </Function>
   <Function ID="314" Type="Scene" Name="W 1 off" Path="Dimmer/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="6">0,0</FixtureVal>
+   <FixtureVal ID="4">3,0</FixtureVal>
   </Function>
   <Function ID="315" Type="Scene" Name="W 2 on" Path="Dimmer/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="10">0,50</FixtureVal>
+   <FixtureVal ID="25">3,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="18">3,255,4,255,5,255,6,255,7,255</FixtureVal>
   </Function>
   <Function ID="316" Type="Scene" Name="W 2 off" Path="Dimmer/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="10">0,0</FixtureVal>
+   <FixtureVal ID="25">3,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="18">3,0,4,0,5,0,6,0,7,0</FixtureVal>
   </Function>
   <Function ID="317" Type="Scene" Name="W 3 on" Path="Dimmer/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="7">0,255</FixtureVal>
+   <FixtureVal ID="15">3,255</FixtureVal>
   </Function>
   <Function ID="318" Type="Scene" Name="W 3 off" Path="Dimmer/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="7">0,0</FixtureVal>
+   <FixtureVal ID="15">3,0</FixtureVal>
   </Function>
   <Function ID="319" Type="Scene" Name="W 4 on" Path="Dimmer/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="11">0,50</FixtureVal>
+   <FixtureVal ID="26">3,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="19">3,255,4,255,5,255,6,255,7,255</FixtureVal>
   </Function>
   <Function ID="320" Type="Scene" Name="W 4 off" Path="Dimmer/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="11">0,0</FixtureVal>
+   <FixtureVal ID="26">3,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="19">3,0,4,0,5,0,6,0,7,0</FixtureVal>
   </Function>
   <Function ID="321" Type="Scene" Name="">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1692,30 +1868,37 @@
   <Function ID="322" Type="Scene" Name="W 5 on" Path="Dimmer/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="8">0,255</FixtureVal>
+   <FixtureVal ID="16">3,255</FixtureVal>
   </Function>
   <Function ID="323" Type="Scene" Name="W 5 off" Path="Dimmer/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="8">0,0</FixtureVal>
+   <FixtureVal ID="16">3,0</FixtureVal>
   </Function>
   <Function ID="324" Type="Scene" Name="W 6 on" Path="Dimmer/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="12">0,50</FixtureVal>
+   <FixtureVal ID="27">3,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="20">3,255,4,255,5,255,6,255,7,255</FixtureVal>
   </Function>
   <Function ID="325" Type="Scene" Name="W 6 off" Path="Dimmer/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="12">0,0</FixtureVal>
+   <FixtureVal ID="27">3,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="20">3,0,4,0,5,0,6,0,7,0</FixtureVal>
   </Function>
   <Function ID="326" Type="Scene" Name="W 7 on" Path="Dimmer/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="9">4,255</FixtureVal>
+   <FixtureVal ID="17">3,255</FixtureVal>
   </Function>
   <Function ID="327" Type="Scene" Name="W 7 off" Path="Dimmer/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="9">4,0</FixtureVal>
+   <FixtureVal ID="17">3,0</FixtureVal>
   </Function>
   <Function ID="328" Type="Scene" Name="W 8 on" Path="Dimmer/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="13">0,50</FixtureVal>
+   <FixtureVal ID="28">3,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="21">3,255,4,255,5,255,6,255,7,255</FixtureVal>
   </Function>
   <Function ID="329" Type="Scene" Name="W 9 on" Path="Dimmer/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1727,7 +1910,8 @@
   </Function>
   <Function ID="331" Type="Scene" Name="W 8 off" Path="Dimmer/Wand">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="13">0,0</FixtureVal>
+   <FixtureVal ID="28">3,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="21">3,0,4,0,5,0,6,0,7,0</FixtureVal>
   </Function>
   <Function ID="332" Type="Collection" Name="MH HL solo" Path="MH Dimmers">
    <Step Number="0">94</Step>
@@ -5359,7 +5543,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="175" Y="40" Width="120" Height="220"/>
+     <WindowState Visible="True" X="175" Y="40" Width="120" Height="270"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -5464,6 +5648,32 @@
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
       <Input Universe="3" Channel="4262"/>
+     </Button>
+     <Button Caption="MH VL Dancer" ID="104" Icon="">
+      <WindowState Visible="True" X="60" Y="160" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="222"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="MH DJ" ID="120" Icon="">
+      <WindowState Visible="True" X="10" Y="210" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="223"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="" ID="265">

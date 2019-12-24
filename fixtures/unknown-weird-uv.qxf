@@ -26,10 +26,12 @@
   <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="255"></Capability>
  </Channel>
- <Mode Name="3 CH">
+ <Channel Name="No function" Preset="NoFunction"/>
+ <Mode Name="4 CH">
   <Channel Number="0">Effects</Channel>
   <Channel Number="1">???</Channel>
   <Channel Number="2">Effect Speed</Channel>
+  <Channel Number="3">No function</Channel>
  </Mode>
  <Physical>
   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>

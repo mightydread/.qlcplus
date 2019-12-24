@@ -3,74 +3,218 @@
 <InputProfile xmlns="http://www.qlcplus.org/InputProfile">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.1</Version>
-  <Author>mighty,</Author>
+  <Version>4.12.2</Version>
+  <Author></Author>
  </Creator>
  <Manufacturer>AKAI</Manufacturer>
  <Model>LPD8</Model>
  <Type>MIDI</Type>
  <Channel Number="4097">
-  <Name>K1</Name>
+  <Name>Pr1 K1</Name>
   <Type>Slider</Type>
  </Channel>
  <Channel Number="4098">
-  <Name>K2</Name>
+  <Name>Pr1 K2</Name>
   <Type>Slider</Type>
  </Channel>
  <Channel Number="4099">
-  <Name>K3</Name>
+  <Name>Pr1 K3</Name>
   <Type>Slider</Type>
  </Channel>
  <Channel Number="4100">
-  <Name>K4</Name>
+  <Name>Pr1 K4</Name>
   <Type>Slider</Type>
  </Channel>
  <Channel Number="4101">
-  <Name>K5</Name>
+  <Name>Pr1 K5</Name>
   <Type>Slider</Type>
  </Channel>
  <Channel Number="4102">
-  <Name>K6</Name>
+  <Name>Pr1 K6</Name>
   <Type>Slider</Type>
  </Channel>
  <Channel Number="4103">
-  <Name>K7</Name>
+  <Name>Pr1 K7</Name>
   <Type>Slider</Type>
  </Channel>
  <Channel Number="4104">
-  <Name>K8</Name>
+  <Name>Pr1 K8</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="4105">
+  <Name>Slider 4106</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="4259">
+  <Name>Slider 4260</Name>
   <Type>Slider</Type>
  </Channel>
  <Channel Number="4260">
-  <Name>PAD1</Name>
-  <Type>Button</Type>
+  <Name>Pr1 P1</Name>
+  <Type>Slider</Type>
  </Channel>
  <Channel Number="4261">
-  <Name>PAD2</Name>
-  <Type>Button</Type>
+  <Name>Pr1 P2</Name>
+  <Type>Slider</Type>
  </Channel>
  <Channel Number="4262">
-  <Name>PAD3</Name>
-  <Type>Button</Type>
+  <Name>Pr1 P3</Name>
+  <Type>Slider</Type>
  </Channel>
  <Channel Number="4263">
-  <Name>PAD4</Name>
-  <Type>Button</Type>
+  <Name>Pr1 P4</Name>
+  <Type>Slider</Type>
  </Channel>
  <Channel Number="4264">
-  <Name>PAD5</Name>
-  <Type>Button</Type>
+  <Name>Pr1 P5</Name>
+  <Type>Slider</Type>
  </Channel>
  <Channel Number="4265">
-  <Name>PAD6</Name>
-  <Type>Button</Type>
+  <Name>Pr1 P6</Name>
+  <Type>Slider</Type>
  </Channel>
  <Channel Number="4266">
-  <Name>PAD7</Name>
-  <Type>Button</Type>
+  <Name>Pr1 P7</Name>
+  <Type>Slider</Type>
  </Channel>
  <Channel Number="4267">
-  <Name>PAD8</Name>
-  <Type>Button</Type>
+  <Name>Pr1 P8</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="4268">
+  <Name>Slider 4269</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="4270">
+  <Name>Slider 4271</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8193">
+  <Name>Pr 3 K 1</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8194">
+  <Name>Pr 3 K 2</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8195">
+  <Name>Pr 3 K 3</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8196">
+  <Name>Pr 3 K 4</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8197">
+  <Name>Pr 3 K 5</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8198">
+  <Name>Pr 3 K 6</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8199">
+  <Name>Pr 3 K 7</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8200">
+  <Name>Pr 3 K 8</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8380">
+  <Name>Pr 3 P 1</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8382">
+  <Name>Pr 3 P 2</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8384">
+  <Name>Pr 3 P 3</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8385">
+  <Name>Pr 3 P 4</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8387">
+  <Name>Pr 3 P 5</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8389">
+  <Name>Pr 3 P 6</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8391">
+  <Name>Pr 3 P 7</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8392">
+  <Name>Pr 3 P 8</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12289">
+  <Name>Pr4 K1</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12290">
+  <Name>Pr4 K2</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12291">
+  <Name>Pr4 K3</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12292">
+  <Name>Pr4 K4</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12293">
+  <Name>Pr4 K5</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12294">
+  <Name>Pr4 K6</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12295">
+  <Name>Pr4 K7</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12296">
+  <Name>Pr4 K7</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12452">
+  <Name>Pr4 P1</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12454">
+  <Name>Pr4 P2</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12456">
+  <Name>Pr4 P3</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12457">
+  <Name>Pr4 P4</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12459">
+  <Name>Pr4 P5</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12461">
+  <Name>Pr4 P6</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12463">
+  <Name>Pr4 P7</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12464">
+  <Name>Pr4 P8</Name>
+  <Type>Slider</Type>
  </Channel>
 </InputProfile>
