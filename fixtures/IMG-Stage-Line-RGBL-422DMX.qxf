@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.2</Version>
+  <Author>mighty</Author>
+ </Creator>
+ <Manufacturer>IMG Stage Line</Manufacturer>
+ <Model>RGBL-422DMX</Model>
+ <Type>LED Bar (Beams)</Type>
+ <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Red 1" Preset="IntensityRed"/>
+ <Channel Name="Green 1" Preset="IntensityGreen"/>
+ <Channel Name="Blue 1" Preset="IntensityBlue"/>
+ <Channel Name="White 1" Preset="IntensityWhite"/>
+ <Channel Name="Red 2" Preset="IntensityRed"/>
+ <Channel Name="Green 2" Preset="IntensityGreen"/>
+ <Channel Name="Blue 2" Preset="IntensityBlue"/>
+ <Channel Name="White 2" Preset="IntensityWhite"/>
+ <Channel Name="Red 3" Preset="IntensityRed"/>
+ <Channel Name="Green 3" Preset="IntensityGreen"/>
+ <Channel Name="Blue 3" Preset="IntensityBlue"/>
+ <Channel Name="White 3" Preset="IntensityWhite"/>
+ <Channel Name="Shutter">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="10">no strobe</Capability>
+  <Capability Min="11" Max="90">strobe slow -&gt; fast</Capability>
+  <Capability Min="91" Max="170">random strobe slow -&gt; fast</Capability>
+  <Capability Min="171" Max="255">flashing slow -&gt; fast</Capability>
+ </Channel>
+ <Channel Name="saved colors">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="program speed">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="color wheel">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="LED response time">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="10">menu setting</Capability>
+  <Capability Min="11" Max="20">immediate response</Capability>
+  <Capability Min="21" Max="30">d1</Capability>
+  <Capability Min="31" Max="40">d2</Capability>
+  <Capability Min="41" Max="50">d3</Capability>
+  <Capability Min="51" Max="60">d4</Capability>
+  <Capability Min="61" Max="254">menu setting</Capability>
+  <Capability Min="255" Max="255">reset</Capability>
+ </Channel>
+ <Mode Name="18ch">
+  <Channel Number="0">Master dimmer</Channel>
+  <Channel Number="1">Red 1</Channel>
+  <Channel Number="2">Green 1</Channel>
+  <Channel Number="3">Blue 1</Channel>
+  <Channel Number="4">White 1</Channel>
+  <Channel Number="5">Red 2</Channel>
+  <Channel Number="6">Green 2</Channel>
+  <Channel Number="7">Blue 2</Channel>
+  <Channel Number="8">White 2</Channel>
+  <Channel Number="9">Red 3</Channel>
+  <Channel Number="10">Green 3</Channel>
+  <Channel Number="11">Blue 3</Channel>
+  <Channel Number="12">White 3</Channel>
+  <Channel Number="13">Shutter</Channel>
+  <Channel Number="14">saved colors</Channel>
+  <Channel Number="15">program speed</Channel>
+  <Channel Number="16">color wheel</Channel>
+  <Channel Number="17">LED response time</Channel>
+  <Head>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+  </Head>
+  <Head>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+   <Channel>8</Channel>
+  </Head>
+  <Head>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+   <Channel>11</Channel>
+   <Channel>12</Channel>
+  </Head>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="3-pin IP65"/>
+ </Physical>
+</FixtureDefinition>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.2</Version>
+  <Author>mighty</Author>
+ </Creator>
+ <Manufacturer>IMG Stage Line</Manufacturer>
+ <Model>ODB 1212rgbw</Model>
+ <Type>LED Bar (Beams)</Type>
+ <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Channel Name="White" Preset="IntensityWhite"/>
+ <Channel Name="led slow response">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="127">off</Capability>
+  <Capability Min="128" Max="255">on</Capability>
+ </Channel>
+ <Channel Name="color">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="program">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="x">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="y">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Mode Name="11ch">
+  <Channel Number="0">Master dimmer</Channel>
+  <Channel Number="1">Red</Channel>
+  <Channel Number="2">Green</Channel>
+  <Channel Number="3">Blue</Channel>
+  <Channel Number="4">White</Channel>
+  <Channel Number="5">led slow response</Channel>
+  <Channel Number="6">color</Channel>
+  <Channel Number="7">strobe</Channel>
+  <Channel Number="8">program</Channel>
+  <Channel Number="9">x</Channel>
+  <Channel Number="10">y</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+   <Channel>8</Channel>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+  </Head>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>

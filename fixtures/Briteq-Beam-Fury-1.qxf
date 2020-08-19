@@ -21,14 +21,14 @@
   <Capability Min="246" Max="255">no funtion</Capability>
  </Channel>
  <Channel Name="Pan Continuous Rotation">
-  <Group Byte="0">Pan</Group>
+  <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="127">no function</Capability>
   <Capability Min="128" Max="189" Preset="RotationClockwiseFastToSlow">pan clockwise fast to slow</Capability>
   <Capability Min="190" Max="193" Preset="RotationStop">no rotation</Capability>
   <Capability Min="194" Max="255" Preset="RotationCounterClockwiseFastToSlow">pan counterclockwise fast to slow</Capability>
  </Channel>
  <Channel Name="Tilt Continuous Rotation">
-  <Group Byte="0">Tilt</Group>
+  <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="127">no function</Capability>
   <Capability Min="128" Max="189" Preset="RotationClockwiseFastToSlow">tilt clockwise fast to slow</Capability>
   <Capability Min="190" Max="193" Preset="RotationStop">no rotation</Capability>
