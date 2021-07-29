@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.2</Version>
+  <Author>mighty</Author>
+ </Creator>
+ <Manufacturer>Ayrton</Manufacturer>
+ <Model>MagicDot-XT</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Pan fine" Preset="PositionPanFine"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Tilt fine" Preset="PositionTiltFine"/>
+ <Channel Name="Pan Rotation">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="127">Idle</Capability>
+  <Capability Min="128" Max="189" Preset="RotationClockwiseFastToSlow">Fast -&gt; Slow CW</Capability>
+  <Capability Min="190" Max="193" Preset="RotationStop">Stop</Capability>
+  <Capability Min="194" Max="255" Preset="RotationCounterClockwiseSlowToFast">Slow -&gt; Fast CCW</Capability>
+ </Channel>
+ <Channel Name="Tilt Rotation">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="127">Idle</Capability>
+  <Capability Min="128" Max="189" Preset="RotationClockwiseFastToSlow">Fast -&gt; Slow CW</Capability>
+  <Capability Min="190" Max="193" Preset="RotationStop">Stop</Capability>
+  <Capability Min="194" Max="255" Preset="RotationCounterClockwiseSlowToFast">Slow -&gt; Fast CCW</Capability>
+ </Channel>
+ <Channel Name="PT Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="225" Preset="FastToSlow">Fast -&gt; Slow</Capability>
+  <Capability Min="226" Max="235">PT Blackout</Capability>
+  <Capability Min="236" Max="255">Idle</Capability>
+ </Channel>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Channel Name="White" Preset="IntensityWhite"/>
+ <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Shutter">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="31" Preset="ShutterClose">Close</Capability>
+  <Capability Min="32" Max="63" Preset="ShutterOpen">Open</Capability>
+  <Capability Min="64" Max="95" Preset="StrobeSlowToFast">Strobe Slow -&gt; Fast</Capability>
+  <Capability Min="96" Max="127" Preset="ShutterOpen">Open</Capability>
+  <Capability Min="128" Max="159" Preset="PulseSlowToFast">Pulse Sequences</Capability>
+  <Capability Min="160" Max="191" Preset="ShutterOpen">Open</Capability>
+  <Capability Min="192" Max="223" Preset="StrobeRandomSlowToFast">Random Strobe Slow to Fast</Capability>
+  <Capability Min="224" Max="255" Preset="ShutterOpen">Open</Capability>
+ </Channel>
+ <Channel Name="Color macro" Preset="ColorMacro"/>
+ <Channel Name="Color wheel">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="4" Preset="ColorMacro">No Fuction</Capability>
+  <Capability Min="5" Max="10" Preset="ColorMacro" Res1="#ffc58f">2700K</Capability>
+  <Capability Min="11" Max="15" Preset="ColorMacro" Res1="#fff1e0">3200K</Capability>
+  <Capability Min="16" Max="20" Preset="ColorMacro" Res1="#fff5ea">4300K</Capability>
+  <Capability Min="21" Max="25" Preset="ColorMacro" Res1="#fffffb">5600K</Capability>
+  <Capability Min="26" Max="34" Preset="ColorMacro" Res1="#c9e2ff">8000K</Capability>
+  <Capability Min="35" Max="39" Preset="ColorMacro" Res1="#ffff00">Yellow</Capability>
+  <Capability Min="40" Max="44" Preset="ColorMacro" Res1="#ff00ff">Magenta</Capability>
+  <Capability Min="45" Max="49" Preset="ColorMacro" Res1="#00ffff">Cyan</Capability>
+  <Capability Min="50" Max="54" Preset="ColorMacro" Res1="#fa8072">Salmon</Capability>
+  <Capability Min="55" Max="59" Preset="ColorMacro" Res1="#40e0d0">Turquoise</Capability>
+  <Capability Min="60" Max="64" Preset="ColorMacro" Res1="#90ee90">Light Green</Capability>
+  <Capability Min="65" Max="69" Preset="ColorMacro" Res1="#4682b4">Steel Blue</Capability>
+  <Capability Min="70" Max="74" Preset="ColorMacro" Res1="#ffa500">Orange</Capability>
+  <Capability Min="75" Max="79" Preset="ColorMacro" Res1="#d6bf86">Straw</Capability>
+  <Capability Min="80" Max="84" Preset="ColorMacro" Res1="#dcd0ff">Pale Lavender</Capability>
+  <Capability Min="85" Max="89" Preset="ColorMacro" Res1="#ffc0cb">Pink</Capability>
+  <Capability Min="90" Max="94" Preset="ColorMacro" Res1="#ff0000">Red</Capability>
+  <Capability Min="95" Max="99" Preset="ColorMacro" Res1="#00ff00">Green</Capability>
+  <Capability Min="100" Max="104" Preset="ColorMacro" Res1="#0000ff">Blue</Capability>
+  <Capability Min="105" Max="109" Preset="ColorMacro" Res1="#ffffff">White</Capability>
+  <Capability Min="110" Max="255">Reserved</Capability>
+ </Channel>
+ <Channel Name="Color Intensity">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Max -&gt; Min</Capability>
+ </Channel>
+ <Channel Name="CTRL">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="79">Normal</Capability>
+  <Capability Min="80" Max="84">All motor reset</Capability>
+  <Capability Min="85" Max="87">Scan motor reset</Capability>
+  <Capability Min="88" Max="90">no function</Capability>
+  <Capability Min="91" Max="93">no function</Capability>
+  <Capability Min="94" Max="96">no function</Capability>
+  <Capability Min="97" Max="99">no function</Capability>
+  <Capability Min="100" Max="119">Internal Program 1</Capability>
+  <Capability Min="120" Max="139">Internal Program 2</Capability>
+  <Capability Min="140" Max="159">Internal Program 3</Capability>
+  <Capability Min="160" Max="179">Internal Program 4</Capability>
+  <Capability Min="180" Max="199">Internal Program 5</Capability>
+  <Capability Min="200" Max="219">Internal Program 6</Capability>
+  <Capability Min="220" Max="239">Internal Program 7</Capability>
+  <Capability Min="240" Max="255">Internal Program 8</Capability>
+ </Channel>
+ <Mode Name="Basic">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2">PT Speed</Channel>
+  <Channel Number="3">Pan Rotation</Channel>
+  <Channel Number="4">Tilt Rotation</Channel>
+  <Channel Number="5">Red</Channel>
+  <Channel Number="6">Green</Channel>
+  <Channel Number="7">Blue</Channel>
+  <Channel Number="8">White</Channel>
+  <Channel Number="9">Shutter</Channel>
+  <Channel Number="10">Master dimmer</Channel>
+  <Channel Number="11">Color macro</Channel>
+  <Channel Number="12">Color wheel</Channel>
+  <Channel Number="13">Color Intensity</Channel>
+  <Channel Number="14">CTRL</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+   <Channel>8</Channel>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+   <Channel>11</Channel>
+   <Channel>12</Channel>
+   <Channel>13</Channel>
+   <Channel>14</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="Standart">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt fine</Channel>
+  <Channel Number="4">PT Speed</Channel>
+  <Channel Number="5">Pan Rotation</Channel>
+  <Channel Number="6">Tilt Rotation</Channel>
+  <Channel Number="7">Red</Channel>
+  <Channel Number="8">Green</Channel>
+  <Channel Number="9">Blue</Channel>
+  <Channel Number="10">White</Channel>
+  <Channel Number="11">Shutter</Channel>
+  <Channel Number="12">Master dimmer</Channel>
+  <Channel Number="13">Color macro</Channel>
+  <Channel Number="14">Color wheel</Channel>
+  <Channel Number="15">Color Intensity</Channel>
+  <Channel Number="16">CTRL</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+   <Channel>4</Channel>
+   <Channel>8</Channel>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+   <Channel>11</Channel>
+   <Channel>12</Channel>
+   <Channel>13</Channel>
+   <Channel>14</Channel>
+   <Channel>15</Channel>
+   <Channel>16</Channel>
+  </Head>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="850" ColourTemperature="0"/>
+  <Dimensions Weight="6.2" Width="235" Height="360" Depth="235"/>
+  <Lens Name="PC" DegreesMin="2" DegreesMax="2"/>
+  <Focus Type="Head" PanMax="540" TiltMax="270"/>
+  <Technical PowerConsumption="100" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>
