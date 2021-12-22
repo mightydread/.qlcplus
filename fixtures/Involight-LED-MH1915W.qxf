@@ -3,8 +3,8 @@
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.1</Version>
-  <Author>mighty,</Author>
+  <Version>4.12.4</Version>
+  <Author>mighty</Author>
  </Creator>
  <Manufacturer>Involight</Manufacturer>
  <Model>LED MH1915W</Model>
