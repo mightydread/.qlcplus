@@ -3,21 +3,24 @@
 <Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="InputOutputManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.6</Version>
-  <Author></Author>
+  <Version>4.12.4</Version>
+  <Author>root</Author>
  </Creator>
  <Engine Autostart="49">
   <InputOutputMap>
-   <Universe Name="Universe 1" ID="0">
-    <Input Plugin="ArtNet" UID="192.168.1.125" Line="2"/>
+   <Universe Name="Universe 1" ID="0" Passthrough="True">
+    <Input Plugin="ArtNet" Line="2"/>
+    <Output Plugin="DMX USB" Line="0">
+     <PluginParameters UniverseChannels="455"/>
+    </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1">
-    <Input Plugin="MIDI" UID="input" Line="2" Profile="Akai APC20"/>
-    <Feedback Plugin="MIDI" UID="input" Line="2"/>
+    <Input Plugin="MIDI" Line="2" Profile="Akai APC20"/>
+    <Feedback Plugin="MIDI" Line="2"/>
    </Universe>
    <Universe Name="Universe 3" ID="2">
-    <Input Plugin="MIDI" UID="input" Line="1"/>
-    <Feedback Plugin="MIDI" UID="input" Line="1"/>
+    <Input Plugin="MIDI" Line="1"/>
+    <Feedback Plugin="MIDI" Line="1"/>
    </Universe>
    <Universe Name="Universe 4" ID="3"/>
   </InputOutputMap>
@@ -797,8 +800,8 @@
    <Property Name="color4Index" Value="Blue"/>
    <Property Name="presetCollision" Value="Yes"/>
    <Property Name="color3Index" Value="Green"/>
-   <Property Name="color2Index" Value="Red"/>
    <Property Name="presetNumber" Value="5"/>
+   <Property Name="color2Index" Value="Red"/>
    <Property Name="presetSize" Value="5"/>
   </Function>
   <Function ID="69" Type="RGBMatrix" Name="Animation Circles - LCB14" Path="bars">
