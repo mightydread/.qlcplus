@@ -3,7 +3,7 @@
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.1</Version>
+  <Version>4.12.3</Version>
   <Author>mighty,</Author>
  </Creator>
  <Manufacturer>mighty</Manufacturer>
@@ -38,6 +38,7 @@
   <Channel Number="11">2-4</Channel>
   <Head>
    <Channel>4</Channel>
+   <Channel>0</Channel>
   </Head>
   <Head>
    <Channel>5</Channel>
@@ -50,6 +51,7 @@
   </Head>
   <Head>
    <Channel>8</Channel>
+   <Channel>1</Channel>
   </Head>
   <Head>
    <Channel>9</Channel>

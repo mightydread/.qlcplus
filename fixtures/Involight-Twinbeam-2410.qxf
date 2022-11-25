@@ -3,7 +3,7 @@
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.1</Version>
+  <Version>4.12.3</Version>
   <Author>mighty,</Author>
  </Creator>
  <Manufacturer>Involight</Manufacturer>
@@ -73,6 +73,7 @@
   <Channel Number="17">reset</Channel>
   <Head>
    <Channel>9</Channel>
+   <Channel>4</Channel>
   </Head>
   <Head>
    <Channel>10</Channel>
@@ -85,6 +86,7 @@
   </Head>
   <Head>
    <Channel>13</Channel>
+   <Channel>5</Channel>
   </Head>
   <Head>
    <Channel>14</Channel>
