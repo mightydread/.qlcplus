@@ -3,7 +3,7 @@
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.3</Version>
+  <Version>4.12.6</Version>
   <Author>Mighty Dread</Author>
  </Creator>
  <Manufacturer>BeamZ</Manufacturer>
@@ -204,84 +204,112 @@
    <Channel>2</Channel>
    <Channel>3</Channel>
    <Channel>4</Channel>
-   <Channel>5</Channel>
   </Head>
   <Head>
    <Channel>6</Channel>
    <Channel>7</Channel>
    <Channel>8</Channel>
-   <Channel>9</Channel>
   </Head>
   <Head>
    <Channel>10</Channel>
    <Channel>11</Channel>
    <Channel>12</Channel>
-   <Channel>13</Channel>
   </Head>
   <Head>
    <Channel>14</Channel>
    <Channel>15</Channel>
-   <Channel>17</Channel>
    <Channel>16</Channel>
   </Head>
   <Head>
    <Channel>18</Channel>
    <Channel>19</Channel>
    <Channel>20</Channel>
-   <Channel>21</Channel>
   </Head>
   <Head>
    <Channel>22</Channel>
    <Channel>23</Channel>
    <Channel>24</Channel>
-   <Channel>25</Channel>
   </Head>
   <Head>
    <Channel>26</Channel>
    <Channel>27</Channel>
-   <Channel>29</Channel>
    <Channel>28</Channel>
   </Head>
   <Head>
    <Channel>30</Channel>
    <Channel>31</Channel>
    <Channel>32</Channel>
-   <Channel>33</Channel>
   </Head>
   <Head>
    <Channel>34</Channel>
    <Channel>35</Channel>
    <Channel>36</Channel>
-   <Channel>37</Channel>
   </Head>
   <Head>
    <Channel>38</Channel>
    <Channel>39</Channel>
    <Channel>40</Channel>
-   <Channel>41</Channel>
   </Head>
   <Head>
    <Channel>42</Channel>
    <Channel>43</Channel>
    <Channel>44</Channel>
-   <Channel>45</Channel>
   </Head>
   <Head>
    <Channel>46</Channel>
    <Channel>47</Channel>
    <Channel>48</Channel>
-   <Channel>49</Channel>
   </Head>
   <Head>
    <Channel>50</Channel>
    <Channel>51</Channel>
    <Channel>52</Channel>
-   <Channel>53</Channel>
   </Head>
   <Head>
    <Channel>54</Channel>
    <Channel>55</Channel>
    <Channel>56</Channel>
+  </Head>
+  <Head>
+   <Channel>5</Channel>
+  </Head>
+  <Head>
+   <Channel>9</Channel>
+  </Head>
+  <Head>
+   <Channel>13</Channel>
+  </Head>
+  <Head>
+   <Channel>17</Channel>
+  </Head>
+  <Head>
+   <Channel>21</Channel>
+  </Head>
+  <Head>
+   <Channel>25</Channel>
+  </Head>
+  <Head>
+   <Channel>29</Channel>
+  </Head>
+  <Head>
+   <Channel>33</Channel>
+  </Head>
+  <Head>
+   <Channel>37</Channel>
+  </Head>
+  <Head>
+   <Channel>41</Channel>
+  </Head>
+  <Head>
+   <Channel>45</Channel>
+  </Head>
+  <Head>
+   <Channel>49</Channel>
+  </Head>
+  <Head>
+   <Channel>53</Channel>
+  </Head>
+  <Head>
    <Channel>57</Channel>
   </Head>
  </Mode>

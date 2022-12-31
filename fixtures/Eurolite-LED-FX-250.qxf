@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.6</Version>
+  <Author>mighty</Author>
+ </Creator>
+ <Manufacturer>Eurolite</Manufacturer>
+ <Model>LED FX-250</Model>
+ <Type>Flower</Type>
+ <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Programm">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="10" Preset="Alias">Dimmer
+   <Alias Mode="programm mode" Channel="Speed" With="Red"/>
+   <Alias Mode="programm mode" Channel="Flash" With="Green"/>
+   <Alias Mode="programm mode" Channel="OFF" With="Blue"/>
+   <Alias Mode="programm mode" Channel="OFF 1" With="White"/>
+  </Capability>
+  <Capability Min="11" Max="24">Programm 1</Capability>
+  <Capability Min="25" Max="39">Programm 2</Capability>
+  <Capability Min="40" Max="54">Programm 3</Capability>
+  <Capability Min="55" Max="69">Programm 4</Capability>
+  <Capability Min="70" Max="84">Programm 5</Capability>
+  <Capability Min="85" Max="99">Programm 6</Capability>
+  <Capability Min="100" Max="114">Programm 7</Capability>
+  <Capability Min="115" Max="129">Programm 8</Capability>
+  <Capability Min="130" Max="144">Programm 9</Capability>
+  <Capability Min="145" Max="159">Programm 10</Capability>
+  <Capability Min="160" Max="174">Programm 11</Capability>
+  <Capability Min="175" Max="189">Programm 12</Capability>
+  <Capability Min="190" Max="204">Programm 13</Capability>
+  <Capability Min="205" Max="219">Programm 14</Capability>
+  <Capability Min="220" Max="234">Programm 15</Capability>
+  <Capability Min="235" Max="249">Musikgesteuert 1</Capability>
+  <Capability Min="250" Max="255">Musikgesteuert 2</Capability>
+ </Channel>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Channel Name="White" Preset="IntensityWhite"/>
+ <Channel Name="Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Flash">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="255" Preset="StrobeSlowToFast"></Capability>
+ </Channel>
+ <Channel Name="OFF">
+  <Group Byte="0">Nothing</Group>
+ </Channel>
+ <Channel Name="OFF 1">
+  <Group Byte="0">Nothing</Group>
+ </Channel>
+ <Mode Name="programm mode">
+  <Channel Number="0">Master dimmer</Channel>
+  <Channel Number="1">Programm</Channel>
+  <Channel Number="2">Speed</Channel>
+  <Channel Number="3">Flash</Channel>
+  <Channel Number="4">OFF</Channel>
+  <Channel Number="5">OFF 1</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+  </Head>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>
