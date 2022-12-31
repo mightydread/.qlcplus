@@ -6,21 +6,65 @@
   <Version>4.12.4</Version>
   <Author>root</Author>
  </Creator>
- <Engine Autostart="49">
+ <Engine Autostart="133">
   <InputOutputMap>
-   <Universe Name="Universe 1" ID="0" Passthrough="True">
-    <Input Plugin="ArtNet" Line="0"/>
+   <Universe Name="Universe 1" ID="0">
     <Output Plugin="DMX USB" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1">
     <Input Plugin="MIDI" Line="1" Profile="Akai APC20"/>
+    <Output Plugin="ArtNet" Line="0">
+     <PluginParameters outputIP="10.0.0.102" outputUni="2" transmitMode="Partial"/>
+    </Output>
     <Feedback Plugin="MIDI" Line="1"/>
    </Universe>
    <Universe Name="Universe 3" ID="2">
     <Input Plugin="MIDI" Line="1"/>
+    <Output Plugin="ArtNet" Line="0">
+     <PluginParameters outputIP="10.0.0.102" outputUni="3" transmitMode="Partial"/>
+    </Output>
     <Feedback Plugin="MIDI" Line="1"/>
    </Universe>
-   <Universe Name="Universe 4" ID="3"/>
+   <Universe Name="Universe 4" ID="3">
+    <Output Plugin="ArtNet" Line="0">
+     <PluginParameters outputIP="10.0.0.102" outputUni="4" transmitMode="Partial"/>
+    </Output>
+   </Universe>
+   <Universe Name="Universe 5" ID="4">
+    <Output Plugin="ArtNet" Line="0">
+     <PluginParameters outputIP="10.0.0.102" outputUni="5" transmitMode="Partial"/>
+    </Output>
+   </Universe>
+   <Universe Name="Universe 6" ID="5">
+    <Output Plugin="ArtNet" Line="0">
+     <PluginParameters outputIP="10.0.0.102" outputUni="6" transmitMode="Partial"/>
+    </Output>
+   </Universe>
+   <Universe Name="Universe 7" ID="6">
+    <Output Plugin="ArtNet" Line="0">
+     <PluginParameters outputIP="10.0.0.102" outputUni="7" transmitMode="Partial"/>
+    </Output>
+   </Universe>
+   <Universe Name="Universe 8" ID="7">
+    <Output Plugin="ArtNet" Line="0">
+     <PluginParameters outputIP="10.0.0.102" outputUni="8" transmitMode="Partial"/>
+    </Output>
+   </Universe>
+   <Universe Name="Universe 9" ID="8">
+    <Output Plugin="ArtNet" Line="0">
+     <PluginParameters outputIP="10.0.0.102" outputUni="9" transmitMode="Partial"/>
+    </Output>
+   </Universe>
+   <Universe Name="Universe 10" ID="9">
+    <Output Plugin="ArtNet" Line="0">
+     <PluginParameters outputIP="10.0.0.102" outputUni="10" transmitMode="Partial"/>
+    </Output>
+   </Universe>
+   <Universe Name="Universe 11" ID="10">
+    <Output Plugin="ArtNet" Line="0">
+     <PluginParameters outputIP="10.0.0.102" outputUni="11" transmitMode="Partial"/>
+    </Output>
+   </Universe>
   </InputOutputMap>
   <Fixture>
    <Manufacturer>Involight</Manufacturer>
@@ -53,14 +97,16 @@
    <Channels>12</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>briteq</Manufacturer>
-   <Model>led bar rgb</Model>
-   <Mode>50ch</Mode>
+   <Manufacturer>Involight</Manufacturer>
+   <Model>LED MH75B</Model>
+   <Mode>12ch</Mode>
    <ID>3</ID>
-   <Name>led bar rgb</Name>
+   <Name>LED MH75B</Name>
    <Universe>0</Universe>
    <Address>26</Address>
-   <Channels>50</Channels>
+   <Channels>12</Channels>
+   <Modifier Channel="1" Name="Invert"/>
+   <Modifier Channel="3" Name="Invert"/>
   </Fixture>
   <Fixture>
    <Manufacturer>Uking</Manufacturer>
@@ -147,7 +193,7 @@
    <Model>LCB14</Model>
    <Mode>60 CH</Mode>
    <ID>12</ID>
-   <Name>LCB14</Name>
+   <Name>LCB14 1</Name>
    <Universe>0</Universe>
    <Address>140</Address>
    <Channels>60</Channels>
@@ -157,7 +203,7 @@
    <Model>LCB14</Model>
    <Mode>60 CH</Mode>
    <ID>13</ID>
-   <Name>LCB14</Name>
+   <Name>LCB14 2</Name>
    <Universe>0</Universe>
    <Address>200</Address>
    <Channels>60</Channels>
@@ -167,7 +213,7 @@
    <Model>LCB14</Model>
    <Mode>60 CH</Mode>
    <ID>14</ID>
-   <Name>LCB14</Name>
+   <Name>LCB14 3</Name>
    <Universe>0</Universe>
    <Address>260</Address>
    <Channels>60</Channels>
@@ -177,7 +223,7 @@
    <Model>LCB14</Model>
    <Mode>60 CH</Mode>
    <ID>15</ID>
-   <Name>LCB14</Name>
+   <Name>LCB14 4</Name>
    <Universe>0</Universe>
    <Address>320</Address>
    <Channels>60</Channels>
@@ -201,6 +247,266 @@
    <Universe>0</Universe>
    <Address>392</Address>
    <Channels>18</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Involight</Manufacturer>
+   <Model>LED MH77B</Model>
+   <Mode>19 Channel</Mode>
+   <ID>18</ID>
+   <Name>LED MH77B</Name>
+   <Universe>0</Universe>
+   <Address>38</Address>
+   <Channels>19</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED FX-250</Model>
+   <Mode>programm mode</Mode>
+   <ID>19</ID>
+   <Name>LED FX-250</Name>
+   <Universe>0</Universe>
+   <Address>57</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>29</ID>
+   <Name>RGB Panel - Row 1</Name>
+   <Universe>1</Universe>
+   <Address>0</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>30</ID>
+   <Name>RGB Panel - Row 2</Name>
+   <Universe>1</Universe>
+   <Address>180</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>31</ID>
+   <Name>RGB Panel - Row 3</Name>
+   <Universe>2</Universe>
+   <Address>0</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>32</ID>
+   <Name>RGB Panel - Row 4</Name>
+   <Universe>2</Universe>
+   <Address>180</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>33</ID>
+   <Name>RGB Panel - Row 5</Name>
+   <Universe>3</Universe>
+   <Address>0</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>34</ID>
+   <Name>RGB Panel - Row 6</Name>
+   <Universe>3</Universe>
+   <Address>180</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>35</ID>
+   <Name>RGB Panel - Row 7</Name>
+   <Universe>4</Universe>
+   <Address>0</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>36</ID>
+   <Name>RGB Panel - Row 8</Name>
+   <Universe>4</Universe>
+   <Address>180</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>37</ID>
+   <Name>RGB Panel - Row 9</Name>
+   <Universe>5</Universe>
+   <Address>0</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>38</ID>
+   <Name>RGB Panel - Row 10</Name>
+   <Universe>5</Universe>
+   <Address>180</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>39</ID>
+   <Name>RGB Panel - Row 11</Name>
+   <Universe>6</Universe>
+   <Address>0</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>40</ID>
+   <Name>RGB Panel - Row 12</Name>
+   <Universe>6</Universe>
+   <Address>180</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>41</ID>
+   <Name>RGB Panel - Row 13</Name>
+   <Universe>7</Universe>
+   <Address>0</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>42</ID>
+   <Name>RGB Panel - Row 14</Name>
+   <Universe>7</Universe>
+   <Address>180</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>43</ID>
+   <Name>RGB Panel - Row 15</Name>
+   <Universe>8</Universe>
+   <Address>0</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>44</ID>
+   <Name>RGB Panel - Row 16</Name>
+   <Universe>8</Universe>
+   <Address>180</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>45</ID>
+   <Name>RGB Panel - Row 17</Name>
+   <Universe>9</Universe>
+   <Address>0</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>46</ID>
+   <Name>RGB Panel - Row 18</Name>
+   <Universe>9</Universe>
+   <Address>180</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>47</ID>
+   <Name>RGB Panel - Row 19</Name>
+   <Universe>10</Universe>
+   <Address>0</Address>
+   <Channels>180</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>100</Weight>
+   <Height>5</Height>
+   <ID>48</ID>
+   <Name>RGB Panel - Row 20</Name>
+   <Universe>10</Universe>
+   <Address>180</Address>
+   <Channels>180</Channels>
   </Fixture>
   <FixtureGroup ID="0">
    <Name>Bars</Name>
@@ -283,333 +589,1503 @@
    <Head X="7" Y="1" Fixture="16">7</Head>
   </FixtureGroup>
   <FixtureGroup ID="2">
-   <Name>LCB14 - RGB Group</Name>
-   <Size X="56" Y="1"/>
-   <Head X="0" Y="0" Fixture="12">0</Head>
-   <Head X="1" Y="0" Fixture="12">1</Head>
-   <Head X="2" Y="0" Fixture="12">2</Head>
-   <Head X="3" Y="0" Fixture="12">3</Head>
-   <Head X="4" Y="0" Fixture="12">4</Head>
-   <Head X="5" Y="0" Fixture="12">5</Head>
-   <Head X="6" Y="0" Fixture="12">6</Head>
-   <Head X="7" Y="0" Fixture="12">7</Head>
-   <Head X="8" Y="0" Fixture="12">8</Head>
-   <Head X="9" Y="0" Fixture="12">9</Head>
-   <Head X="10" Y="0" Fixture="12">10</Head>
-   <Head X="11" Y="0" Fixture="12">11</Head>
-   <Head X="12" Y="0" Fixture="12">12</Head>
-   <Head X="13" Y="0" Fixture="12">13</Head>
-   <Head X="14" Y="0" Fixture="13">0</Head>
-   <Head X="15" Y="0" Fixture="13">1</Head>
-   <Head X="16" Y="0" Fixture="13">2</Head>
-   <Head X="17" Y="0" Fixture="13">3</Head>
-   <Head X="18" Y="0" Fixture="13">4</Head>
-   <Head X="19" Y="0" Fixture="13">5</Head>
-   <Head X="20" Y="0" Fixture="13">6</Head>
-   <Head X="21" Y="0" Fixture="13">7</Head>
-   <Head X="22" Y="0" Fixture="13">8</Head>
-   <Head X="23" Y="0" Fixture="13">9</Head>
-   <Head X="24" Y="0" Fixture="13">10</Head>
-   <Head X="25" Y="0" Fixture="13">11</Head>
-   <Head X="26" Y="0" Fixture="13">12</Head>
-   <Head X="27" Y="0" Fixture="13">13</Head>
-   <Head X="28" Y="0" Fixture="14">0</Head>
-   <Head X="29" Y="0" Fixture="14">1</Head>
-   <Head X="30" Y="0" Fixture="14">2</Head>
-   <Head X="31" Y="0" Fixture="14">3</Head>
-   <Head X="32" Y="0" Fixture="14">4</Head>
-   <Head X="33" Y="0" Fixture="14">5</Head>
-   <Head X="34" Y="0" Fixture="14">6</Head>
-   <Head X="35" Y="0" Fixture="14">7</Head>
-   <Head X="36" Y="0" Fixture="14">8</Head>
-   <Head X="37" Y="0" Fixture="14">9</Head>
-   <Head X="38" Y="0" Fixture="14">10</Head>
-   <Head X="39" Y="0" Fixture="14">11</Head>
-   <Head X="40" Y="0" Fixture="14">12</Head>
-   <Head X="41" Y="0" Fixture="14">13</Head>
-   <Head X="42" Y="0" Fixture="15">0</Head>
-   <Head X="43" Y="0" Fixture="15">1</Head>
-   <Head X="44" Y="0" Fixture="15">2</Head>
-   <Head X="45" Y="0" Fixture="15">3</Head>
-   <Head X="46" Y="0" Fixture="15">4</Head>
-   <Head X="47" Y="0" Fixture="15">5</Head>
-   <Head X="48" Y="0" Fixture="15">6</Head>
-   <Head X="49" Y="0" Fixture="15">7</Head>
-   <Head X="50" Y="0" Fixture="15">8</Head>
-   <Head X="51" Y="0" Fixture="15">9</Head>
-   <Head X="52" Y="0" Fixture="15">10</Head>
-   <Head X="53" Y="0" Fixture="15">11</Head>
-   <Head X="54" Y="0" Fixture="15">12</Head>
-   <Head X="55" Y="0" Fixture="15">13</Head>
+   <Name>Bars Blinder</Name>
+   <Size X="4" Y="14"/>
+   <Head X="0" Y="0" Fixture="12">27</Head>
+   <Head X="1" Y="0" Fixture="13">27</Head>
+   <Head X="2" Y="0" Fixture="14">14</Head>
+   <Head X="3" Y="0" Fixture="15">14</Head>
+   <Head X="0" Y="1" Fixture="12">26</Head>
+   <Head X="1" Y="1" Fixture="13">26</Head>
+   <Head X="2" Y="1" Fixture="14">15</Head>
+   <Head X="3" Y="1" Fixture="15">15</Head>
+   <Head X="0" Y="2" Fixture="12">25</Head>
+   <Head X="1" Y="2" Fixture="13">25</Head>
+   <Head X="2" Y="2" Fixture="14">16</Head>
+   <Head X="3" Y="2" Fixture="15">16</Head>
+   <Head X="0" Y="3" Fixture="12">24</Head>
+   <Head X="1" Y="3" Fixture="13">24</Head>
+   <Head X="2" Y="3" Fixture="14">17</Head>
+   <Head X="3" Y="3" Fixture="15">17</Head>
+   <Head X="0" Y="4" Fixture="12">23</Head>
+   <Head X="1" Y="4" Fixture="13">23</Head>
+   <Head X="2" Y="4" Fixture="14">18</Head>
+   <Head X="3" Y="4" Fixture="15">18</Head>
+   <Head X="0" Y="5" Fixture="12">22</Head>
+   <Head X="1" Y="5" Fixture="13">22</Head>
+   <Head X="2" Y="5" Fixture="14">19</Head>
+   <Head X="3" Y="5" Fixture="15">19</Head>
+   <Head X="0" Y="6" Fixture="12">21</Head>
+   <Head X="1" Y="6" Fixture="13">21</Head>
+   <Head X="2" Y="6" Fixture="14">20</Head>
+   <Head X="3" Y="6" Fixture="15">20</Head>
+   <Head X="0" Y="7" Fixture="12">20</Head>
+   <Head X="1" Y="7" Fixture="13">20</Head>
+   <Head X="2" Y="7" Fixture="14">21</Head>
+   <Head X="3" Y="7" Fixture="15">21</Head>
+   <Head X="0" Y="8" Fixture="12">19</Head>
+   <Head X="1" Y="8" Fixture="13">19</Head>
+   <Head X="2" Y="8" Fixture="14">22</Head>
+   <Head X="3" Y="8" Fixture="15">22</Head>
+   <Head X="0" Y="9" Fixture="12">18</Head>
+   <Head X="1" Y="9" Fixture="13">18</Head>
+   <Head X="2" Y="9" Fixture="14">23</Head>
+   <Head X="3" Y="9" Fixture="15">23</Head>
+   <Head X="0" Y="10" Fixture="12">17</Head>
+   <Head X="1" Y="10" Fixture="13">17</Head>
+   <Head X="2" Y="10" Fixture="14">24</Head>
+   <Head X="3" Y="10" Fixture="15">24</Head>
+   <Head X="0" Y="11" Fixture="12">16</Head>
+   <Head X="1" Y="11" Fixture="13">16</Head>
+   <Head X="2" Y="11" Fixture="14">25</Head>
+   <Head X="3" Y="11" Fixture="15">25</Head>
+   <Head X="0" Y="12" Fixture="12">15</Head>
+   <Head X="1" Y="12" Fixture="13">15</Head>
+   <Head X="2" Y="12" Fixture="14">26</Head>
+   <Head X="3" Y="12" Fixture="15">26</Head>
+   <Head X="0" Y="13" Fixture="12">14</Head>
+   <Head X="1" Y="13" Fixture="13">14</Head>
+   <Head X="2" Y="13" Fixture="14">27</Head>
+   <Head X="3" Y="13" Fixture="15">27</Head>
   </FixtureGroup>
-  <Function ID="0" Type="Scene" Name="White - LED MH75B" Path="MH">
+  <FixtureGroup ID="3">
+   <Name>RGB Panel</Name>
+   <Size X="60" Y="20"/>
+   <Head X="0" Y="0" Fixture="29">0</Head>
+   <Head X="1" Y="0" Fixture="29">1</Head>
+   <Head X="2" Y="0" Fixture="29">2</Head>
+   <Head X="3" Y="0" Fixture="29">3</Head>
+   <Head X="4" Y="0" Fixture="29">4</Head>
+   <Head X="5" Y="0" Fixture="29">5</Head>
+   <Head X="6" Y="0" Fixture="29">6</Head>
+   <Head X="7" Y="0" Fixture="29">7</Head>
+   <Head X="8" Y="0" Fixture="29">8</Head>
+   <Head X="9" Y="0" Fixture="29">9</Head>
+   <Head X="10" Y="0" Fixture="29">10</Head>
+   <Head X="11" Y="0" Fixture="29">11</Head>
+   <Head X="12" Y="0" Fixture="29">12</Head>
+   <Head X="13" Y="0" Fixture="29">13</Head>
+   <Head X="14" Y="0" Fixture="29">14</Head>
+   <Head X="15" Y="0" Fixture="29">15</Head>
+   <Head X="16" Y="0" Fixture="29">16</Head>
+   <Head X="17" Y="0" Fixture="29">17</Head>
+   <Head X="18" Y="0" Fixture="29">18</Head>
+   <Head X="19" Y="0" Fixture="29">19</Head>
+   <Head X="20" Y="0" Fixture="29">20</Head>
+   <Head X="21" Y="0" Fixture="29">21</Head>
+   <Head X="22" Y="0" Fixture="29">22</Head>
+   <Head X="23" Y="0" Fixture="29">23</Head>
+   <Head X="24" Y="0" Fixture="29">24</Head>
+   <Head X="25" Y="0" Fixture="29">25</Head>
+   <Head X="26" Y="0" Fixture="29">26</Head>
+   <Head X="27" Y="0" Fixture="29">27</Head>
+   <Head X="28" Y="0" Fixture="29">28</Head>
+   <Head X="29" Y="0" Fixture="29">29</Head>
+   <Head X="30" Y="0" Fixture="29">30</Head>
+   <Head X="31" Y="0" Fixture="29">31</Head>
+   <Head X="32" Y="0" Fixture="29">32</Head>
+   <Head X="33" Y="0" Fixture="29">33</Head>
+   <Head X="34" Y="0" Fixture="29">34</Head>
+   <Head X="35" Y="0" Fixture="29">35</Head>
+   <Head X="36" Y="0" Fixture="29">36</Head>
+   <Head X="37" Y="0" Fixture="29">37</Head>
+   <Head X="38" Y="0" Fixture="29">38</Head>
+   <Head X="39" Y="0" Fixture="29">39</Head>
+   <Head X="40" Y="0" Fixture="29">40</Head>
+   <Head X="41" Y="0" Fixture="29">41</Head>
+   <Head X="42" Y="0" Fixture="29">42</Head>
+   <Head X="43" Y="0" Fixture="29">43</Head>
+   <Head X="44" Y="0" Fixture="29">44</Head>
+   <Head X="45" Y="0" Fixture="29">45</Head>
+   <Head X="46" Y="0" Fixture="29">46</Head>
+   <Head X="47" Y="0" Fixture="29">47</Head>
+   <Head X="48" Y="0" Fixture="29">48</Head>
+   <Head X="49" Y="0" Fixture="29">49</Head>
+   <Head X="50" Y="0" Fixture="29">50</Head>
+   <Head X="51" Y="0" Fixture="29">51</Head>
+   <Head X="52" Y="0" Fixture="29">52</Head>
+   <Head X="53" Y="0" Fixture="29">53</Head>
+   <Head X="54" Y="0" Fixture="29">54</Head>
+   <Head X="55" Y="0" Fixture="29">55</Head>
+   <Head X="56" Y="0" Fixture="29">56</Head>
+   <Head X="57" Y="0" Fixture="29">57</Head>
+   <Head X="58" Y="0" Fixture="29">58</Head>
+   <Head X="59" Y="0" Fixture="29">59</Head>
+   <Head X="0" Y="1" Fixture="30">59</Head>
+   <Head X="1" Y="1" Fixture="30">58</Head>
+   <Head X="2" Y="1" Fixture="30">57</Head>
+   <Head X="3" Y="1" Fixture="30">56</Head>
+   <Head X="4" Y="1" Fixture="30">55</Head>
+   <Head X="5" Y="1" Fixture="30">54</Head>
+   <Head X="6" Y="1" Fixture="30">53</Head>
+   <Head X="7" Y="1" Fixture="30">52</Head>
+   <Head X="8" Y="1" Fixture="30">51</Head>
+   <Head X="9" Y="1" Fixture="30">50</Head>
+   <Head X="10" Y="1" Fixture="30">49</Head>
+   <Head X="11" Y="1" Fixture="30">48</Head>
+   <Head X="12" Y="1" Fixture="30">47</Head>
+   <Head X="13" Y="1" Fixture="30">46</Head>
+   <Head X="14" Y="1" Fixture="30">45</Head>
+   <Head X="15" Y="1" Fixture="30">44</Head>
+   <Head X="16" Y="1" Fixture="30">43</Head>
+   <Head X="17" Y="1" Fixture="30">42</Head>
+   <Head X="18" Y="1" Fixture="30">41</Head>
+   <Head X="19" Y="1" Fixture="30">40</Head>
+   <Head X="20" Y="1" Fixture="30">39</Head>
+   <Head X="21" Y="1" Fixture="30">38</Head>
+   <Head X="22" Y="1" Fixture="30">37</Head>
+   <Head X="23" Y="1" Fixture="30">36</Head>
+   <Head X="24" Y="1" Fixture="30">35</Head>
+   <Head X="25" Y="1" Fixture="30">34</Head>
+   <Head X="26" Y="1" Fixture="30">33</Head>
+   <Head X="27" Y="1" Fixture="30">32</Head>
+   <Head X="28" Y="1" Fixture="30">31</Head>
+   <Head X="29" Y="1" Fixture="30">30</Head>
+   <Head X="30" Y="1" Fixture="30">29</Head>
+   <Head X="31" Y="1" Fixture="30">28</Head>
+   <Head X="32" Y="1" Fixture="30">27</Head>
+   <Head X="33" Y="1" Fixture="30">26</Head>
+   <Head X="34" Y="1" Fixture="30">25</Head>
+   <Head X="35" Y="1" Fixture="30">24</Head>
+   <Head X="36" Y="1" Fixture="30">23</Head>
+   <Head X="37" Y="1" Fixture="30">22</Head>
+   <Head X="38" Y="1" Fixture="30">21</Head>
+   <Head X="39" Y="1" Fixture="30">20</Head>
+   <Head X="40" Y="1" Fixture="30">19</Head>
+   <Head X="41" Y="1" Fixture="30">18</Head>
+   <Head X="42" Y="1" Fixture="30">17</Head>
+   <Head X="43" Y="1" Fixture="30">16</Head>
+   <Head X="44" Y="1" Fixture="30">15</Head>
+   <Head X="45" Y="1" Fixture="30">14</Head>
+   <Head X="46" Y="1" Fixture="30">13</Head>
+   <Head X="47" Y="1" Fixture="30">12</Head>
+   <Head X="48" Y="1" Fixture="30">11</Head>
+   <Head X="49" Y="1" Fixture="30">10</Head>
+   <Head X="50" Y="1" Fixture="30">9</Head>
+   <Head X="51" Y="1" Fixture="30">8</Head>
+   <Head X="52" Y="1" Fixture="30">7</Head>
+   <Head X="53" Y="1" Fixture="30">6</Head>
+   <Head X="54" Y="1" Fixture="30">5</Head>
+   <Head X="55" Y="1" Fixture="30">4</Head>
+   <Head X="56" Y="1" Fixture="30">3</Head>
+   <Head X="57" Y="1" Fixture="30">2</Head>
+   <Head X="58" Y="1" Fixture="30">1</Head>
+   <Head X="59" Y="1" Fixture="30">0</Head>
+   <Head X="0" Y="2" Fixture="31">0</Head>
+   <Head X="1" Y="2" Fixture="31">1</Head>
+   <Head X="2" Y="2" Fixture="31">2</Head>
+   <Head X="3" Y="2" Fixture="31">3</Head>
+   <Head X="4" Y="2" Fixture="31">4</Head>
+   <Head X="5" Y="2" Fixture="31">5</Head>
+   <Head X="6" Y="2" Fixture="31">6</Head>
+   <Head X="7" Y="2" Fixture="31">7</Head>
+   <Head X="8" Y="2" Fixture="31">8</Head>
+   <Head X="9" Y="2" Fixture="31">9</Head>
+   <Head X="10" Y="2" Fixture="31">10</Head>
+   <Head X="11" Y="2" Fixture="31">11</Head>
+   <Head X="12" Y="2" Fixture="31">12</Head>
+   <Head X="13" Y="2" Fixture="31">13</Head>
+   <Head X="14" Y="2" Fixture="31">14</Head>
+   <Head X="15" Y="2" Fixture="31">15</Head>
+   <Head X="16" Y="2" Fixture="31">16</Head>
+   <Head X="17" Y="2" Fixture="31">17</Head>
+   <Head X="18" Y="2" Fixture="31">18</Head>
+   <Head X="19" Y="2" Fixture="31">19</Head>
+   <Head X="20" Y="2" Fixture="31">20</Head>
+   <Head X="21" Y="2" Fixture="31">21</Head>
+   <Head X="22" Y="2" Fixture="31">22</Head>
+   <Head X="23" Y="2" Fixture="31">23</Head>
+   <Head X="24" Y="2" Fixture="31">24</Head>
+   <Head X="25" Y="2" Fixture="31">25</Head>
+   <Head X="26" Y="2" Fixture="31">26</Head>
+   <Head X="27" Y="2" Fixture="31">27</Head>
+   <Head X="28" Y="2" Fixture="31">28</Head>
+   <Head X="29" Y="2" Fixture="31">29</Head>
+   <Head X="30" Y="2" Fixture="31">30</Head>
+   <Head X="31" Y="2" Fixture="31">31</Head>
+   <Head X="32" Y="2" Fixture="31">32</Head>
+   <Head X="33" Y="2" Fixture="31">33</Head>
+   <Head X="34" Y="2" Fixture="31">34</Head>
+   <Head X="35" Y="2" Fixture="31">35</Head>
+   <Head X="36" Y="2" Fixture="31">36</Head>
+   <Head X="37" Y="2" Fixture="31">37</Head>
+   <Head X="38" Y="2" Fixture="31">38</Head>
+   <Head X="39" Y="2" Fixture="31">39</Head>
+   <Head X="40" Y="2" Fixture="31">40</Head>
+   <Head X="41" Y="2" Fixture="31">41</Head>
+   <Head X="42" Y="2" Fixture="31">42</Head>
+   <Head X="43" Y="2" Fixture="31">43</Head>
+   <Head X="44" Y="2" Fixture="31">44</Head>
+   <Head X="45" Y="2" Fixture="31">45</Head>
+   <Head X="46" Y="2" Fixture="31">46</Head>
+   <Head X="47" Y="2" Fixture="31">47</Head>
+   <Head X="48" Y="2" Fixture="31">48</Head>
+   <Head X="49" Y="2" Fixture="31">49</Head>
+   <Head X="50" Y="2" Fixture="31">50</Head>
+   <Head X="51" Y="2" Fixture="31">51</Head>
+   <Head X="52" Y="2" Fixture="31">52</Head>
+   <Head X="53" Y="2" Fixture="31">53</Head>
+   <Head X="54" Y="2" Fixture="31">54</Head>
+   <Head X="55" Y="2" Fixture="31">55</Head>
+   <Head X="56" Y="2" Fixture="31">56</Head>
+   <Head X="57" Y="2" Fixture="31">57</Head>
+   <Head X="58" Y="2" Fixture="31">58</Head>
+   <Head X="59" Y="2" Fixture="31">59</Head>
+   <Head X="0" Y="3" Fixture="32">59</Head>
+   <Head X="1" Y="3" Fixture="32">58</Head>
+   <Head X="2" Y="3" Fixture="32">57</Head>
+   <Head X="3" Y="3" Fixture="32">56</Head>
+   <Head X="4" Y="3" Fixture="32">55</Head>
+   <Head X="5" Y="3" Fixture="32">54</Head>
+   <Head X="6" Y="3" Fixture="32">53</Head>
+   <Head X="7" Y="3" Fixture="32">52</Head>
+   <Head X="8" Y="3" Fixture="32">51</Head>
+   <Head X="9" Y="3" Fixture="32">50</Head>
+   <Head X="10" Y="3" Fixture="32">49</Head>
+   <Head X="11" Y="3" Fixture="32">48</Head>
+   <Head X="12" Y="3" Fixture="32">47</Head>
+   <Head X="13" Y="3" Fixture="32">46</Head>
+   <Head X="14" Y="3" Fixture="32">45</Head>
+   <Head X="15" Y="3" Fixture="32">44</Head>
+   <Head X="16" Y="3" Fixture="32">43</Head>
+   <Head X="17" Y="3" Fixture="32">42</Head>
+   <Head X="18" Y="3" Fixture="32">41</Head>
+   <Head X="19" Y="3" Fixture="32">40</Head>
+   <Head X="20" Y="3" Fixture="32">39</Head>
+   <Head X="21" Y="3" Fixture="32">38</Head>
+   <Head X="22" Y="3" Fixture="32">37</Head>
+   <Head X="23" Y="3" Fixture="32">36</Head>
+   <Head X="24" Y="3" Fixture="32">35</Head>
+   <Head X="25" Y="3" Fixture="32">34</Head>
+   <Head X="26" Y="3" Fixture="32">33</Head>
+   <Head X="27" Y="3" Fixture="32">32</Head>
+   <Head X="28" Y="3" Fixture="32">31</Head>
+   <Head X="29" Y="3" Fixture="32">30</Head>
+   <Head X="30" Y="3" Fixture="32">29</Head>
+   <Head X="31" Y="3" Fixture="32">28</Head>
+   <Head X="32" Y="3" Fixture="32">27</Head>
+   <Head X="33" Y="3" Fixture="32">26</Head>
+   <Head X="34" Y="3" Fixture="32">25</Head>
+   <Head X="35" Y="3" Fixture="32">24</Head>
+   <Head X="36" Y="3" Fixture="32">23</Head>
+   <Head X="37" Y="3" Fixture="32">22</Head>
+   <Head X="38" Y="3" Fixture="32">21</Head>
+   <Head X="39" Y="3" Fixture="32">20</Head>
+   <Head X="40" Y="3" Fixture="32">19</Head>
+   <Head X="41" Y="3" Fixture="32">18</Head>
+   <Head X="42" Y="3" Fixture="32">17</Head>
+   <Head X="43" Y="3" Fixture="32">16</Head>
+   <Head X="44" Y="3" Fixture="32">15</Head>
+   <Head X="45" Y="3" Fixture="32">14</Head>
+   <Head X="46" Y="3" Fixture="32">13</Head>
+   <Head X="47" Y="3" Fixture="32">12</Head>
+   <Head X="48" Y="3" Fixture="32">11</Head>
+   <Head X="49" Y="3" Fixture="32">10</Head>
+   <Head X="50" Y="3" Fixture="32">9</Head>
+   <Head X="51" Y="3" Fixture="32">8</Head>
+   <Head X="52" Y="3" Fixture="32">7</Head>
+   <Head X="53" Y="3" Fixture="32">6</Head>
+   <Head X="54" Y="3" Fixture="32">5</Head>
+   <Head X="55" Y="3" Fixture="32">4</Head>
+   <Head X="56" Y="3" Fixture="32">3</Head>
+   <Head X="57" Y="3" Fixture="32">2</Head>
+   <Head X="58" Y="3" Fixture="32">1</Head>
+   <Head X="59" Y="3" Fixture="32">0</Head>
+   <Head X="0" Y="4" Fixture="33">0</Head>
+   <Head X="1" Y="4" Fixture="33">1</Head>
+   <Head X="2" Y="4" Fixture="33">2</Head>
+   <Head X="3" Y="4" Fixture="33">3</Head>
+   <Head X="4" Y="4" Fixture="33">4</Head>
+   <Head X="5" Y="4" Fixture="33">5</Head>
+   <Head X="6" Y="4" Fixture="33">6</Head>
+   <Head X="7" Y="4" Fixture="33">7</Head>
+   <Head X="8" Y="4" Fixture="33">8</Head>
+   <Head X="9" Y="4" Fixture="33">9</Head>
+   <Head X="10" Y="4" Fixture="33">10</Head>
+   <Head X="11" Y="4" Fixture="33">11</Head>
+   <Head X="12" Y="4" Fixture="33">12</Head>
+   <Head X="13" Y="4" Fixture="33">13</Head>
+   <Head X="14" Y="4" Fixture="33">14</Head>
+   <Head X="15" Y="4" Fixture="33">15</Head>
+   <Head X="16" Y="4" Fixture="33">16</Head>
+   <Head X="17" Y="4" Fixture="33">17</Head>
+   <Head X="18" Y="4" Fixture="33">18</Head>
+   <Head X="19" Y="4" Fixture="33">19</Head>
+   <Head X="20" Y="4" Fixture="33">20</Head>
+   <Head X="21" Y="4" Fixture="33">21</Head>
+   <Head X="22" Y="4" Fixture="33">22</Head>
+   <Head X="23" Y="4" Fixture="33">23</Head>
+   <Head X="24" Y="4" Fixture="33">24</Head>
+   <Head X="25" Y="4" Fixture="33">25</Head>
+   <Head X="26" Y="4" Fixture="33">26</Head>
+   <Head X="27" Y="4" Fixture="33">27</Head>
+   <Head X="28" Y="4" Fixture="33">28</Head>
+   <Head X="29" Y="4" Fixture="33">29</Head>
+   <Head X="30" Y="4" Fixture="33">30</Head>
+   <Head X="31" Y="4" Fixture="33">31</Head>
+   <Head X="32" Y="4" Fixture="33">32</Head>
+   <Head X="33" Y="4" Fixture="33">33</Head>
+   <Head X="34" Y="4" Fixture="33">34</Head>
+   <Head X="35" Y="4" Fixture="33">35</Head>
+   <Head X="36" Y="4" Fixture="33">36</Head>
+   <Head X="37" Y="4" Fixture="33">37</Head>
+   <Head X="38" Y="4" Fixture="33">38</Head>
+   <Head X="39" Y="4" Fixture="33">39</Head>
+   <Head X="40" Y="4" Fixture="33">40</Head>
+   <Head X="41" Y="4" Fixture="33">41</Head>
+   <Head X="42" Y="4" Fixture="33">42</Head>
+   <Head X="43" Y="4" Fixture="33">43</Head>
+   <Head X="44" Y="4" Fixture="33">44</Head>
+   <Head X="45" Y="4" Fixture="33">45</Head>
+   <Head X="46" Y="4" Fixture="33">46</Head>
+   <Head X="47" Y="4" Fixture="33">47</Head>
+   <Head X="48" Y="4" Fixture="33">48</Head>
+   <Head X="49" Y="4" Fixture="33">49</Head>
+   <Head X="50" Y="4" Fixture="33">50</Head>
+   <Head X="51" Y="4" Fixture="33">51</Head>
+   <Head X="52" Y="4" Fixture="33">52</Head>
+   <Head X="53" Y="4" Fixture="33">53</Head>
+   <Head X="54" Y="4" Fixture="33">54</Head>
+   <Head X="55" Y="4" Fixture="33">55</Head>
+   <Head X="56" Y="4" Fixture="33">56</Head>
+   <Head X="57" Y="4" Fixture="33">57</Head>
+   <Head X="58" Y="4" Fixture="33">58</Head>
+   <Head X="59" Y="4" Fixture="33">59</Head>
+   <Head X="0" Y="5" Fixture="34">59</Head>
+   <Head X="1" Y="5" Fixture="34">58</Head>
+   <Head X="2" Y="5" Fixture="34">57</Head>
+   <Head X="3" Y="5" Fixture="34">56</Head>
+   <Head X="4" Y="5" Fixture="34">55</Head>
+   <Head X="5" Y="5" Fixture="34">54</Head>
+   <Head X="6" Y="5" Fixture="34">53</Head>
+   <Head X="7" Y="5" Fixture="34">52</Head>
+   <Head X="8" Y="5" Fixture="34">51</Head>
+   <Head X="9" Y="5" Fixture="34">50</Head>
+   <Head X="10" Y="5" Fixture="34">49</Head>
+   <Head X="11" Y="5" Fixture="34">48</Head>
+   <Head X="12" Y="5" Fixture="34">47</Head>
+   <Head X="13" Y="5" Fixture="34">46</Head>
+   <Head X="14" Y="5" Fixture="34">45</Head>
+   <Head X="15" Y="5" Fixture="34">44</Head>
+   <Head X="16" Y="5" Fixture="34">43</Head>
+   <Head X="17" Y="5" Fixture="34">42</Head>
+   <Head X="18" Y="5" Fixture="34">41</Head>
+   <Head X="19" Y="5" Fixture="34">40</Head>
+   <Head X="20" Y="5" Fixture="34">39</Head>
+   <Head X="21" Y="5" Fixture="34">38</Head>
+   <Head X="22" Y="5" Fixture="34">37</Head>
+   <Head X="23" Y="5" Fixture="34">36</Head>
+   <Head X="24" Y="5" Fixture="34">35</Head>
+   <Head X="25" Y="5" Fixture="34">34</Head>
+   <Head X="26" Y="5" Fixture="34">33</Head>
+   <Head X="27" Y="5" Fixture="34">32</Head>
+   <Head X="28" Y="5" Fixture="34">31</Head>
+   <Head X="29" Y="5" Fixture="34">30</Head>
+   <Head X="30" Y="5" Fixture="34">29</Head>
+   <Head X="31" Y="5" Fixture="34">28</Head>
+   <Head X="32" Y="5" Fixture="34">27</Head>
+   <Head X="33" Y="5" Fixture="34">26</Head>
+   <Head X="34" Y="5" Fixture="34">25</Head>
+   <Head X="35" Y="5" Fixture="34">24</Head>
+   <Head X="36" Y="5" Fixture="34">23</Head>
+   <Head X="37" Y="5" Fixture="34">22</Head>
+   <Head X="38" Y="5" Fixture="34">21</Head>
+   <Head X="39" Y="5" Fixture="34">20</Head>
+   <Head X="40" Y="5" Fixture="34">19</Head>
+   <Head X="41" Y="5" Fixture="34">18</Head>
+   <Head X="42" Y="5" Fixture="34">17</Head>
+   <Head X="43" Y="5" Fixture="34">16</Head>
+   <Head X="44" Y="5" Fixture="34">15</Head>
+   <Head X="45" Y="5" Fixture="34">14</Head>
+   <Head X="46" Y="5" Fixture="34">13</Head>
+   <Head X="47" Y="5" Fixture="34">12</Head>
+   <Head X="48" Y="5" Fixture="34">11</Head>
+   <Head X="49" Y="5" Fixture="34">10</Head>
+   <Head X="50" Y="5" Fixture="34">9</Head>
+   <Head X="51" Y="5" Fixture="34">8</Head>
+   <Head X="52" Y="5" Fixture="34">7</Head>
+   <Head X="53" Y="5" Fixture="34">6</Head>
+   <Head X="54" Y="5" Fixture="34">5</Head>
+   <Head X="55" Y="5" Fixture="34">4</Head>
+   <Head X="56" Y="5" Fixture="34">3</Head>
+   <Head X="57" Y="5" Fixture="34">2</Head>
+   <Head X="58" Y="5" Fixture="34">1</Head>
+   <Head X="59" Y="5" Fixture="34">0</Head>
+   <Head X="0" Y="6" Fixture="35">0</Head>
+   <Head X="1" Y="6" Fixture="35">1</Head>
+   <Head X="2" Y="6" Fixture="35">2</Head>
+   <Head X="3" Y="6" Fixture="35">3</Head>
+   <Head X="4" Y="6" Fixture="35">4</Head>
+   <Head X="5" Y="6" Fixture="35">5</Head>
+   <Head X="6" Y="6" Fixture="35">6</Head>
+   <Head X="7" Y="6" Fixture="35">7</Head>
+   <Head X="8" Y="6" Fixture="35">8</Head>
+   <Head X="9" Y="6" Fixture="35">9</Head>
+   <Head X="10" Y="6" Fixture="35">10</Head>
+   <Head X="11" Y="6" Fixture="35">11</Head>
+   <Head X="12" Y="6" Fixture="35">12</Head>
+   <Head X="13" Y="6" Fixture="35">13</Head>
+   <Head X="14" Y="6" Fixture="35">14</Head>
+   <Head X="15" Y="6" Fixture="35">15</Head>
+   <Head X="16" Y="6" Fixture="35">16</Head>
+   <Head X="17" Y="6" Fixture="35">17</Head>
+   <Head X="18" Y="6" Fixture="35">18</Head>
+   <Head X="19" Y="6" Fixture="35">19</Head>
+   <Head X="20" Y="6" Fixture="35">20</Head>
+   <Head X="21" Y="6" Fixture="35">21</Head>
+   <Head X="22" Y="6" Fixture="35">22</Head>
+   <Head X="23" Y="6" Fixture="35">23</Head>
+   <Head X="24" Y="6" Fixture="35">24</Head>
+   <Head X="25" Y="6" Fixture="35">25</Head>
+   <Head X="26" Y="6" Fixture="35">26</Head>
+   <Head X="27" Y="6" Fixture="35">27</Head>
+   <Head X="28" Y="6" Fixture="35">28</Head>
+   <Head X="29" Y="6" Fixture="35">29</Head>
+   <Head X="30" Y="6" Fixture="35">30</Head>
+   <Head X="31" Y="6" Fixture="35">31</Head>
+   <Head X="32" Y="6" Fixture="35">32</Head>
+   <Head X="33" Y="6" Fixture="35">33</Head>
+   <Head X="34" Y="6" Fixture="35">34</Head>
+   <Head X="35" Y="6" Fixture="35">35</Head>
+   <Head X="36" Y="6" Fixture="35">36</Head>
+   <Head X="37" Y="6" Fixture="35">37</Head>
+   <Head X="38" Y="6" Fixture="35">38</Head>
+   <Head X="39" Y="6" Fixture="35">39</Head>
+   <Head X="40" Y="6" Fixture="35">40</Head>
+   <Head X="41" Y="6" Fixture="35">41</Head>
+   <Head X="42" Y="6" Fixture="35">42</Head>
+   <Head X="43" Y="6" Fixture="35">43</Head>
+   <Head X="44" Y="6" Fixture="35">44</Head>
+   <Head X="45" Y="6" Fixture="35">45</Head>
+   <Head X="46" Y="6" Fixture="35">46</Head>
+   <Head X="47" Y="6" Fixture="35">47</Head>
+   <Head X="48" Y="6" Fixture="35">48</Head>
+   <Head X="49" Y="6" Fixture="35">49</Head>
+   <Head X="50" Y="6" Fixture="35">50</Head>
+   <Head X="51" Y="6" Fixture="35">51</Head>
+   <Head X="52" Y="6" Fixture="35">52</Head>
+   <Head X="53" Y="6" Fixture="35">53</Head>
+   <Head X="54" Y="6" Fixture="35">54</Head>
+   <Head X="55" Y="6" Fixture="35">55</Head>
+   <Head X="56" Y="6" Fixture="35">56</Head>
+   <Head X="57" Y="6" Fixture="35">57</Head>
+   <Head X="58" Y="6" Fixture="35">58</Head>
+   <Head X="59" Y="6" Fixture="35">59</Head>
+   <Head X="0" Y="7" Fixture="36">59</Head>
+   <Head X="1" Y="7" Fixture="36">58</Head>
+   <Head X="2" Y="7" Fixture="36">57</Head>
+   <Head X="3" Y="7" Fixture="36">56</Head>
+   <Head X="4" Y="7" Fixture="36">55</Head>
+   <Head X="5" Y="7" Fixture="36">54</Head>
+   <Head X="6" Y="7" Fixture="36">53</Head>
+   <Head X="7" Y="7" Fixture="36">52</Head>
+   <Head X="8" Y="7" Fixture="36">51</Head>
+   <Head X="9" Y="7" Fixture="36">50</Head>
+   <Head X="10" Y="7" Fixture="36">49</Head>
+   <Head X="11" Y="7" Fixture="36">48</Head>
+   <Head X="12" Y="7" Fixture="36">47</Head>
+   <Head X="13" Y="7" Fixture="36">46</Head>
+   <Head X="14" Y="7" Fixture="36">45</Head>
+   <Head X="15" Y="7" Fixture="36">44</Head>
+   <Head X="16" Y="7" Fixture="36">43</Head>
+   <Head X="17" Y="7" Fixture="36">42</Head>
+   <Head X="18" Y="7" Fixture="36">41</Head>
+   <Head X="19" Y="7" Fixture="36">40</Head>
+   <Head X="20" Y="7" Fixture="36">39</Head>
+   <Head X="21" Y="7" Fixture="36">38</Head>
+   <Head X="22" Y="7" Fixture="36">37</Head>
+   <Head X="23" Y="7" Fixture="36">36</Head>
+   <Head X="24" Y="7" Fixture="36">35</Head>
+   <Head X="25" Y="7" Fixture="36">34</Head>
+   <Head X="26" Y="7" Fixture="36">33</Head>
+   <Head X="27" Y="7" Fixture="36">32</Head>
+   <Head X="28" Y="7" Fixture="36">31</Head>
+   <Head X="29" Y="7" Fixture="36">30</Head>
+   <Head X="30" Y="7" Fixture="36">29</Head>
+   <Head X="31" Y="7" Fixture="36">28</Head>
+   <Head X="32" Y="7" Fixture="36">27</Head>
+   <Head X="33" Y="7" Fixture="36">26</Head>
+   <Head X="34" Y="7" Fixture="36">25</Head>
+   <Head X="35" Y="7" Fixture="36">24</Head>
+   <Head X="36" Y="7" Fixture="36">23</Head>
+   <Head X="37" Y="7" Fixture="36">22</Head>
+   <Head X="38" Y="7" Fixture="36">21</Head>
+   <Head X="39" Y="7" Fixture="36">20</Head>
+   <Head X="40" Y="7" Fixture="36">19</Head>
+   <Head X="41" Y="7" Fixture="36">18</Head>
+   <Head X="42" Y="7" Fixture="36">17</Head>
+   <Head X="43" Y="7" Fixture="36">16</Head>
+   <Head X="44" Y="7" Fixture="36">15</Head>
+   <Head X="45" Y="7" Fixture="36">14</Head>
+   <Head X="46" Y="7" Fixture="36">13</Head>
+   <Head X="47" Y="7" Fixture="36">12</Head>
+   <Head X="48" Y="7" Fixture="36">11</Head>
+   <Head X="49" Y="7" Fixture="36">10</Head>
+   <Head X="50" Y="7" Fixture="36">9</Head>
+   <Head X="51" Y="7" Fixture="36">8</Head>
+   <Head X="52" Y="7" Fixture="36">7</Head>
+   <Head X="53" Y="7" Fixture="36">6</Head>
+   <Head X="54" Y="7" Fixture="36">5</Head>
+   <Head X="55" Y="7" Fixture="36">4</Head>
+   <Head X="56" Y="7" Fixture="36">3</Head>
+   <Head X="57" Y="7" Fixture="36">2</Head>
+   <Head X="58" Y="7" Fixture="36">1</Head>
+   <Head X="59" Y="7" Fixture="36">0</Head>
+   <Head X="0" Y="8" Fixture="37">0</Head>
+   <Head X="1" Y="8" Fixture="37">1</Head>
+   <Head X="2" Y="8" Fixture="37">2</Head>
+   <Head X="3" Y="8" Fixture="37">3</Head>
+   <Head X="4" Y="8" Fixture="37">4</Head>
+   <Head X="5" Y="8" Fixture="37">5</Head>
+   <Head X="6" Y="8" Fixture="37">6</Head>
+   <Head X="7" Y="8" Fixture="37">7</Head>
+   <Head X="8" Y="8" Fixture="37">8</Head>
+   <Head X="9" Y="8" Fixture="37">9</Head>
+   <Head X="10" Y="8" Fixture="37">10</Head>
+   <Head X="11" Y="8" Fixture="37">11</Head>
+   <Head X="12" Y="8" Fixture="37">12</Head>
+   <Head X="13" Y="8" Fixture="37">13</Head>
+   <Head X="14" Y="8" Fixture="37">14</Head>
+   <Head X="15" Y="8" Fixture="37">15</Head>
+   <Head X="16" Y="8" Fixture="37">16</Head>
+   <Head X="17" Y="8" Fixture="37">17</Head>
+   <Head X="18" Y="8" Fixture="37">18</Head>
+   <Head X="19" Y="8" Fixture="37">19</Head>
+   <Head X="20" Y="8" Fixture="37">20</Head>
+   <Head X="21" Y="8" Fixture="37">21</Head>
+   <Head X="22" Y="8" Fixture="37">22</Head>
+   <Head X="23" Y="8" Fixture="37">23</Head>
+   <Head X="24" Y="8" Fixture="37">24</Head>
+   <Head X="25" Y="8" Fixture="37">25</Head>
+   <Head X="26" Y="8" Fixture="37">26</Head>
+   <Head X="27" Y="8" Fixture="37">27</Head>
+   <Head X="28" Y="8" Fixture="37">28</Head>
+   <Head X="29" Y="8" Fixture="37">29</Head>
+   <Head X="30" Y="8" Fixture="37">30</Head>
+   <Head X="31" Y="8" Fixture="37">31</Head>
+   <Head X="32" Y="8" Fixture="37">32</Head>
+   <Head X="33" Y="8" Fixture="37">33</Head>
+   <Head X="34" Y="8" Fixture="37">34</Head>
+   <Head X="35" Y="8" Fixture="37">35</Head>
+   <Head X="36" Y="8" Fixture="37">36</Head>
+   <Head X="37" Y="8" Fixture="37">37</Head>
+   <Head X="38" Y="8" Fixture="37">38</Head>
+   <Head X="39" Y="8" Fixture="37">39</Head>
+   <Head X="40" Y="8" Fixture="37">40</Head>
+   <Head X="41" Y="8" Fixture="37">41</Head>
+   <Head X="42" Y="8" Fixture="37">42</Head>
+   <Head X="43" Y="8" Fixture="37">43</Head>
+   <Head X="44" Y="8" Fixture="37">44</Head>
+   <Head X="45" Y="8" Fixture="37">45</Head>
+   <Head X="46" Y="8" Fixture="37">46</Head>
+   <Head X="47" Y="8" Fixture="37">47</Head>
+   <Head X="48" Y="8" Fixture="37">48</Head>
+   <Head X="49" Y="8" Fixture="37">49</Head>
+   <Head X="50" Y="8" Fixture="37">50</Head>
+   <Head X="51" Y="8" Fixture="37">51</Head>
+   <Head X="52" Y="8" Fixture="37">52</Head>
+   <Head X="53" Y="8" Fixture="37">53</Head>
+   <Head X="54" Y="8" Fixture="37">54</Head>
+   <Head X="55" Y="8" Fixture="37">55</Head>
+   <Head X="56" Y="8" Fixture="37">56</Head>
+   <Head X="57" Y="8" Fixture="37">57</Head>
+   <Head X="58" Y="8" Fixture="37">58</Head>
+   <Head X="59" Y="8" Fixture="37">59</Head>
+   <Head X="0" Y="9" Fixture="38">59</Head>
+   <Head X="1" Y="9" Fixture="38">58</Head>
+   <Head X="2" Y="9" Fixture="38">57</Head>
+   <Head X="3" Y="9" Fixture="38">56</Head>
+   <Head X="4" Y="9" Fixture="38">55</Head>
+   <Head X="5" Y="9" Fixture="38">54</Head>
+   <Head X="6" Y="9" Fixture="38">53</Head>
+   <Head X="7" Y="9" Fixture="38">52</Head>
+   <Head X="8" Y="9" Fixture="38">51</Head>
+   <Head X="9" Y="9" Fixture="38">50</Head>
+   <Head X="10" Y="9" Fixture="38">49</Head>
+   <Head X="11" Y="9" Fixture="38">48</Head>
+   <Head X="12" Y="9" Fixture="38">47</Head>
+   <Head X="13" Y="9" Fixture="38">46</Head>
+   <Head X="14" Y="9" Fixture="38">45</Head>
+   <Head X="15" Y="9" Fixture="38">44</Head>
+   <Head X="16" Y="9" Fixture="38">43</Head>
+   <Head X="17" Y="9" Fixture="38">42</Head>
+   <Head X="18" Y="9" Fixture="38">41</Head>
+   <Head X="19" Y="9" Fixture="38">40</Head>
+   <Head X="20" Y="9" Fixture="38">39</Head>
+   <Head X="21" Y="9" Fixture="38">38</Head>
+   <Head X="22" Y="9" Fixture="38">37</Head>
+   <Head X="23" Y="9" Fixture="38">36</Head>
+   <Head X="24" Y="9" Fixture="38">35</Head>
+   <Head X="25" Y="9" Fixture="38">34</Head>
+   <Head X="26" Y="9" Fixture="38">33</Head>
+   <Head X="27" Y="9" Fixture="38">32</Head>
+   <Head X="28" Y="9" Fixture="38">31</Head>
+   <Head X="29" Y="9" Fixture="38">30</Head>
+   <Head X="30" Y="9" Fixture="38">29</Head>
+   <Head X="31" Y="9" Fixture="38">28</Head>
+   <Head X="32" Y="9" Fixture="38">27</Head>
+   <Head X="33" Y="9" Fixture="38">26</Head>
+   <Head X="34" Y="9" Fixture="38">25</Head>
+   <Head X="35" Y="9" Fixture="38">24</Head>
+   <Head X="36" Y="9" Fixture="38">23</Head>
+   <Head X="37" Y="9" Fixture="38">22</Head>
+   <Head X="38" Y="9" Fixture="38">21</Head>
+   <Head X="39" Y="9" Fixture="38">20</Head>
+   <Head X="40" Y="9" Fixture="38">19</Head>
+   <Head X="41" Y="9" Fixture="38">18</Head>
+   <Head X="42" Y="9" Fixture="38">17</Head>
+   <Head X="43" Y="9" Fixture="38">16</Head>
+   <Head X="44" Y="9" Fixture="38">15</Head>
+   <Head X="45" Y="9" Fixture="38">14</Head>
+   <Head X="46" Y="9" Fixture="38">13</Head>
+   <Head X="47" Y="9" Fixture="38">12</Head>
+   <Head X="48" Y="9" Fixture="38">11</Head>
+   <Head X="49" Y="9" Fixture="38">10</Head>
+   <Head X="50" Y="9" Fixture="38">9</Head>
+   <Head X="51" Y="9" Fixture="38">8</Head>
+   <Head X="52" Y="9" Fixture="38">7</Head>
+   <Head X="53" Y="9" Fixture="38">6</Head>
+   <Head X="54" Y="9" Fixture="38">5</Head>
+   <Head X="55" Y="9" Fixture="38">4</Head>
+   <Head X="56" Y="9" Fixture="38">3</Head>
+   <Head X="57" Y="9" Fixture="38">2</Head>
+   <Head X="58" Y="9" Fixture="38">1</Head>
+   <Head X="59" Y="9" Fixture="38">0</Head>
+   <Head X="0" Y="10" Fixture="39">0</Head>
+   <Head X="1" Y="10" Fixture="39">1</Head>
+   <Head X="2" Y="10" Fixture="39">2</Head>
+   <Head X="3" Y="10" Fixture="39">3</Head>
+   <Head X="4" Y="10" Fixture="39">4</Head>
+   <Head X="5" Y="10" Fixture="39">5</Head>
+   <Head X="6" Y="10" Fixture="39">6</Head>
+   <Head X="7" Y="10" Fixture="39">7</Head>
+   <Head X="8" Y="10" Fixture="39">8</Head>
+   <Head X="9" Y="10" Fixture="39">9</Head>
+   <Head X="10" Y="10" Fixture="39">10</Head>
+   <Head X="11" Y="10" Fixture="39">11</Head>
+   <Head X="12" Y="10" Fixture="39">12</Head>
+   <Head X="13" Y="10" Fixture="39">13</Head>
+   <Head X="14" Y="10" Fixture="39">14</Head>
+   <Head X="15" Y="10" Fixture="39">15</Head>
+   <Head X="16" Y="10" Fixture="39">16</Head>
+   <Head X="17" Y="10" Fixture="39">17</Head>
+   <Head X="18" Y="10" Fixture="39">18</Head>
+   <Head X="19" Y="10" Fixture="39">19</Head>
+   <Head X="20" Y="10" Fixture="39">20</Head>
+   <Head X="21" Y="10" Fixture="39">21</Head>
+   <Head X="22" Y="10" Fixture="39">22</Head>
+   <Head X="23" Y="10" Fixture="39">23</Head>
+   <Head X="24" Y="10" Fixture="39">24</Head>
+   <Head X="25" Y="10" Fixture="39">25</Head>
+   <Head X="26" Y="10" Fixture="39">26</Head>
+   <Head X="27" Y="10" Fixture="39">27</Head>
+   <Head X="28" Y="10" Fixture="39">28</Head>
+   <Head X="29" Y="10" Fixture="39">29</Head>
+   <Head X="30" Y="10" Fixture="39">30</Head>
+   <Head X="31" Y="10" Fixture="39">31</Head>
+   <Head X="32" Y="10" Fixture="39">32</Head>
+   <Head X="33" Y="10" Fixture="39">33</Head>
+   <Head X="34" Y="10" Fixture="39">34</Head>
+   <Head X="35" Y="10" Fixture="39">35</Head>
+   <Head X="36" Y="10" Fixture="39">36</Head>
+   <Head X="37" Y="10" Fixture="39">37</Head>
+   <Head X="38" Y="10" Fixture="39">38</Head>
+   <Head X="39" Y="10" Fixture="39">39</Head>
+   <Head X="40" Y="10" Fixture="39">40</Head>
+   <Head X="41" Y="10" Fixture="39">41</Head>
+   <Head X="42" Y="10" Fixture="39">42</Head>
+   <Head X="43" Y="10" Fixture="39">43</Head>
+   <Head X="44" Y="10" Fixture="39">44</Head>
+   <Head X="45" Y="10" Fixture="39">45</Head>
+   <Head X="46" Y="10" Fixture="39">46</Head>
+   <Head X="47" Y="10" Fixture="39">47</Head>
+   <Head X="48" Y="10" Fixture="39">48</Head>
+   <Head X="49" Y="10" Fixture="39">49</Head>
+   <Head X="50" Y="10" Fixture="39">50</Head>
+   <Head X="51" Y="10" Fixture="39">51</Head>
+   <Head X="52" Y="10" Fixture="39">52</Head>
+   <Head X="53" Y="10" Fixture="39">53</Head>
+   <Head X="54" Y="10" Fixture="39">54</Head>
+   <Head X="55" Y="10" Fixture="39">55</Head>
+   <Head X="56" Y="10" Fixture="39">56</Head>
+   <Head X="57" Y="10" Fixture="39">57</Head>
+   <Head X="58" Y="10" Fixture="39">58</Head>
+   <Head X="59" Y="10" Fixture="39">59</Head>
+   <Head X="0" Y="11" Fixture="40">59</Head>
+   <Head X="1" Y="11" Fixture="40">58</Head>
+   <Head X="2" Y="11" Fixture="40">57</Head>
+   <Head X="3" Y="11" Fixture="40">56</Head>
+   <Head X="4" Y="11" Fixture="40">55</Head>
+   <Head X="5" Y="11" Fixture="40">54</Head>
+   <Head X="6" Y="11" Fixture="40">53</Head>
+   <Head X="7" Y="11" Fixture="40">52</Head>
+   <Head X="8" Y="11" Fixture="40">51</Head>
+   <Head X="9" Y="11" Fixture="40">50</Head>
+   <Head X="10" Y="11" Fixture="40">49</Head>
+   <Head X="11" Y="11" Fixture="40">48</Head>
+   <Head X="12" Y="11" Fixture="40">47</Head>
+   <Head X="13" Y="11" Fixture="40">46</Head>
+   <Head X="14" Y="11" Fixture="40">45</Head>
+   <Head X="15" Y="11" Fixture="40">44</Head>
+   <Head X="16" Y="11" Fixture="40">43</Head>
+   <Head X="17" Y="11" Fixture="40">42</Head>
+   <Head X="18" Y="11" Fixture="40">41</Head>
+   <Head X="19" Y="11" Fixture="40">40</Head>
+   <Head X="20" Y="11" Fixture="40">39</Head>
+   <Head X="21" Y="11" Fixture="40">38</Head>
+   <Head X="22" Y="11" Fixture="40">37</Head>
+   <Head X="23" Y="11" Fixture="40">36</Head>
+   <Head X="24" Y="11" Fixture="40">35</Head>
+   <Head X="25" Y="11" Fixture="40">34</Head>
+   <Head X="26" Y="11" Fixture="40">33</Head>
+   <Head X="27" Y="11" Fixture="40">32</Head>
+   <Head X="28" Y="11" Fixture="40">31</Head>
+   <Head X="29" Y="11" Fixture="40">30</Head>
+   <Head X="30" Y="11" Fixture="40">29</Head>
+   <Head X="31" Y="11" Fixture="40">28</Head>
+   <Head X="32" Y="11" Fixture="40">27</Head>
+   <Head X="33" Y="11" Fixture="40">26</Head>
+   <Head X="34" Y="11" Fixture="40">25</Head>
+   <Head X="35" Y="11" Fixture="40">24</Head>
+   <Head X="36" Y="11" Fixture="40">23</Head>
+   <Head X="37" Y="11" Fixture="40">22</Head>
+   <Head X="38" Y="11" Fixture="40">21</Head>
+   <Head X="39" Y="11" Fixture="40">20</Head>
+   <Head X="40" Y="11" Fixture="40">19</Head>
+   <Head X="41" Y="11" Fixture="40">18</Head>
+   <Head X="42" Y="11" Fixture="40">17</Head>
+   <Head X="43" Y="11" Fixture="40">16</Head>
+   <Head X="44" Y="11" Fixture="40">15</Head>
+   <Head X="45" Y="11" Fixture="40">14</Head>
+   <Head X="46" Y="11" Fixture="40">13</Head>
+   <Head X="47" Y="11" Fixture="40">12</Head>
+   <Head X="48" Y="11" Fixture="40">11</Head>
+   <Head X="49" Y="11" Fixture="40">10</Head>
+   <Head X="50" Y="11" Fixture="40">9</Head>
+   <Head X="51" Y="11" Fixture="40">8</Head>
+   <Head X="52" Y="11" Fixture="40">7</Head>
+   <Head X="53" Y="11" Fixture="40">6</Head>
+   <Head X="54" Y="11" Fixture="40">5</Head>
+   <Head X="55" Y="11" Fixture="40">4</Head>
+   <Head X="56" Y="11" Fixture="40">3</Head>
+   <Head X="57" Y="11" Fixture="40">2</Head>
+   <Head X="58" Y="11" Fixture="40">1</Head>
+   <Head X="59" Y="11" Fixture="40">0</Head>
+   <Head X="0" Y="12" Fixture="41">0</Head>
+   <Head X="1" Y="12" Fixture="41">1</Head>
+   <Head X="2" Y="12" Fixture="41">2</Head>
+   <Head X="3" Y="12" Fixture="41">3</Head>
+   <Head X="4" Y="12" Fixture="41">4</Head>
+   <Head X="5" Y="12" Fixture="41">5</Head>
+   <Head X="6" Y="12" Fixture="41">6</Head>
+   <Head X="7" Y="12" Fixture="41">7</Head>
+   <Head X="8" Y="12" Fixture="41">8</Head>
+   <Head X="9" Y="12" Fixture="41">9</Head>
+   <Head X="10" Y="12" Fixture="41">10</Head>
+   <Head X="11" Y="12" Fixture="41">11</Head>
+   <Head X="12" Y="12" Fixture="41">12</Head>
+   <Head X="13" Y="12" Fixture="41">13</Head>
+   <Head X="14" Y="12" Fixture="41">14</Head>
+   <Head X="15" Y="12" Fixture="41">15</Head>
+   <Head X="16" Y="12" Fixture="41">16</Head>
+   <Head X="17" Y="12" Fixture="41">17</Head>
+   <Head X="18" Y="12" Fixture="41">18</Head>
+   <Head X="19" Y="12" Fixture="41">19</Head>
+   <Head X="20" Y="12" Fixture="41">20</Head>
+   <Head X="21" Y="12" Fixture="41">21</Head>
+   <Head X="22" Y="12" Fixture="41">22</Head>
+   <Head X="23" Y="12" Fixture="41">23</Head>
+   <Head X="24" Y="12" Fixture="41">24</Head>
+   <Head X="25" Y="12" Fixture="41">25</Head>
+   <Head X="26" Y="12" Fixture="41">26</Head>
+   <Head X="27" Y="12" Fixture="41">27</Head>
+   <Head X="28" Y="12" Fixture="41">28</Head>
+   <Head X="29" Y="12" Fixture="41">29</Head>
+   <Head X="30" Y="12" Fixture="41">30</Head>
+   <Head X="31" Y="12" Fixture="41">31</Head>
+   <Head X="32" Y="12" Fixture="41">32</Head>
+   <Head X="33" Y="12" Fixture="41">33</Head>
+   <Head X="34" Y="12" Fixture="41">34</Head>
+   <Head X="35" Y="12" Fixture="41">35</Head>
+   <Head X="36" Y="12" Fixture="41">36</Head>
+   <Head X="37" Y="12" Fixture="41">37</Head>
+   <Head X="38" Y="12" Fixture="41">38</Head>
+   <Head X="39" Y="12" Fixture="41">39</Head>
+   <Head X="40" Y="12" Fixture="41">40</Head>
+   <Head X="41" Y="12" Fixture="41">41</Head>
+   <Head X="42" Y="12" Fixture="41">42</Head>
+   <Head X="43" Y="12" Fixture="41">43</Head>
+   <Head X="44" Y="12" Fixture="41">44</Head>
+   <Head X="45" Y="12" Fixture="41">45</Head>
+   <Head X="46" Y="12" Fixture="41">46</Head>
+   <Head X="47" Y="12" Fixture="41">47</Head>
+   <Head X="48" Y="12" Fixture="41">48</Head>
+   <Head X="49" Y="12" Fixture="41">49</Head>
+   <Head X="50" Y="12" Fixture="41">50</Head>
+   <Head X="51" Y="12" Fixture="41">51</Head>
+   <Head X="52" Y="12" Fixture="41">52</Head>
+   <Head X="53" Y="12" Fixture="41">53</Head>
+   <Head X="54" Y="12" Fixture="41">54</Head>
+   <Head X="55" Y="12" Fixture="41">55</Head>
+   <Head X="56" Y="12" Fixture="41">56</Head>
+   <Head X="57" Y="12" Fixture="41">57</Head>
+   <Head X="58" Y="12" Fixture="41">58</Head>
+   <Head X="59" Y="12" Fixture="41">59</Head>
+   <Head X="0" Y="13" Fixture="42">59</Head>
+   <Head X="1" Y="13" Fixture="42">58</Head>
+   <Head X="2" Y="13" Fixture="42">57</Head>
+   <Head X="3" Y="13" Fixture="42">56</Head>
+   <Head X="4" Y="13" Fixture="42">55</Head>
+   <Head X="5" Y="13" Fixture="42">54</Head>
+   <Head X="6" Y="13" Fixture="42">53</Head>
+   <Head X="7" Y="13" Fixture="42">52</Head>
+   <Head X="8" Y="13" Fixture="42">51</Head>
+   <Head X="9" Y="13" Fixture="42">50</Head>
+   <Head X="10" Y="13" Fixture="42">49</Head>
+   <Head X="11" Y="13" Fixture="42">48</Head>
+   <Head X="12" Y="13" Fixture="42">47</Head>
+   <Head X="13" Y="13" Fixture="42">46</Head>
+   <Head X="14" Y="13" Fixture="42">45</Head>
+   <Head X="15" Y="13" Fixture="42">44</Head>
+   <Head X="16" Y="13" Fixture="42">43</Head>
+   <Head X="17" Y="13" Fixture="42">42</Head>
+   <Head X="18" Y="13" Fixture="42">41</Head>
+   <Head X="19" Y="13" Fixture="42">40</Head>
+   <Head X="20" Y="13" Fixture="42">39</Head>
+   <Head X="21" Y="13" Fixture="42">38</Head>
+   <Head X="22" Y="13" Fixture="42">37</Head>
+   <Head X="23" Y="13" Fixture="42">36</Head>
+   <Head X="24" Y="13" Fixture="42">35</Head>
+   <Head X="25" Y="13" Fixture="42">34</Head>
+   <Head X="26" Y="13" Fixture="42">33</Head>
+   <Head X="27" Y="13" Fixture="42">32</Head>
+   <Head X="28" Y="13" Fixture="42">31</Head>
+   <Head X="29" Y="13" Fixture="42">30</Head>
+   <Head X="30" Y="13" Fixture="42">29</Head>
+   <Head X="31" Y="13" Fixture="42">28</Head>
+   <Head X="32" Y="13" Fixture="42">27</Head>
+   <Head X="33" Y="13" Fixture="42">26</Head>
+   <Head X="34" Y="13" Fixture="42">25</Head>
+   <Head X="35" Y="13" Fixture="42">24</Head>
+   <Head X="36" Y="13" Fixture="42">23</Head>
+   <Head X="37" Y="13" Fixture="42">22</Head>
+   <Head X="38" Y="13" Fixture="42">21</Head>
+   <Head X="39" Y="13" Fixture="42">20</Head>
+   <Head X="40" Y="13" Fixture="42">19</Head>
+   <Head X="41" Y="13" Fixture="42">18</Head>
+   <Head X="42" Y="13" Fixture="42">17</Head>
+   <Head X="43" Y="13" Fixture="42">16</Head>
+   <Head X="44" Y="13" Fixture="42">15</Head>
+   <Head X="45" Y="13" Fixture="42">14</Head>
+   <Head X="46" Y="13" Fixture="42">13</Head>
+   <Head X="47" Y="13" Fixture="42">12</Head>
+   <Head X="48" Y="13" Fixture="42">11</Head>
+   <Head X="49" Y="13" Fixture="42">10</Head>
+   <Head X="50" Y="13" Fixture="42">9</Head>
+   <Head X="51" Y="13" Fixture="42">8</Head>
+   <Head X="52" Y="13" Fixture="42">7</Head>
+   <Head X="53" Y="13" Fixture="42">6</Head>
+   <Head X="54" Y="13" Fixture="42">5</Head>
+   <Head X="55" Y="13" Fixture="42">4</Head>
+   <Head X="56" Y="13" Fixture="42">3</Head>
+   <Head X="57" Y="13" Fixture="42">2</Head>
+   <Head X="58" Y="13" Fixture="42">1</Head>
+   <Head X="59" Y="13" Fixture="42">0</Head>
+   <Head X="0" Y="14" Fixture="43">0</Head>
+   <Head X="1" Y="14" Fixture="43">1</Head>
+   <Head X="2" Y="14" Fixture="43">2</Head>
+   <Head X="3" Y="14" Fixture="43">3</Head>
+   <Head X="4" Y="14" Fixture="43">4</Head>
+   <Head X="5" Y="14" Fixture="43">5</Head>
+   <Head X="6" Y="14" Fixture="43">6</Head>
+   <Head X="7" Y="14" Fixture="43">7</Head>
+   <Head X="8" Y="14" Fixture="43">8</Head>
+   <Head X="9" Y="14" Fixture="43">9</Head>
+   <Head X="10" Y="14" Fixture="43">10</Head>
+   <Head X="11" Y="14" Fixture="43">11</Head>
+   <Head X="12" Y="14" Fixture="43">12</Head>
+   <Head X="13" Y="14" Fixture="43">13</Head>
+   <Head X="14" Y="14" Fixture="43">14</Head>
+   <Head X="15" Y="14" Fixture="43">15</Head>
+   <Head X="16" Y="14" Fixture="43">16</Head>
+   <Head X="17" Y="14" Fixture="43">17</Head>
+   <Head X="18" Y="14" Fixture="43">18</Head>
+   <Head X="19" Y="14" Fixture="43">19</Head>
+   <Head X="20" Y="14" Fixture="43">20</Head>
+   <Head X="21" Y="14" Fixture="43">21</Head>
+   <Head X="22" Y="14" Fixture="43">22</Head>
+   <Head X="23" Y="14" Fixture="43">23</Head>
+   <Head X="24" Y="14" Fixture="43">24</Head>
+   <Head X="25" Y="14" Fixture="43">25</Head>
+   <Head X="26" Y="14" Fixture="43">26</Head>
+   <Head X="27" Y="14" Fixture="43">27</Head>
+   <Head X="28" Y="14" Fixture="43">28</Head>
+   <Head X="29" Y="14" Fixture="43">29</Head>
+   <Head X="30" Y="14" Fixture="43">30</Head>
+   <Head X="31" Y="14" Fixture="43">31</Head>
+   <Head X="32" Y="14" Fixture="43">32</Head>
+   <Head X="33" Y="14" Fixture="43">33</Head>
+   <Head X="34" Y="14" Fixture="43">34</Head>
+   <Head X="35" Y="14" Fixture="43">35</Head>
+   <Head X="36" Y="14" Fixture="43">36</Head>
+   <Head X="37" Y="14" Fixture="43">37</Head>
+   <Head X="38" Y="14" Fixture="43">38</Head>
+   <Head X="39" Y="14" Fixture="43">39</Head>
+   <Head X="40" Y="14" Fixture="43">40</Head>
+   <Head X="41" Y="14" Fixture="43">41</Head>
+   <Head X="42" Y="14" Fixture="43">42</Head>
+   <Head X="43" Y="14" Fixture="43">43</Head>
+   <Head X="44" Y="14" Fixture="43">44</Head>
+   <Head X="45" Y="14" Fixture="43">45</Head>
+   <Head X="46" Y="14" Fixture="43">46</Head>
+   <Head X="47" Y="14" Fixture="43">47</Head>
+   <Head X="48" Y="14" Fixture="43">48</Head>
+   <Head X="49" Y="14" Fixture="43">49</Head>
+   <Head X="50" Y="14" Fixture="43">50</Head>
+   <Head X="51" Y="14" Fixture="43">51</Head>
+   <Head X="52" Y="14" Fixture="43">52</Head>
+   <Head X="53" Y="14" Fixture="43">53</Head>
+   <Head X="54" Y="14" Fixture="43">54</Head>
+   <Head X="55" Y="14" Fixture="43">55</Head>
+   <Head X="56" Y="14" Fixture="43">56</Head>
+   <Head X="57" Y="14" Fixture="43">57</Head>
+   <Head X="58" Y="14" Fixture="43">58</Head>
+   <Head X="59" Y="14" Fixture="43">59</Head>
+   <Head X="0" Y="15" Fixture="44">59</Head>
+   <Head X="1" Y="15" Fixture="44">58</Head>
+   <Head X="2" Y="15" Fixture="44">57</Head>
+   <Head X="3" Y="15" Fixture="44">56</Head>
+   <Head X="4" Y="15" Fixture="44">55</Head>
+   <Head X="5" Y="15" Fixture="44">54</Head>
+   <Head X="6" Y="15" Fixture="44">53</Head>
+   <Head X="7" Y="15" Fixture="44">52</Head>
+   <Head X="8" Y="15" Fixture="44">51</Head>
+   <Head X="9" Y="15" Fixture="44">50</Head>
+   <Head X="10" Y="15" Fixture="44">49</Head>
+   <Head X="11" Y="15" Fixture="44">48</Head>
+   <Head X="12" Y="15" Fixture="44">47</Head>
+   <Head X="13" Y="15" Fixture="44">46</Head>
+   <Head X="14" Y="15" Fixture="44">45</Head>
+   <Head X="15" Y="15" Fixture="44">44</Head>
+   <Head X="16" Y="15" Fixture="44">43</Head>
+   <Head X="17" Y="15" Fixture="44">42</Head>
+   <Head X="18" Y="15" Fixture="44">41</Head>
+   <Head X="19" Y="15" Fixture="44">40</Head>
+   <Head X="20" Y="15" Fixture="44">39</Head>
+   <Head X="21" Y="15" Fixture="44">38</Head>
+   <Head X="22" Y="15" Fixture="44">37</Head>
+   <Head X="23" Y="15" Fixture="44">36</Head>
+   <Head X="24" Y="15" Fixture="44">35</Head>
+   <Head X="25" Y="15" Fixture="44">34</Head>
+   <Head X="26" Y="15" Fixture="44">33</Head>
+   <Head X="27" Y="15" Fixture="44">32</Head>
+   <Head X="28" Y="15" Fixture="44">31</Head>
+   <Head X="29" Y="15" Fixture="44">30</Head>
+   <Head X="30" Y="15" Fixture="44">29</Head>
+   <Head X="31" Y="15" Fixture="44">28</Head>
+   <Head X="32" Y="15" Fixture="44">27</Head>
+   <Head X="33" Y="15" Fixture="44">26</Head>
+   <Head X="34" Y="15" Fixture="44">25</Head>
+   <Head X="35" Y="15" Fixture="44">24</Head>
+   <Head X="36" Y="15" Fixture="44">23</Head>
+   <Head X="37" Y="15" Fixture="44">22</Head>
+   <Head X="38" Y="15" Fixture="44">21</Head>
+   <Head X="39" Y="15" Fixture="44">20</Head>
+   <Head X="40" Y="15" Fixture="44">19</Head>
+   <Head X="41" Y="15" Fixture="44">18</Head>
+   <Head X="42" Y="15" Fixture="44">17</Head>
+   <Head X="43" Y="15" Fixture="44">16</Head>
+   <Head X="44" Y="15" Fixture="44">15</Head>
+   <Head X="45" Y="15" Fixture="44">14</Head>
+   <Head X="46" Y="15" Fixture="44">13</Head>
+   <Head X="47" Y="15" Fixture="44">12</Head>
+   <Head X="48" Y="15" Fixture="44">11</Head>
+   <Head X="49" Y="15" Fixture="44">10</Head>
+   <Head X="50" Y="15" Fixture="44">9</Head>
+   <Head X="51" Y="15" Fixture="44">8</Head>
+   <Head X="52" Y="15" Fixture="44">7</Head>
+   <Head X="53" Y="15" Fixture="44">6</Head>
+   <Head X="54" Y="15" Fixture="44">5</Head>
+   <Head X="55" Y="15" Fixture="44">4</Head>
+   <Head X="56" Y="15" Fixture="44">3</Head>
+   <Head X="57" Y="15" Fixture="44">2</Head>
+   <Head X="58" Y="15" Fixture="44">1</Head>
+   <Head X="59" Y="15" Fixture="44">0</Head>
+   <Head X="0" Y="16" Fixture="45">0</Head>
+   <Head X="1" Y="16" Fixture="45">1</Head>
+   <Head X="2" Y="16" Fixture="45">2</Head>
+   <Head X="3" Y="16" Fixture="45">3</Head>
+   <Head X="4" Y="16" Fixture="45">4</Head>
+   <Head X="5" Y="16" Fixture="45">5</Head>
+   <Head X="6" Y="16" Fixture="45">6</Head>
+   <Head X="7" Y="16" Fixture="45">7</Head>
+   <Head X="8" Y="16" Fixture="45">8</Head>
+   <Head X="9" Y="16" Fixture="45">9</Head>
+   <Head X="10" Y="16" Fixture="45">10</Head>
+   <Head X="11" Y="16" Fixture="45">11</Head>
+   <Head X="12" Y="16" Fixture="45">12</Head>
+   <Head X="13" Y="16" Fixture="45">13</Head>
+   <Head X="14" Y="16" Fixture="45">14</Head>
+   <Head X="15" Y="16" Fixture="45">15</Head>
+   <Head X="16" Y="16" Fixture="45">16</Head>
+   <Head X="17" Y="16" Fixture="45">17</Head>
+   <Head X="18" Y="16" Fixture="45">18</Head>
+   <Head X="19" Y="16" Fixture="45">19</Head>
+   <Head X="20" Y="16" Fixture="45">20</Head>
+   <Head X="21" Y="16" Fixture="45">21</Head>
+   <Head X="22" Y="16" Fixture="45">22</Head>
+   <Head X="23" Y="16" Fixture="45">23</Head>
+   <Head X="24" Y="16" Fixture="45">24</Head>
+   <Head X="25" Y="16" Fixture="45">25</Head>
+   <Head X="26" Y="16" Fixture="45">26</Head>
+   <Head X="27" Y="16" Fixture="45">27</Head>
+   <Head X="28" Y="16" Fixture="45">28</Head>
+   <Head X="29" Y="16" Fixture="45">29</Head>
+   <Head X="30" Y="16" Fixture="45">30</Head>
+   <Head X="31" Y="16" Fixture="45">31</Head>
+   <Head X="32" Y="16" Fixture="45">32</Head>
+   <Head X="33" Y="16" Fixture="45">33</Head>
+   <Head X="34" Y="16" Fixture="45">34</Head>
+   <Head X="35" Y="16" Fixture="45">35</Head>
+   <Head X="36" Y="16" Fixture="45">36</Head>
+   <Head X="37" Y="16" Fixture="45">37</Head>
+   <Head X="38" Y="16" Fixture="45">38</Head>
+   <Head X="39" Y="16" Fixture="45">39</Head>
+   <Head X="40" Y="16" Fixture="45">40</Head>
+   <Head X="41" Y="16" Fixture="45">41</Head>
+   <Head X="42" Y="16" Fixture="45">42</Head>
+   <Head X="43" Y="16" Fixture="45">43</Head>
+   <Head X="44" Y="16" Fixture="45">44</Head>
+   <Head X="45" Y="16" Fixture="45">45</Head>
+   <Head X="46" Y="16" Fixture="45">46</Head>
+   <Head X="47" Y="16" Fixture="45">47</Head>
+   <Head X="48" Y="16" Fixture="45">48</Head>
+   <Head X="49" Y="16" Fixture="45">49</Head>
+   <Head X="50" Y="16" Fixture="45">50</Head>
+   <Head X="51" Y="16" Fixture="45">51</Head>
+   <Head X="52" Y="16" Fixture="45">52</Head>
+   <Head X="53" Y="16" Fixture="45">53</Head>
+   <Head X="54" Y="16" Fixture="45">54</Head>
+   <Head X="55" Y="16" Fixture="45">55</Head>
+   <Head X="56" Y="16" Fixture="45">56</Head>
+   <Head X="57" Y="16" Fixture="45">57</Head>
+   <Head X="58" Y="16" Fixture="45">58</Head>
+   <Head X="59" Y="16" Fixture="45">59</Head>
+   <Head X="0" Y="17" Fixture="46">59</Head>
+   <Head X="1" Y="17" Fixture="46">58</Head>
+   <Head X="2" Y="17" Fixture="46">57</Head>
+   <Head X="3" Y="17" Fixture="46">56</Head>
+   <Head X="4" Y="17" Fixture="46">55</Head>
+   <Head X="5" Y="17" Fixture="46">54</Head>
+   <Head X="6" Y="17" Fixture="46">53</Head>
+   <Head X="7" Y="17" Fixture="46">52</Head>
+   <Head X="8" Y="17" Fixture="46">51</Head>
+   <Head X="9" Y="17" Fixture="46">50</Head>
+   <Head X="10" Y="17" Fixture="46">49</Head>
+   <Head X="11" Y="17" Fixture="46">48</Head>
+   <Head X="12" Y="17" Fixture="46">47</Head>
+   <Head X="13" Y="17" Fixture="46">46</Head>
+   <Head X="14" Y="17" Fixture="46">45</Head>
+   <Head X="15" Y="17" Fixture="46">44</Head>
+   <Head X="16" Y="17" Fixture="46">43</Head>
+   <Head X="17" Y="17" Fixture="46">42</Head>
+   <Head X="18" Y="17" Fixture="46">41</Head>
+   <Head X="19" Y="17" Fixture="46">40</Head>
+   <Head X="20" Y="17" Fixture="46">39</Head>
+   <Head X="21" Y="17" Fixture="46">38</Head>
+   <Head X="22" Y="17" Fixture="46">37</Head>
+   <Head X="23" Y="17" Fixture="46">36</Head>
+   <Head X="24" Y="17" Fixture="46">35</Head>
+   <Head X="25" Y="17" Fixture="46">34</Head>
+   <Head X="26" Y="17" Fixture="46">33</Head>
+   <Head X="27" Y="17" Fixture="46">32</Head>
+   <Head X="28" Y="17" Fixture="46">31</Head>
+   <Head X="29" Y="17" Fixture="46">30</Head>
+   <Head X="30" Y="17" Fixture="46">29</Head>
+   <Head X="31" Y="17" Fixture="46">28</Head>
+   <Head X="32" Y="17" Fixture="46">27</Head>
+   <Head X="33" Y="17" Fixture="46">26</Head>
+   <Head X="34" Y="17" Fixture="46">25</Head>
+   <Head X="35" Y="17" Fixture="46">24</Head>
+   <Head X="36" Y="17" Fixture="46">23</Head>
+   <Head X="37" Y="17" Fixture="46">22</Head>
+   <Head X="38" Y="17" Fixture="46">21</Head>
+   <Head X="39" Y="17" Fixture="46">20</Head>
+   <Head X="40" Y="17" Fixture="46">19</Head>
+   <Head X="41" Y="17" Fixture="46">18</Head>
+   <Head X="42" Y="17" Fixture="46">17</Head>
+   <Head X="43" Y="17" Fixture="46">16</Head>
+   <Head X="44" Y="17" Fixture="46">15</Head>
+   <Head X="45" Y="17" Fixture="46">14</Head>
+   <Head X="46" Y="17" Fixture="46">13</Head>
+   <Head X="47" Y="17" Fixture="46">12</Head>
+   <Head X="48" Y="17" Fixture="46">11</Head>
+   <Head X="49" Y="17" Fixture="46">10</Head>
+   <Head X="50" Y="17" Fixture="46">9</Head>
+   <Head X="51" Y="17" Fixture="46">8</Head>
+   <Head X="52" Y="17" Fixture="46">7</Head>
+   <Head X="53" Y="17" Fixture="46">6</Head>
+   <Head X="54" Y="17" Fixture="46">5</Head>
+   <Head X="55" Y="17" Fixture="46">4</Head>
+   <Head X="56" Y="17" Fixture="46">3</Head>
+   <Head X="57" Y="17" Fixture="46">2</Head>
+   <Head X="58" Y="17" Fixture="46">1</Head>
+   <Head X="59" Y="17" Fixture="46">0</Head>
+   <Head X="0" Y="18" Fixture="47">0</Head>
+   <Head X="1" Y="18" Fixture="47">1</Head>
+   <Head X="2" Y="18" Fixture="47">2</Head>
+   <Head X="3" Y="18" Fixture="47">3</Head>
+   <Head X="4" Y="18" Fixture="47">4</Head>
+   <Head X="5" Y="18" Fixture="47">5</Head>
+   <Head X="6" Y="18" Fixture="47">6</Head>
+   <Head X="7" Y="18" Fixture="47">7</Head>
+   <Head X="8" Y="18" Fixture="47">8</Head>
+   <Head X="9" Y="18" Fixture="47">9</Head>
+   <Head X="10" Y="18" Fixture="47">10</Head>
+   <Head X="11" Y="18" Fixture="47">11</Head>
+   <Head X="12" Y="18" Fixture="47">12</Head>
+   <Head X="13" Y="18" Fixture="47">13</Head>
+   <Head X="14" Y="18" Fixture="47">14</Head>
+   <Head X="15" Y="18" Fixture="47">15</Head>
+   <Head X="16" Y="18" Fixture="47">16</Head>
+   <Head X="17" Y="18" Fixture="47">17</Head>
+   <Head X="18" Y="18" Fixture="47">18</Head>
+   <Head X="19" Y="18" Fixture="47">19</Head>
+   <Head X="20" Y="18" Fixture="47">20</Head>
+   <Head X="21" Y="18" Fixture="47">21</Head>
+   <Head X="22" Y="18" Fixture="47">22</Head>
+   <Head X="23" Y="18" Fixture="47">23</Head>
+   <Head X="24" Y="18" Fixture="47">24</Head>
+   <Head X="25" Y="18" Fixture="47">25</Head>
+   <Head X="26" Y="18" Fixture="47">26</Head>
+   <Head X="27" Y="18" Fixture="47">27</Head>
+   <Head X="28" Y="18" Fixture="47">28</Head>
+   <Head X="29" Y="18" Fixture="47">29</Head>
+   <Head X="30" Y="18" Fixture="47">30</Head>
+   <Head X="31" Y="18" Fixture="47">31</Head>
+   <Head X="32" Y="18" Fixture="47">32</Head>
+   <Head X="33" Y="18" Fixture="47">33</Head>
+   <Head X="34" Y="18" Fixture="47">34</Head>
+   <Head X="35" Y="18" Fixture="47">35</Head>
+   <Head X="36" Y="18" Fixture="47">36</Head>
+   <Head X="37" Y="18" Fixture="47">37</Head>
+   <Head X="38" Y="18" Fixture="47">38</Head>
+   <Head X="39" Y="18" Fixture="47">39</Head>
+   <Head X="40" Y="18" Fixture="47">40</Head>
+   <Head X="41" Y="18" Fixture="47">41</Head>
+   <Head X="42" Y="18" Fixture="47">42</Head>
+   <Head X="43" Y="18" Fixture="47">43</Head>
+   <Head X="44" Y="18" Fixture="47">44</Head>
+   <Head X="45" Y="18" Fixture="47">45</Head>
+   <Head X="46" Y="18" Fixture="47">46</Head>
+   <Head X="47" Y="18" Fixture="47">47</Head>
+   <Head X="48" Y="18" Fixture="47">48</Head>
+   <Head X="49" Y="18" Fixture="47">49</Head>
+   <Head X="50" Y="18" Fixture="47">50</Head>
+   <Head X="51" Y="18" Fixture="47">51</Head>
+   <Head X="52" Y="18" Fixture="47">52</Head>
+   <Head X="53" Y="18" Fixture="47">53</Head>
+   <Head X="54" Y="18" Fixture="47">54</Head>
+   <Head X="55" Y="18" Fixture="47">55</Head>
+   <Head X="56" Y="18" Fixture="47">56</Head>
+   <Head X="57" Y="18" Fixture="47">57</Head>
+   <Head X="58" Y="18" Fixture="47">58</Head>
+   <Head X="59" Y="18" Fixture="47">59</Head>
+   <Head X="0" Y="19" Fixture="48">59</Head>
+   <Head X="1" Y="19" Fixture="48">58</Head>
+   <Head X="2" Y="19" Fixture="48">57</Head>
+   <Head X="3" Y="19" Fixture="48">56</Head>
+   <Head X="4" Y="19" Fixture="48">55</Head>
+   <Head X="5" Y="19" Fixture="48">54</Head>
+   <Head X="6" Y="19" Fixture="48">53</Head>
+   <Head X="7" Y="19" Fixture="48">52</Head>
+   <Head X="8" Y="19" Fixture="48">51</Head>
+   <Head X="9" Y="19" Fixture="48">50</Head>
+   <Head X="10" Y="19" Fixture="48">49</Head>
+   <Head X="11" Y="19" Fixture="48">48</Head>
+   <Head X="12" Y="19" Fixture="48">47</Head>
+   <Head X="13" Y="19" Fixture="48">46</Head>
+   <Head X="14" Y="19" Fixture="48">45</Head>
+   <Head X="15" Y="19" Fixture="48">44</Head>
+   <Head X="16" Y="19" Fixture="48">43</Head>
+   <Head X="17" Y="19" Fixture="48">42</Head>
+   <Head X="18" Y="19" Fixture="48">41</Head>
+   <Head X="19" Y="19" Fixture="48">40</Head>
+   <Head X="20" Y="19" Fixture="48">39</Head>
+   <Head X="21" Y="19" Fixture="48">38</Head>
+   <Head X="22" Y="19" Fixture="48">37</Head>
+   <Head X="23" Y="19" Fixture="48">36</Head>
+   <Head X="24" Y="19" Fixture="48">35</Head>
+   <Head X="25" Y="19" Fixture="48">34</Head>
+   <Head X="26" Y="19" Fixture="48">33</Head>
+   <Head X="27" Y="19" Fixture="48">32</Head>
+   <Head X="28" Y="19" Fixture="48">31</Head>
+   <Head X="29" Y="19" Fixture="48">30</Head>
+   <Head X="30" Y="19" Fixture="48">29</Head>
+   <Head X="31" Y="19" Fixture="48">28</Head>
+   <Head X="32" Y="19" Fixture="48">27</Head>
+   <Head X="33" Y="19" Fixture="48">26</Head>
+   <Head X="34" Y="19" Fixture="48">25</Head>
+   <Head X="35" Y="19" Fixture="48">24</Head>
+   <Head X="36" Y="19" Fixture="48">23</Head>
+   <Head X="37" Y="19" Fixture="48">22</Head>
+   <Head X="38" Y="19" Fixture="48">21</Head>
+   <Head X="39" Y="19" Fixture="48">20</Head>
+   <Head X="40" Y="19" Fixture="48">19</Head>
+   <Head X="41" Y="19" Fixture="48">18</Head>
+   <Head X="42" Y="19" Fixture="48">17</Head>
+   <Head X="43" Y="19" Fixture="48">16</Head>
+   <Head X="44" Y="19" Fixture="48">15</Head>
+   <Head X="45" Y="19" Fixture="48">14</Head>
+   <Head X="46" Y="19" Fixture="48">13</Head>
+   <Head X="47" Y="19" Fixture="48">12</Head>
+   <Head X="48" Y="19" Fixture="48">11</Head>
+   <Head X="49" Y="19" Fixture="48">10</Head>
+   <Head X="50" Y="19" Fixture="48">9</Head>
+   <Head X="51" Y="19" Fixture="48">8</Head>
+   <Head X="52" Y="19" Fixture="48">7</Head>
+   <Head X="53" Y="19" Fixture="48">6</Head>
+   <Head X="54" Y="19" Fixture="48">5</Head>
+   <Head X="55" Y="19" Fixture="48">4</Head>
+   <Head X="56" Y="19" Fixture="48">3</Head>
+   <Head X="57" Y="19" Fixture="48">2</Head>
+   <Head X="58" Y="19" Fixture="48">1</Head>
+   <Head X="59" Y="19" Fixture="48">0</Head>
+  </FixtureGroup>
+  <Function ID="0" Type="Scene" Name="White - MH" Path="MH/colours/all">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">5,3</FixtureVal>
    <FixtureVal ID="0">5,3</FixtureVal>
+   <FixtureVal ID="3">5,3</FixtureVal>
+   <FixtureVal ID="18">7,1</FixtureVal>
   </Function>
-  <Function ID="1" Type="Scene" Name="Yellow - LED MH75B" Path="MH">
+  <Function ID="1" Type="Scene" Name="Yellow - MH" Path="MH/colours/all">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">5,10</FixtureVal>
    <FixtureVal ID="0">5,10</FixtureVal>
+   <FixtureVal ID="3">5,10</FixtureVal>
+   <FixtureVal ID="18">7,62</FixtureVal>
   </Function>
-  <Function ID="2" Type="Scene" Name="Purple - LED MH75B" Path="MH">
+  <Function ID="2" Type="Scene" Name="Purple - MH" Path="MH/colours/all">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">5,17</FixtureVal>
    <FixtureVal ID="0">5,17</FixtureVal>
+   <FixtureVal ID="3">5,17</FixtureVal>
+   <FixtureVal ID="18">7,52</FixtureVal>
   </Function>
-  <Function ID="3" Type="Scene" Name="Green - LED MH75B" Path="MH">
+  <Function ID="3" Type="Scene" Name="Green - MH" Path="MH/colours/all">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">5,24</FixtureVal>
    <FixtureVal ID="0">5,24</FixtureVal>
+   <FixtureVal ID="3">5,24</FixtureVal>
+   <FixtureVal ID="18">7,31</FixtureVal>
   </Function>
-  <Function ID="4" Type="Scene" Name="Red - LED MH75B" Path="MH">
+  <Function ID="4" Type="Scene" Name="Red - MH" Path="MH/colours/all">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">5,31</FixtureVal>
    <FixtureVal ID="0">5,31</FixtureVal>
+   <FixtureVal ID="3">5,31</FixtureVal>
+   <FixtureVal ID="18">7,11</FixtureVal>
   </Function>
-  <Function ID="5" Type="Scene" Name="Light Blue - LED MH75B" Path="MH">
+  <Function ID="5" Type="Scene" Name="Light Blue - MH" Path="MH/colours/all">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">5,38</FixtureVal>
    <FixtureVal ID="0">5,38</FixtureVal>
+   <FixtureVal ID="3">5,38</FixtureVal>
+   <FixtureVal ID="18">7,41</FixtureVal>
   </Function>
-  <Function ID="6" Type="Scene" Name="Light Green - LED MH75B" Path="MH">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">5,45</FixtureVal>
-   <FixtureVal ID="0">5,45</FixtureVal>
+  <Function ID="6" Type="RGBMatrix" Name="Blinder noise" Path="bars/blinder">
+   <Speed FadeIn="0" FadeOut="0" Duration="553"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Noise</Algorithm>
+   <MonoColor>4293914607</MonoColor>
+   <EndColor>4278190080</EndColor>
+   <ControlMode>White</ControlMode>
+   <FixtureGroup>2</FixtureGroup>
+   <Property Name="noisePercentage" Value="Low"/>
   </Function>
-  <Function ID="7" Type="Scene" Name="Orange - LED MH75B" Path="MH">
+  <Function ID="7" Type="Scene" Name="Orange - MH" Path="MH/colours/all">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">5,52</FixtureVal>
    <FixtureVal ID="0">5,52</FixtureVal>
+   <FixtureVal ID="3">5,52</FixtureVal>
+   <FixtureVal ID="18">7,22</FixtureVal>
   </Function>
-  <Function ID="8" Type="Scene" Name="Dark Blue - LED MH75B" Path="MH">
+  <Function ID="8" Type="Scene" Name="Dark Blue - MH" Path="MH/colours/all">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">5,59</FixtureVal>
    <FixtureVal ID="0">5,59</FixtureVal>
+   <FixtureVal ID="3">5,59</FixtureVal>
+   <FixtureVal ID="18">7,71</FixtureVal>
   </Function>
-  <Function ID="9" Type="Scene" Name="White + Yellow - LED MH75B" Path="MH">
+  <Function ID="9" Type="Scene" Name="MR Disco" Path="MH/Positionen">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">5,67</FixtureVal>
-   <FixtureVal ID="0">5,67</FixtureVal>
+   <FixtureVal ID="18">0,9,1,0,2,34,3,0,9,75</FixtureVal>
   </Function>
-  <Function ID="10" Type="Scene" Name="Yellow + Purple - LED MH75B" Path="MH">
+  <Function ID="10" Type="Scene" Name="ML Disco" Path="MH/Positionen">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">5,74</FixtureVal>
-   <FixtureVal ID="0">5,74</FixtureVal>
+   <FixtureVal ID="3">0,12,1,32,2,0,3,0</FixtureVal>
   </Function>
-  <Function ID="11" Type="Scene" Name="Purple + Green - LED MH75B" Path="MH">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">5,81</FixtureVal>
-   <FixtureVal ID="0">5,81</FixtureVal>
+  <Function ID="11" Type="RGBMatrix" Name="Blinder fall" Path="bars/blinder">
+   <Speed FadeIn="0" FadeOut="0" Duration="109"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Vertical fall</Algorithm>
+   <MonoColor>4293914607</MonoColor>
+   <EndColor>4278190080</EndColor>
+   <ControlMode>White</ControlMode>
+   <FixtureGroup>2</FixtureGroup>
   </Function>
-  <Function ID="12" Type="Scene" Name="Green + Red - LED MH75B" Path="MH">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">5,88</FixtureVal>
-   <FixtureVal ID="0">5,88</FixtureVal>
+  <Function ID="12" Type="RGBMatrix" Name="stripes lava">
+   <Speed FadeIn="0" FadeOut="0" Duration="114"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Plasma (Colors)</Algorithm>
+   <MonoColor>4294901760</MonoColor>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>3</FixtureGroup>
+   <Property Name="color5Index" Value="Goldenrod"/>
+   <Property Name="ramp" Value="15"/>
+   <Property Name="color1Index" Value="Dim Red"/>
+   <Property Name="color4Index" Value="Dim Orange"/>
+   <Property Name="presetSize" Value="5"/>
+   <Property Name="color3Index" Value="Orange"/>
+   <Property Name="stepsize" Value="25"/>
+   <Property Name="color2Index" Value="Red"/>
   </Function>
-  <Function ID="13" Type="Scene" Name="Red + Light Blue - LED MH75B" Path="MH">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">5,95</FixtureVal>
-   <FixtureVal ID="0">5,95</FixtureVal>
-  </Function>
-  <Function ID="14" Type="Scene" Name="Light Blue + Light Green - LED MH75B" Path="MH">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">5,102</FixtureVal>
-   <FixtureVal ID="0">5,102</FixtureVal>
-  </Function>
-  <Function ID="15" Type="Scene" Name="Light Green + Orange - LED MH75B" Path="MH">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">5,109</FixtureVal>
-   <FixtureVal ID="0">5,109</FixtureVal>
-  </Function>
-  <Function ID="16" Type="Scene" Name="Orange + Dark Blue - LED MH75B" Path="MH">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">5,116</FixtureVal>
-   <FixtureVal ID="0">5,116</FixtureVal>
-  </Function>
-  <Function ID="17" Type="Scene" Name="Dark Blue + White - LED MH75B" Path="MH">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">5,123</FixtureVal>
-   <FixtureVal ID="0">5,123</FixtureVal>
-  </Function>
-  <Function ID="18" Type="Scene" Name="Clockwise Color Rotation - LED MH75B" Path="MH">
+  <Function ID="21" Type="Scene" Name="Closed - MH" Path="MH/shutter">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">5,159</FixtureVal>
    <FixtureVal ID="0">5,159</FixtureVal>
+   <FixtureVal ID="3">5,159</FixtureVal>
+   <FixtureVal ID="18">5,0</FixtureVal>
   </Function>
-  <Function ID="19" Type="Scene" Name="Counterclockwise Color Rotation - LED MH75B" Path="MH">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">5,223</FixtureVal>
-   <FixtureVal ID="0">5,223</FixtureVal>
-  </Function>
-  <Function ID="20" Type="Chaser" Name="Colour macros chaser - LED MH75B">
-   <Speed FadeIn="3000" FadeOut="0" Duration="10000"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">0</Step>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">1</Step>
-   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">2</Step>
-   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">3</Step>
-   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">4</Step>
-   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">5</Step>
-   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">6</Step>
-   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">7</Step>
-   <Step Number="8" FadeIn="0" Hold="0" FadeOut="0">8</Step>
-   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0">9</Step>
-   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">10</Step>
-   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0">11</Step>
-   <Step Number="12" FadeIn="0" Hold="0" FadeOut="0">12</Step>
-   <Step Number="13" FadeIn="0" Hold="0" FadeOut="0">13</Step>
-   <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">14</Step>
-   <Step Number="15" FadeIn="0" Hold="0" FadeOut="0">15</Step>
-   <Step Number="16" FadeIn="0" Hold="0" FadeOut="0">16</Step>
-   <Step Number="17" FadeIn="0" Hold="0" FadeOut="0">17</Step>
-   <Step Number="18" FadeIn="0" Hold="0" FadeOut="0">18</Step>
-   <Step Number="19" FadeIn="0" Hold="0" FadeOut="0">19</Step>
-  </Function>
-  <Function ID="21" Type="Scene" Name="Closed - LED MH75B" Path="MH">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">6,1</FixtureVal>
-   <FixtureVal ID="0">6,1</FixtureVal>
-  </Function>
-  <Function ID="22" Type="Scene" Name="Open - LED MH75B" Path="MH">
+  <Function ID="22" Type="Scene" Name="Open - MH" Path="MH/shutter">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">6,5</FixtureVal>
    <FixtureVal ID="0">6,5</FixtureVal>
+   <FixtureVal ID="3">6,5</FixtureVal>
+   <FixtureVal ID="18">5,252</FixtureVal>
   </Function>
-  <Function ID="23" Type="Scene" Name="Strobe slow to fast - LED MH75B" Path="MH">
+  <Function ID="23" Type="Scene" Name="Strobe - MH" Path="MH/shutter">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">6,42</FixtureVal>
    <FixtureVal ID="0">6,42</FixtureVal>
+   <FixtureVal ID="3">6,42</FixtureVal>
+   <FixtureVal ID="18">5,77</FixtureVal>
   </Function>
-  <Function ID="24" Type="Scene" Name="Pulse - LED MH75B" Path="MH">
+  <Function ID="24" Type="Scene" Name="Pulse - MH" Path="MH/shutter">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">6,100</FixtureVal>
    <FixtureVal ID="0">6,100</FixtureVal>
+   <FixtureVal ID="3">6,100</FixtureVal>
+   <FixtureVal ID="18">5,0</FixtureVal>
   </Function>
-  <Function ID="25" Type="Scene" Name="Random - LED MH75B" Path="MH">
+  <Function ID="25" Type="Scene" Name="Random - MH" Path="MH/shutter">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">6,180</FixtureVal>
    <FixtureVal ID="0">6,180</FixtureVal>
+   <FixtureVal ID="3">6,180</FixtureVal>
+   <FixtureVal ID="18">5,0</FixtureVal>
   </Function>
-  <Function ID="26" Type="Chaser" Name="Shutter macros chaser - LED MH75B">
-   <Speed FadeIn="3000" FadeOut="0" Duration="10000"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">21</Step>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">22</Step>
-   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">23</Step>
-   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">24</Step>
-   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">25</Step>
-  </Function>
-  <Function ID="27" Type="Scene" Name="Wide - LED MH75B" Path="MH">
+  <Function ID="27" Type="Scene" Name="Wide - MH" Path="MH/gobos">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">8,3</FixtureVal>
    <FixtureVal ID="0">8,3</FixtureVal>
+   <FixtureVal ID="3">8,3</FixtureVal>
+   <FixtureVal ID="18">8,1</FixtureVal>
   </Function>
-  <Function ID="28" Type="Scene" Name="Medium - LED MH75B" Path="MH">
+  <Function ID="28" Type="Scene" Name="Medium - MH" Path="MH/gobos">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">8,11</FixtureVal>
    <FixtureVal ID="0">8,11</FixtureVal>
+   <FixtureVal ID="3">8,11</FixtureVal>
+   <FixtureVal ID="18">8,7</FixtureVal>
   </Function>
-  <Function ID="29" Type="Scene" Name="Narrow - LED MH75B" Path="MH">
+  <Function ID="29" Type="Scene" Name="Narrow - MH" Path="MH/gobos">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">8,19</FixtureVal>
    <FixtureVal ID="0">8,19</FixtureVal>
+   <FixtureVal ID="3">8,19</FixtureVal>
+   <FixtureVal ID="18">8,12</FixtureVal>
   </Function>
-  <Function ID="30" Type="Scene" Name="Star - LED MH75B" Path="MH">
+  <Function ID="30" Type="Scene" Name="Star - MH" Path="MH/gobos">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">8,27</FixtureVal>
    <FixtureVal ID="0">8,27</FixtureVal>
+   <FixtureVal ID="3">8,27</FixtureVal>
+   <FixtureVal ID="18">8,22</FixtureVal>
   </Function>
-  <Function ID="31" Type="Scene" Name="Circle - LED MH75B" Path="MH">
+  <Function ID="31" Type="Scene" Name="Circle - MH" Path="MH/gobos">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">8,35</FixtureVal>
    <FixtureVal ID="0">8,35</FixtureVal>
+   <FixtureVal ID="3">8,35</FixtureVal>
+   <FixtureVal ID="18">8,26</FixtureVal>
   </Function>
-  <Function ID="32" Type="Scene" Name="Triangle - LED MH75B" Path="MH">
+  <Function ID="32" Type="Scene" Name="Triangle - MH" Path="MH/gobos">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">8,43</FixtureVal>
    <FixtureVal ID="0">8,43</FixtureVal>
+   <FixtureVal ID="3">8,43</FixtureVal>
+   <FixtureVal ID="18">8,32</FixtureVal>
   </Function>
-  <Function ID="33" Type="Scene" Name="Stars - LED MH75B" Path="MH">
+  <Function ID="33" Type="Scene" Name="Stars - MH" Path="MH/gobos">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">8,55</FixtureVal>
    <FixtureVal ID="0">8,55</FixtureVal>
+   <FixtureVal ID="3">8,55</FixtureVal>
+   <FixtureVal ID="18">8,36</FixtureVal>
   </Function>
-  <Function ID="34" Type="Scene" Name="Stars Shake - LED MH75B" Path="MH">
+  <Function ID="34" Type="Scene" Name="Stars Shake - MH" Path="MH/gobos">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">8,71</FixtureVal>
    <FixtureVal ID="0">8,71</FixtureVal>
+   <FixtureVal ID="3">8,71</FixtureVal>
+   <FixtureVal ID="18">8,248</FixtureVal>
   </Function>
-  <Function ID="35" Type="Scene" Name="Triangle Shake - LED MH75B" Path="MH">
+  <Function ID="35" Type="Scene" Name="Triangle Shake - MH" Path="MH/gobos">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">8,83</FixtureVal>
    <FixtureVal ID="0">8,83</FixtureVal>
+   <FixtureVal ID="3">8,83</FixtureVal>
+   <FixtureVal ID="18">8,243</FixtureVal>
   </Function>
-  <Function ID="36" Type="Scene" Name="Circle Shake - LED MH75B" Path="MH">
+  <Function ID="36" Type="Scene" Name="Circle Shake - MH" Path="MH/gobos">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">8,91</FixtureVal>
    <FixtureVal ID="0">8,91</FixtureVal>
+   <FixtureVal ID="3">8,91</FixtureVal>
+   <FixtureVal ID="18">8,237</FixtureVal>
   </Function>
-  <Function ID="37" Type="Scene" Name="Star Shake - LED MH75B" Path="MH">
+  <Function ID="37" Type="Scene" Name="Star Shake - MH" Path="MH/gobos">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">8,99</FixtureVal>
    <FixtureVal ID="0">8,99</FixtureVal>
+   <FixtureVal ID="3">8,99</FixtureVal>
+   <FixtureVal ID="18">8,233</FixtureVal>
   </Function>
-  <Function ID="38" Type="Scene" Name="Narrow Shake - LED MH75B" Path="MH">
+  <Function ID="38" Type="Scene" Name="Narrow Shake - MH" Path="MH/gobos">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">8,107</FixtureVal>
    <FixtureVal ID="0">8,107</FixtureVal>
+   <FixtureVal ID="3">8,107</FixtureVal>
+   <FixtureVal ID="18">8,223</FixtureVal>
   </Function>
-  <Function ID="39" Type="Scene" Name="Medium Shake - LED MH75B" Path="MH">
+  <Function ID="39" Type="Scene" Name="Medium Shake - MH" Path="MH/gobos">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">8,115</FixtureVal>
    <FixtureVal ID="0">8,115</FixtureVal>
-  </Function>
-  <Function ID="40" Type="Scene" Name="Open - LED MH75B" Path="MH">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">8,123</FixtureVal>
-   <FixtureVal ID="0">8,123</FixtureVal>
-  </Function>
-  <Function ID="41" Type="Scene" Name="positive rainbow - LED MH75B" Path="MH">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">8,159</FixtureVal>
-   <FixtureVal ID="0">8,159</FixtureVal>
-  </Function>
-  <Function ID="42" Type="Scene" Name="neg rainbow - LED MH75B" Path="MH">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">8,223</FixtureVal>
-   <FixtureVal ID="0">8,223</FixtureVal>
-  </Function>
-  <Function ID="43" Type="Chaser" Name="Gobo macros chaser - LED MH75B">
-   <Speed FadeIn="3000" FadeOut="0" Duration="10000"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">27</Step>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">28</Step>
-   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">29</Step>
-   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">30</Step>
-   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">31</Step>
-   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">32</Step>
-   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">33</Step>
-   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">34</Step>
-   <Step Number="8" FadeIn="0" Hold="0" FadeOut="0">35</Step>
-   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0">36</Step>
-   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">37</Step>
-   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0">38</Step>
-   <Step Number="12" FadeIn="0" Hold="0" FadeOut="0">39</Step>
-   <Step Number="13" FadeIn="0" Hold="0" FadeOut="0">40</Step>
-   <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">41</Step>
-   <Step Number="15" FadeIn="0" Hold="0" FadeOut="0">42</Step>
+   <FixtureVal ID="3">8,115</FixtureVal>
+   <FixtureVal ID="18">8,218</FixtureVal>
   </Function>
   <Function ID="44" Type="Scene" Name="MH Dim" Path="MH">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">7,255</FixtureVal>
    <FixtureVal ID="2">7,255</FixtureVal>
+   <FixtureVal ID="3">7,255</FixtureVal>
+   <FixtureVal ID="18">6,255</FixtureVal>
   </Function>
   <Function ID="45" Type="Scene" Name="L Disco" Path="MH/Positionen">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -617,7 +2093,7 @@
   </Function>
   <Function ID="46" Type="Scene" Name="R Disco" Path="MH/Positionen">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">0,32,1,35,2,109,3,0</FixtureVal>
+   <FixtureVal ID="2">0,32,1,35,2,0,3,0</FixtureVal>
   </Function>
   <Function ID="47" Type="Scene" Name="Wand Weiß">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -752,362 +2228,15 @@
    <FixtureVal ID="14">2,255,3,255,4,255,6,255,7,255,8,255,10,255,11,255,12,255,14,255,15,255,16,255,18,255,19,255,20,255,22,255,23,255,24,255,26,255,27,255,28,255,30,255,31,255,32,255,34,255,35,255,36,255,38,255,39,255,40,255,42,255,43,255,44,255,46,255,47,255,48,255,50,255,51,255,52,255,54,255,55,255,56,255</FixtureVal>
    <FixtureVal ID="15">2,255,3,255,4,255,6,255,7,255,8,255,10,255,11,255,12,255,14,255,15,255,16,255,18,255,19,255,20,255,22,255,23,255,24,255,26,255,27,255,28,255,30,255,31,255,32,255,34,255,35,255,36,255,38,255,39,255,40,255,42,255,43,255,44,255,46,255,47,255,48,255,50,255,51,255,52,255,54,255,55,255,56,255</FixtureVal>
   </Function>
-  <Function ID="66" Type="Chaser" Name="16 Colours chaser - LCB14">
-   <Speed FadeIn="3000" FadeOut="0" Duration="10000"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">50</Step>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">51</Step>
-   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">52</Step>
-   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">53</Step>
-   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">54</Step>
-   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">55</Step>
-   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">56</Step>
-   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">57</Step>
-   <Step Number="8" FadeIn="0" Hold="0" FadeOut="0">58</Step>
-   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0">59</Step>
-   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">60</Step>
-   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0">61</Step>
-   <Step Number="12" FadeIn="0" Hold="0" FadeOut="0">62</Step>
-   <Step Number="13" FadeIn="0" Hold="0" FadeOut="0">63</Step>
-   <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">64</Step>
-   <Step Number="15" FadeIn="0" Hold="0" FadeOut="0">65</Step>
-  </Function>
-  <Function ID="67" Type="RGBMatrix" Name="Animation Balls - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Balls</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetNumber" Value="5"/>
-  </Function>
-  <Function ID="68" Type="RGBMatrix" Name="Animation Balls (Colors) - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Balls (Colors)</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-   <Property Name="color5Index" Value="Orange"/>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="presetNumber" Value="5"/>
-   <Property Name="color3Index" Value="Green"/>
-   <Property Name="presetCollision" Value="Yes"/>
-   <Property Name="presetSize" Value="5"/>
-   <Property Name="color2Index" Value="Red"/>
-  </Function>
-  <Function ID="69" Type="RGBMatrix" Name="Animation Circles - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Circles</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-   <Property Name="circlesAmount" Value="3"/>
-  </Function>
-  <Function ID="70" Type="RGBMatrix" Name="Animation Even/Odd - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Even/Odd</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="71" Type="RGBMatrix" Name="Animation Fill - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Fill</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="72" Type="RGBMatrix" Name="Animation Fill From Center - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Fill From Center</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="73" Type="RGBMatrix" Name="Animation Fill Unfill - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Fill Unfill</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="74" Type="RGBMatrix" Name="Animation Fill Unfill From Center - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Fill Unfill From Center</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="75" Type="RGBMatrix" Name="Animation Fill Unfill Squares From Center - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Fill Unfill Squares From Center</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="76" Type="RGBMatrix" Name="Animation Gradient - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Gradient</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetSize" Value="5"/>
-  </Function>
-  <Function ID="77" Type="RGBMatrix" Name="Animation Noise - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
+  <Function ID="96" Type="RGBMatrix" Name="LCB14 red noise" Path="bars/rgb">
+   <Speed FadeIn="0" FadeOut="0" Duration="117"/>
+   <Direction>Backward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Noise</Algorithm>
-   <DimmerControl>1</DimmerControl>
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="noisePercentage" Value="High"/>
-  </Function>
-  <Function ID="78" Type="RGBMatrix" Name="Animation One By One - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">One By One</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="79" Type="RGBMatrix" Name="Animation Opposite - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Opposite</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="80" Type="RGBMatrix" Name="Animation Plasma - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Plasma</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-   <Property Name="stepsize" Value="25"/>
-   <Property Name="ramp" Value="20"/>
-   <Property Name="presetSize" Value="5"/>
-  </Function>
-  <Function ID="81" Type="RGBMatrix" Name="Animation Plasma (Colors) - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Plasma (Colors)</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-   <Property Name="color5Index" Value="OFF"/>
-   <Property Name="stepsize" Value="25"/>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="ramp" Value="15"/>
-   <Property Name="color3Index" Value="Green"/>
-   <Property Name="presetSize" Value="5"/>
-   <Property Name="color2Index" Value="Red"/>
-  </Function>
-  <Function ID="82" Type="RGBMatrix" Name="Animation Random Column - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Random Column</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="83" Type="RGBMatrix" Name="Animation Random Fill Column - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Random Fill Column</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="84" Type="RGBMatrix" Name="Animation Random Fill Row - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Random Fill Row</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="85" Type="RGBMatrix" Name="Animation Random Fill Single - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Random Fill Single</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="86" Type="RGBMatrix" Name="Animation Random Pixel Per Row - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Random Pixel Per Row</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="87" Type="RGBMatrix" Name="Animation Random Pixel Per Row Multicolor - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Random Pixel Per Row Multicolor</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="88" Type="RGBMatrix" Name="Animation Random Row - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Random Row</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="89" Type="RGBMatrix" Name="Animation Random Single - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Random Single</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="90" Type="RGBMatrix" Name="Animation Squares - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Squares</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-   <Property Name="squaresAmount" Value="3"/>
-  </Function>
-  <Function ID="91" Type="RGBMatrix" Name="Animation Squares From Center - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Squares From Center</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="92" Type="RGBMatrix" Name="Animation 3D Starfield - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">3D Starfield</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-   <Property Name="StarsAmount" Value="50"/>
-  </Function>
-  <Function ID="93" Type="RGBMatrix" Name="Animation Stripes - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Stripes</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="94" Type="RGBMatrix" Name="Animation Stripes From Center - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Stripes From Center</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="95" Type="RGBMatrix" Name="Animation Strobe - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Strobe</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="96" Type="RGBMatrix" Name="Animation Vertical Fall - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Vertical fall</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="97" Type="RGBMatrix" Name="Animation Waves - LCB14" Path="bars">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Waves</Algorithm>
-   <DimmerControl>1</DimmerControl>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-   <Property Name="taillength" Value="50"/>
-   <Property Name="tailfade" Value="Yes"/>
+   <Property Name="noisePercentage" Value="Low"/>
   </Function>
   <Function ID="98" Type="Scene" Name="Bars Full" Path="bars">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1218,8 +2347,9 @@
    <FixtureVal ID="14">0,255,1,0,5,0,9,0,13,0,17,0,21,0,25,0,29,0,33,0,37,0,41,0,45,0,49,0,53,0,57,0</FixtureVal>
    <FixtureVal ID="15">0,255,1,0,5,0,9,0,13,0,17,0,21,0,25,0,29,0,33,0,37,0,41,0,45,0,49,0,53,0,57,0</FixtureVal>
   </Function>
-  <Function ID="108" Type="Scene" Name="New Scene 108">
+  <Function ID="108" Type="Scene" Name="Flower red" Path="Flower">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="19">1,0,2,255,3,0,4,0,5,0</FixtureVal>
   </Function>
   <Function ID="109" Type="Scene" Name="All on" Path="Spiders">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1242,17 +2372,11 @@
    <FixtureVal ID="16">0,110,1,0</FixtureVal>
    <FixtureVal ID="17">4,88,5,0</FixtureVal>
   </Function>
-  <Function ID="113" Type="Chaser" Name="spiders schaukel">
-   <Speed FadeIn="1664" FadeOut="1664" Duration="0"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">111</Step>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">112</Step>
-  </Function>
   <Function ID="114" Type="Collection" Name="disco pos">
    <Step Number="0">45</Step>
    <Step Number="1">46</Step>
+   <Step Number="2">10</Step>
+   <Step Number="3">9</Step>
   </Function>
   <Function ID="115" Type="EFX" Name="mh fx">
    <Fixture>
@@ -1264,6 +2388,20 @@
    </Fixture>
    <Fixture>
     <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>18</ID>
     <Head>0</Head>
     <Mode>0</Mode>
     <Direction>Forward</Direction>
@@ -1302,21 +2440,44 @@
    <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">117</Step>
    <Step Number="5" FadeIn="0" Hold="2056" FadeOut="0">137</Step>
   </Function>
-  <Function ID="117" Type="Scene" Name="Purple - LED MH75B L" Path="MH">
+  <Function ID="117" Type="Scene" Name="Purple - LED MH75B L" Path="MH/colours/seperate">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">5,17</FixtureVal>
   </Function>
-  <Function ID="118" Type="Scene" Name="Purple - LED MH75B R" Path="MH">
+  <Function ID="118" Type="Scene" Name="Purple - LED MH75B R" Path="MH/colours/seperate">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">5,17</FixtureVal>
   </Function>
-  <Function ID="119" Type="Scene" Name="Orange - LED MH75B R" Path="MH">
+  <Function ID="119" Type="Scene" Name="Orange - LED MH75B R" Path="MH/colours/seperate">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">5,52</FixtureVal>
   </Function>
-  <Function ID="120" Type="Scene" Name="Orange - LED MH75B L" Path="MH">
+  <Function ID="120" Type="Scene" Name="Orange - LED MH75B L" Path="MH/colours/seperate">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">5,52</FixtureVal>
+  </Function>
+  <Function ID="121" Type="Scene" Name="test">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="12">0,255,1,0,2,0,3,255,4,0,5,255,6,0,7,255,8,0,9,255,10,0,11,255,12,0,13,255,14,0,15,255,16,0,17,255,18,0,19,255,20,0,21,255,22,0,23,255,24,0,25,255,26,0,27,255,28,0,29,255,30,0,31,255,32,0,33,255,34,0,35,255,36,0,37,255,38,0,39,255,40,0,41,255,42,0,43,255,44,0,45,255,46,0,47,255,48,0,49,255,50,0,51,255,52,0,53,255,54,0,55,255,56,0</FixtureVal>
+   <FixtureVal ID="13">0,255,1,0,2,0,3,255,4,0,5,255,6,0,7,255,8,0,9,255,10,0,11,255,12,0,13,255,14,0,15,255,16,0,17,255,18,0,19,255,20,0,21,255,22,0,23,255,24,0,25,255,26,0,27,255,28,0,29,255,30,0,31,255,32,0,33,255,34,0,35,255,36,0,37,255,38,0,39,255,40,0,41,255,42,0,43,255,44,0,45,255,46,0,47,255,48,0,49,255,50,0,51,255,52,0,53,255,54,0,55,255,56,0</FixtureVal>
+   <FixtureVal ID="14">0,255,1,0,2,0,3,255,4,0,5,255,6,0,7,255,8,0,9,255,10,0,11,255,12,0,13,255,14,0,15,255,16,0,17,255,18,0,19,255,20,0,21,255,22,0,23,255,24,0,25,255,26,0,27,255,28,0,29,255,30,0,31,255,32,0,33,255,34,0,35,255,36,0,37,255,38,0,39,255,40,0,41,255,42,0,43,255,44,0,45,255,46,0,47,255,48,0,49,255,50,0,51,255,52,0,53,255,54,0,55,255,56,0</FixtureVal>
+   <FixtureVal ID="15">0,255,1,0,2,0,3,255,4,0,5,255,6,0,7,255,8,0,9,255,10,0,11,255,12,0,13,255,14,0,15,255,16,0,17,255,18,0,19,255,20,0,21,255,22,0,23,255,24,0,25,255,26,0,27,255,28,0,29,255,30,0,31,255,32,0,33,255,34,0,35,255,36,0,37,255,38,0,39,255,40,0,41,255,42,0,43,255,44,0,45,255,46,0,47,255,48,0,49,255,50,0,51,255,52,0,53,255,54,0,55,255,56,0</FixtureVal>
+   <FixtureVal ID="19">0,255,1,0,2,0,3,255,4,0,5,0</FixtureVal>
+   <FixtureVal ID="3">0,127,1,127,2,0,3,0,5,23,6,4,7,255,8,0</FixtureVal>
+   <FixtureVal ID="0">0,127,1,127,2,0,3,0,5,23,6,4,7,255,8,0</FixtureVal>
+   <FixtureVal ID="2">0,127,1,127,2,0,3,0,5,23,6,4,7,255,8,0</FixtureVal>
+   <FixtureVal ID="18">0,127,1,0,2,127,3,0,5,252,6,255,7,32,8,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,255,2,0,3,0,4,255,5,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0,3,255,4,0,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0,3,255,4,0,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0,3,255,4,0,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0,3,255,4,0,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="16">0,127,1,127,2,255,3,0,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255</FixtureVal>
+   <FixtureVal ID="17">0,0,2,0,4,127,5,127,7,255,8,0,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,3,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,3,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,3,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,3,255,4,255,5,255,6,255,7,255</FixtureVal>
   </Function>
   <Function ID="122" Type="Scene" Name="MH Dim L" Path="MH">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1326,14 +2487,23 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">7,221</FixtureVal>
   </Function>
-  <Function ID="124" Type="RGBMatrix" Name="Animation - LCB14" Path="bars">
+  <Function ID="124" Type="RGBMatrix" Name=" LCB14 lava" Path="bars/rgb">
    <Speed FadeIn="0" FadeOut="0" Duration="416"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Plasma (Colors)</Algorithm>
    <DimmerControl>1</DimmerControl>
    <MonoColor>4278190208</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color5Index" Value="OFF"/>
+   <Property Name="ramp" Value="15"/>
+   <Property Name="color1Index" Value="Goldenrod"/>
+   <Property Name="color4Index" Value="Dim Red"/>
+   <Property Name="presetSize" Value="5"/>
+   <Property Name="color3Index" Value="Red"/>
+   <Property Name="stepsize" Value="25"/>
+   <Property Name="color2Index" Value="Orange"/>
   </Function>
   <Function ID="125" Type="Collection" Name="Strobo ALL">
    <Step Number="0">126</Step>
@@ -1341,10 +2511,12 @@
    <Step Number="2">128</Step>
    <Step Number="3">135</Step>
   </Function>
-  <Function ID="126" Type="Scene" Name="Strobe - LED MH75B " Path="MH">
+  <Function ID="126" Type="Scene" Name="Strobe white - MH" Path="MH/shutter">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">5,3,6,42</FixtureVal>
    <FixtureVal ID="0">5,3,6,42</FixtureVal>
+   <FixtureVal ID="3">5,3,6,42</FixtureVal>
+   <FixtureVal ID="18">5,71,7,0</FixtureVal>
   </Function>
   <Function ID="127" Type="Scene" Name="Bars gewitter" Path="bars">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1435,14 +2607,18 @@
    </Axis>
   </Function>
   <Function ID="133" Type="Collection" Name="Default">
-   <Step Number="0">45</Step>
-   <Step Number="1">46</Step>
-   <Step Number="2">7</Step>
-   <Step Number="3">44</Step>
-   <Step Number="4">22</Step>
-   <Step Number="5">107</Step>
-   <Step Number="6">105</Step>
-   <Step Number="7">134</Step>
+   <Step Number="0">7</Step>
+   <Step Number="1">44</Step>
+   <Step Number="2">22</Step>
+   <Step Number="3">107</Step>
+   <Step Number="4">105</Step>
+   <Step Number="5">134</Step>
+   <Step Number="6">12</Step>
+   <Step Number="7">124</Step>
+   <Step Number="8">114</Step>
+   <Step Number="9">142</Step>
+   <Step Number="10">108</Step>
+   <Step Number="11">140</Step>
   </Function>
   <Function ID="134" Type="Scene" Name="All off" Path="Spiders">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1459,19 +2635,112 @@
    <Step Number="1">21</Step>
    <Step Number="2">50</Step>
   </Function>
-  <Function ID="137" Type="Scene" Name="Dark Blue - LED MH75B R" Path="MH">
+  <Function ID="137" Type="Scene" Name="Dark Blue - LED MH75B R" Path="MH/colours/seperate">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">5,59</FixtureVal>
   </Function>
-  <Function ID="138" Type="Scene" Name="Dark Blue - LED MH75B L" Path="MH">
+  <Function ID="138" Type="Scene" Name="Dark Blue - LED MH75B L" Path="MH/colours/seperate">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">5,59</FixtureVal>
+  </Function>
+  <Function ID="139" Type="Scene" Name="Flower green" Path="Flower">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="19">1,0,2,0,3,255,4,0,5,0</FixtureVal>
+  </Function>
+  <Function ID="140" Type="Scene" Name="Flower blue" Path="Flower">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="19">1,0,2,0,3,0,4,255,5,0</FixtureVal>
+  </Function>
+  <Function ID="141" Type="Scene" Name="Flower white" Path="Flower">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="19">1,0,2,0,3,0,4,0,5,255</FixtureVal>
+  </Function>
+  <Function ID="142" Type="Scene" Name="Flower Dimm" Path="Flower">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="19">0,255</FixtureVal>
+  </Function>
+  <Function ID="143" Type="Scene" Name="No strobing - Pinspot LED Quad DMX" Path="pinspot/shutter">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,3</FixtureVal>
+  </Function>
+  <Function ID="144" Type="Scene" Name="Slow to fast - Pinspot LED Quad DMX" Path="pinspot/shutter">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,127</FixtureVal>
+  </Function>
+  <Function ID="145" Type="Scene" Name="Sound active - Pinspot LED Quad DMX" Path="pinspot/shutter">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,251</FixtureVal>
+  </Function>
+  <Function ID="147" Type="Scene" Name="Scene Black - Pinspot LED Quad DMX" Path="pinspot/colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="148" Type="Scene" Name="Scene Dark Blue - Pinspot LED Quad DMX" Path="pinspot/colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,0,1,0,2,128</FixtureVal>
+  </Function>
+  <Function ID="149" Type="Scene" Name="Scene Blue - Pinspot LED Quad DMX" Path="pinspot/colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,0,1,0,2,255</FixtureVal>
+  </Function>
+  <Function ID="150" Type="Scene" Name="Scene Dark Green - Pinspot LED Quad DMX" Path="pinspot/colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,0,1,128,2,0</FixtureVal>
+  </Function>
+  <Function ID="151" Type="Scene" Name="Scene Dark Cyan - Pinspot LED Quad DMX" Path="pinspot/colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,0,1,128,2,128</FixtureVal>
+  </Function>
+  <Function ID="152" Type="Scene" Name="Scene Green - Pinspot LED Quad DMX" Path="pinspot/colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,0,1,255,2,0</FixtureVal>
+  </Function>
+  <Function ID="153" Type="Scene" Name="Scene Cyan - Pinspot LED Quad DMX" Path="pinspot/colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,0,1,255,2,255</FixtureVal>
+  </Function>
+  <Function ID="154" Type="Scene" Name="Scene Dark Red - Pinspot LED Quad DMX" Path="pinspot/colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,128,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="155" Type="Scene" Name="Scene Dark Magenta - Pinspot LED Quad DMX" Path="pinspot/colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,128,1,0,2,128</FixtureVal>
+  </Function>
+  <Function ID="156" Type="Scene" Name="Scene Dark Yellow - Pinspot LED Quad DMX" Path="pinspot/colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,128,1,128,2,0</FixtureVal>
+  </Function>
+  <Function ID="157" Type="Scene" Name="Scene Dark Gray - Pinspot LED Quad DMX" Path="pinspot/colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,128,1,128,2,128</FixtureVal>
+  </Function>
+  <Function ID="158" Type="Scene" Name="Scene Light Gray - Pinspot LED Quad DMX" Path="pinspot/colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,192,1,192,2,192</FixtureVal>
+  </Function>
+  <Function ID="159" Type="Scene" Name="Scene Red - Pinspot LED Quad DMX" Path="pinspot/colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,255,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="160" Type="Scene" Name="Scene Magenta - Pinspot LED Quad DMX" Path="pinspot/colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,255,1,0,2,255</FixtureVal>
+  </Function>
+  <Function ID="161" Type="Scene" Name="Scene Yellow - Pinspot LED Quad DMX" Path="pinspot/colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,255,1,255,2,0</FixtureVal>
+  </Function>
+  <Function ID="162" Type="Scene" Name="Scene White - Pinspot LED Quad DMX" Path="pinspot/colour">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,255,1,255,2,255</FixtureVal>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>1</ValueStyle>
    <Grid Width="5" Height="3" Depth="5" Units="0"/>
+   <FxItem ID="12" XPos="981.877" YPos="407.07"/>
   </Monitor>
  </Engine>
  <VirtualConsole>
@@ -1506,7 +2775,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="10" Y="40" Width="250" Height="340"/>
+     <WindowState Visible="True" X="10" Y="40" Width="250" Height="200"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -1592,21 +2861,8 @@
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
-     <Button Caption="Light Green" ID="8" Icon="">
-      <WindowState Visible="True" X="130" Y="70" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>4287291956</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="6"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
      <Button Caption="Orange" ID="9" Icon="">
-      <WindowState Visible="True" X="190" Y="70" Width="50" Height="50"/>
+      <WindowState Visible="True" X="130" Y="70" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1619,7 +2875,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Dark Blue" ID="10" Icon="">
-      <WindowState Visible="True" X="10" Y="125" Width="50" Height="50"/>
+      <WindowState Visible="True" X="190" Y="70" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1809,7 +3065,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Stars Shake" ID="40" Icon="">
-      <WindowState Visible="True" X="190" Y="100" Width="50" Height="50"/>
+      <WindowState Visible="True" X="130" Y="160" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1822,7 +3078,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Triangle Shake" ID="41" Icon="">
-      <WindowState Visible="True" X="10" Y="160" Width="50" Height="50"/>
+      <WindowState Visible="True" X="70" Y="160" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1835,7 +3091,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Circle Shake" ID="42" Icon="">
-      <WindowState Visible="True" X="70" Y="160" Width="50" Height="50"/>
+      <WindowState Visible="True" X="10" Y="160" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1848,7 +3104,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Star Shake" ID="43" Icon="">
-      <WindowState Visible="True" X="130" Y="160" Width="50" Height="50"/>
+      <WindowState Visible="True" X="190" Y="220" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1861,7 +3117,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Narrow Shake" ID="44" Icon="">
-      <WindowState Visible="True" X="190" Y="160" Width="50" Height="50"/>
+      <WindowState Visible="True" X="130" Y="220" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1874,7 +3130,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Medium Shake" ID="45" Icon="">
-      <WindowState Visible="True" X="10" Y="220" Width="50" Height="50"/>
+      <WindowState Visible="True" X="70" Y="220" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1886,45 +3142,16 @@
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
-     <Button Caption="Open" ID="46" Icon="">
-      <WindowState Visible="True" X="70" Y="220" Width="50" Height="50"/>
+     <Label Caption="&lt;-&#10;normal&#10;&#10;shake&#10;&lt;-" ID="46">
+      <WindowState Visible="True" X="190" Y="100" Width="50" Height="110"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>/usr/share/qlcplus/gobos/Others/open.svg</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="40"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="positive rainbow" ID="47" Icon="">
-      <WindowState Visible="True" X="130" Y="220" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundColor>4294967295</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="41"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="neg rainbow" ID="48" Icon="">
-      <WindowState Visible="True" X="190" Y="220" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>/usr/share/qlcplus/gobos/</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="42"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
+     </Label>
     </SoloFrame>
     <Slider Caption="MH Dim" ID="50" WidgetStyle="Slider" InvertedAppearance="false">
      <WindowState Visible="True" X="260" Y="140" Width="90" Height="240"/>
@@ -1942,7 +3169,7 @@
      </Playback>
     </Slider>
     <Button Caption="disco pos" ID="99" Icon="">
-     <WindowState Visible="True" X="385" Y="320" Width="50" Height="50"/>
+     <WindowState Visible="True" X="120" Y="245" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1955,7 +3182,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="mh fx" ID="100" Icon="">
-     <WindowState Visible="True" X="355" Y="140" Width="50" Height="50"/>
+     <WindowState Visible="True" X="10" Y="245" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1968,7 +3195,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="MH sequence" ID="107" Icon="">
-     <WindowState Visible="True" X="345" Y="205" Width="50" Height="50"/>
+     <WindowState Visible="True" X="695" Y="335" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1981,7 +3208,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="MH Color Fade" ID="101" Icon="">
-     <WindowState Visible="True" X="410" Y="265" Width="50" Height="50"/>
+     <WindowState Visible="True" X="65" Y="245" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2242,7 +3469,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="385" Y="40" Width="250" Height="520"/>
+     <WindowState Visible="True" X="375" Y="35" Width="250" Height="520"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -2250,385 +3477,8 @@
      <Mixing>False</Mixing>
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
-     <Button Caption="Animation Balls" ID="54" Icon="">
-      <WindowState Visible="True" X="10" Y="40" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="67"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Balls (Colors)" ID="55" Icon="">
-      <WindowState Visible="True" X="70" Y="40" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="68"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Circles" ID="56" Icon="">
-      <WindowState Visible="True" X="130" Y="40" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="69"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Even/Odd" ID="57" Icon="">
-      <WindowState Visible="True" X="190" Y="40" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="70"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Fill" ID="58" Icon="">
-      <WindowState Visible="True" X="10" Y="100" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="71"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Fill From Center" ID="59" Icon="">
-      <WindowState Visible="True" X="70" Y="100" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="72"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Fill Unfill" ID="60" Icon="">
-      <WindowState Visible="True" X="130" Y="100" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="73"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Fill Unfill From Center" ID="61" Icon="">
-      <WindowState Visible="True" X="190" Y="100" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="74"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Fill Unfill Squares From Center" ID="62" Icon="">
-      <WindowState Visible="True" X="10" Y="160" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="75"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Gradient" ID="63" Icon="">
-      <WindowState Visible="True" X="70" Y="160" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="76"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Noise" ID="64" Icon="">
-      <WindowState Visible="True" X="130" Y="160" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="77"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation One By One" ID="65" Icon="">
-      <WindowState Visible="True" X="190" Y="160" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="78"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Opposite" ID="66" Icon="">
-      <WindowState Visible="True" X="10" Y="220" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="79"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Plasma" ID="67" Icon="">
-      <WindowState Visible="True" X="70" Y="220" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="80"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Plasma (Colors)" ID="68" Icon="">
-      <WindowState Visible="True" X="130" Y="220" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="81"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Random Column" ID="69" Icon="">
-      <WindowState Visible="True" X="190" Y="220" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="82"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Random Fill Column" ID="70" Icon="">
-      <WindowState Visible="True" X="10" Y="280" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="83"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Random Fill Row" ID="71" Icon="">
-      <WindowState Visible="True" X="70" Y="280" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="84"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Random Fill Single" ID="72" Icon="">
-      <WindowState Visible="True" X="130" Y="280" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="85"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Random Pixel Per Row" ID="73" Icon="">
-      <WindowState Visible="True" X="190" Y="280" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="86"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Random Pixel Per Row Multicolor" ID="74" Icon="">
-      <WindowState Visible="True" X="10" Y="340" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="87"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Random Row" ID="75" Icon="">
-      <WindowState Visible="True" X="70" Y="340" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="88"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Random Single" ID="76" Icon="">
-      <WindowState Visible="True" X="130" Y="340" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="89"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Squares" ID="77" Icon="">
-      <WindowState Visible="True" X="190" Y="340" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="90"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Squares From Center" ID="78" Icon="">
-      <WindowState Visible="True" X="10" Y="400" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="91"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation 3D Starfield" ID="79" Icon="">
-      <WindowState Visible="True" X="70" Y="400" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="92"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Stripes" ID="80" Icon="">
-      <WindowState Visible="True" X="130" Y="400" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="93"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Stripes From Center" ID="81" Icon="">
-      <WindowState Visible="True" X="190" Y="400" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="94"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Animation Strobe" ID="82" Icon="">
-      <WindowState Visible="True" X="10" Y="460" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="95"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
      <Button Caption="Animation Vertical fall" ID="83" Icon="">
-      <WindowState Visible="True" X="70" Y="460" Width="50" Height="50"/>
+      <WindowState Visible="True" X="5" Y="40" Width="50" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2640,21 +3490,8 @@
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
-     <Button Caption="Animation Waves" ID="84" Icon="">
-      <WindowState Visible="True" X="130" Y="460" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="97"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
      <Button Caption="Animation - LCB14" ID="102" Icon="">
-      <WindowState Visible="True" X="190" Y="460" Width="40" Height="40"/>
+      <WindowState Visible="True" X="60" Y="40" Width="55" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2729,6 +3566,32 @@
       <Font>Default</Font>
      </Appearance>
      <Function ID="127"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Blinder random single" ID="8" Icon="">
+     <WindowState Visible="True" X="310" Y="340" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="6"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Blinder fall" ID="51" Icon="">
+     <WindowState Visible="True" X="315" Y="490" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="11"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
@@ -2858,7 +3721,6 @@
     <MultKey>.</MultKey>
     <DivKey>,</DivKey>
     <MultDivResetKey>/</MultDivResetKey>
-    <Function FadeIn="6" FadeOut="6" Duration="1">113</Function>
     <Function FadeIn="0" FadeOut="0" Duration="10">132</Function>
     <Function FadeIn="0" FadeOut="0" Duration="10">100</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">104</Function>
@@ -2866,19 +3728,6 @@
     <Function FadeIn="0" FadeOut="0" Duration="8">116</Function>
     <Function FadeIn="0" FadeOut="0" Duration="4">124</Function>
    </SpeedDial>
-   <Button Caption="spiders schaukel" ID="98" Icon="">
-    <WindowState Visible="True" X="780" Y="1005" Width="50" Height="50"/>
-    <Appearance>
-     <FrameStyle>None</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <Function ID="113"/>
-    <Action>Toggle</Action>
-    <Intensity Adjust="False">100</Intensity>
-   </Button>
    <Button Caption="Strobo ALL" ID="104" Icon="">
     <WindowState Visible="True" X="775" Y="10" Width="150" Height="125"/>
     <Appearance>
@@ -2959,6 +3808,47 @@
      <Font>Default</Font>
     </Appearance>
     <Function ID="133"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="TEST" ID="47" Icon="">
+    <WindowState Visible="True" X="60" Y="1825" Width="185" Height="80"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4281586042</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="121"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Slider Caption="Slider 48" ID="48" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="770" Y="150" Width="60" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0"/>
+    <Playback>
+     <Function>142</Function>
+    </Playback>
+   </Slider>
+   <Button Caption="stripes" ID="54" Icon="">
+    <WindowState Visible="True" X="540" Y="1805" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="12"/>
     <Action>Toggle</Action>
     <Intensity Adjust="False">100</Intensity>
    </Button>
