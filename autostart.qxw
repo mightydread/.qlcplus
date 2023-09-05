@@ -9,14 +9,14 @@
  <Engine Autostart="133">
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0" Passthrough="True">
-    <Input Plugin="MIDI" Line="1" Profile="AKAI LPD8"/>
+    <Input Plugin="ArtNet" Line="3"/>
     <Output Plugin="DMX USB" Line="0"/>
     <Feedback Plugin="MIDI" Line="1"/>
    </Universe>
    <Universe Name="Universe 2" ID="1">
     <Input Plugin="MIDI" Line="1" Profile="Akai APC20"/>
-    <Output Plugin="ArtNet" Line="0">
-     <PluginParameters outputIP="10.0.0.102" outputUni="2" transmitMode="Partial"/>
+    <Output Plugin="E1.31" Line="0">
+     <PluginParameters UniverseChannels="11" multicast="0" priority="100" transmitMode="Partial" ucastIP="10.0.0.103" ucastPort="5568" universe="2"/>
     </Output>
     <Feedback Plugin="MIDI" Line="1"/>
    </Universe>
@@ -77,7 +77,6 @@
    <Address>26</Address>
    <Channels>12</Channels>
    <Modifier Channel="1" Name="Invert"/>
-   <Modifier Channel="3" Name="Invert"/>
   </Fixture>
   <Fixture>
    <Manufacturer>Uking</Manufacturer>
@@ -251,16 +250,6 @@
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
-   <Model>Generic Smoke</Model>
-   <Mode>Normal</Mode>
-   <ID>21</ID>
-   <Name>Generic Smoke</Name>
-   <Universe>0</Universe>
-   <Address>508</Address>
-   <Channels>2</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
    <Model>Generic</Model>
    <Mode>1 Channel</Mode>
    <ID>22</ID>
@@ -268,6 +257,36 @@
    <Universe>3</Universe>
    <Address>0</Address>
    <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>5 Channel</Mode>
+   <ID>23</ID>
+   <Name>whitepar L</Name>
+   <Universe>0</Universe>
+   <Address>491</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>5 Channel</Mode>
+   <ID>24</ID>
+   <Name>whitpar M</Name>
+   <Universe>0</Universe>
+   <Address>498</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>5 Channel</Mode>
+   <ID>25</ID>
+   <Name>whitepar R</Name>
+   <Universe>0</Universe>
+   <Address>505</Address>
+   <Channels>5</Channels>
   </Fixture>
   <FixtureGroup ID="0">
    <Name>Bars</Name>
@@ -452,7 +471,7 @@
    <FixtureVal ID="18">7,41,15,0</FixtureVal>
   </Function>
   <Function ID="6" Type="RGBMatrix" Name="Blinder noise" Path="bars/blinder">
-   <Speed FadeIn="0" FadeOut="0" Duration="36"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="28"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Squares From Center</Algorithm>
@@ -485,7 +504,7 @@
    <FixtureVal ID="3">0,12,1,33,2,0,3,20</FixtureVal>
   </Function>
   <Function ID="11" Type="RGBMatrix" Name="Blinder fall" Path="bars/blinder">
-   <Speed FadeIn="0" FadeOut="0" Duration="2352"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1852"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Vertical fall</Algorithm>
@@ -502,14 +521,14 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4294967295</FixtureGroup>
-   <Property Name="color5Index" Value="OFF"/>
-   <Property Name="presetSize" Value="5"/>
-   <Property Name="color1Index" Value="OFF"/>
-   <Property Name="stepsize" Value="25"/>
-   <Property Name="color4Index" Value="Deep Pink"/>
-   <Property Name="color3Index" Value="OFF"/>
-   <Property Name="ramp" Value="14"/>
    <Property Name="color2Index" Value="Dim Red"/>
+   <Property Name="color5Index" Value="OFF"/>
+   <Property Name="color1Index" Value="OFF"/>
+   <Property Name="color4Index" Value="Deep Pink"/>
+   <Property Name="stepsize" Value="25"/>
+   <Property Name="ramp" Value="14"/>
+   <Property Name="color3Index" Value="OFF"/>
+   <Property Name="presetSize" Value="5"/>
   </Function>
   <Function ID="13" Type="Collection" Name="Hell">
    <Step Number="0">114</Step>
@@ -1310,7 +1329,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="2352"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1852"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -1444,7 +1463,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="2352"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1852"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -1538,7 +1557,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Serial</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="2352"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1852"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -1570,7 +1589,6 @@
   </Function>
   <Function ID="93" Type="Scene" Name="bodennebel on">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="21">0,228,1,255</FixtureVal>
   </Function>
   <Function ID="94" Type="Collection" Name="bodenebel beleuchtet">
    <Step Number="0">91</Step>
@@ -1578,10 +1596,9 @@
   </Function>
   <Function ID="95" Type="Scene" Name="bodennebel off">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="21">0,0,1,0</FixtureVal>
   </Function>
   <Function ID="96" Type="RGBMatrix" Name="bars fall" Path="bars/rgb" BlendMode="Mask">
-   <Speed FadeIn="0" FadeOut="0" Duration="36"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="28"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Vertical fall</Algorithm>
@@ -1641,7 +1658,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="3648" FadeOut="3648" Duration="4704"/>
+   <Speed FadeIn="3648" FadeOut="3648" Duration="3704"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -1682,7 +1699,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="104" Type="RGBMatrix" Name="Noise - Spiders" Path="spider">
-   <Speed FadeIn="0" FadeOut="0" Duration="147"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="115"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <MonoColor>4294967295</MonoColor>
@@ -1730,6 +1747,10 @@
    <FixtureVal ID="16">0,110,1,0</FixtureVal>
    <FixtureVal ID="17">4,88,5,0</FixtureVal>
   </Function>
+  <Function ID="113" Type="Scene" Name="spezial" Path="MH">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="18">0,8,1,97,2,34,3,0,9,145</FixtureVal>
+  </Function>
   <Function ID="114" Type="Collection" Name="disco pos">
    <Step Number="0">45</Step>
    <Step Number="1">46</Step>
@@ -1766,7 +1787,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Serial</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="9408"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="7408"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -1787,7 +1808,7 @@
    </Axis>
   </Function>
   <Function ID="116" Type="Chaser" Name="MH Color Fade">
-   <Speed FadeIn="0" FadeOut="0" Duration="2352"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1852"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1862,6 +1883,8 @@
    <Step Number="2">128</Step>
    <Step Number="3">135</Step>
    <Step Number="4">15</Step>
+   <Step Number="5">164</Step>
+   <Step Number="6">146</Step>
   </Function>
   <Function ID="126" Type="Scene" Name="Strobe white - MH" Path="MH/shutter">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1940,7 +1963,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="648" FadeOut="648" Duration="4704"/>
+   <Speed FadeIn="648" FadeOut="648" Duration="3704"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -2028,6 +2051,12 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,251</FixtureVal>
   </Function>
+  <Function ID="146" Type="Scene" Name="whitepar dim">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="23">0,255</FixtureVal>
+   <FixtureVal ID="25">0,255</FixtureVal>
+   <FixtureVal ID="24">0,255</FixtureVal>
+  </Function>
   <Function ID="147" Type="Scene" Name="Scene Black - Pinspot LED Quad DMX" Path="pinspot/colour">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
@@ -2092,6 +2121,18 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,255,1,255,2,255</FixtureVal>
   </Function>
+  <Function ID="163" Type="Scene" Name="whitepar WW">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="23">2,255</FixtureVal>
+   <FixtureVal ID="25">2,255</FixtureVal>
+   <FixtureVal ID="24">2,255</FixtureVal>
+  </Function>
+  <Function ID="164" Type="Scene" Name="whitepar strobe">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="23">4,191</FixtureVal>
+   <FixtureVal ID="25">4,191</FixtureVal>
+   <FixtureVal ID="24">4,191</FixtureVal>
+  </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -2105,7 +2146,7 @@
    <Appearance>
     <FrameStyle>None</FrameStyle>
     <ForegroundColor>Default</ForegroundColor>
-    <BackgroundColor>4294967295</BackgroundColor>
+    <BackgroundColor>4278190080</BackgroundColor>
     <BackgroundImage>None</BackgroundImage>
     <Font>Default</Font>
    </Appearance>
@@ -2600,7 +2641,7 @@
       <Font>Default</Font>
      </Appearance>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="13" HighLimit="130" Value="130">
+     <Level LowLimit="13" HighLimit="130" Value="13">
       <Channel Fixture="0">11</Channel>
       <Channel Fixture="2">11</Channel>
       <Channel Fixture="3">11</Channel>
@@ -2619,7 +2660,7 @@
       <Font>Default</Font>
      </Appearance>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="128" HighLimit="191" Value="191">
+     <Level LowLimit="128" HighLimit="191" Value="128">
       <Channel Fixture="18">11</Channel>
      </Level>
      <Playback>
@@ -3078,7 +3119,7 @@
       </Appearance>
       <Input Universe="0" Channel="4097"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="33">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="12">2</Channel>
        <Channel Fixture="12">6</Channel>
        <Channel Fixture="12">10</Channel>
@@ -3224,7 +3265,7 @@
       </Appearance>
       <Input Universe="0" Channel="4099"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="52">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="12">4</Channel>
        <Channel Fixture="12">8</Channel>
        <Channel Fixture="12">12</Channel>
@@ -3540,7 +3581,7 @@
     <Tap>
      <Input Universe="0" Channel="4263"/>
     </Tap>
-    <Time>588</Time>
+    <Time>463</Time>
     <MultKey>.</MultKey>
     <DivKey>,</DivKey>
     <MultDivResetKey>/</MultDivResetKey>
@@ -4177,7 +4218,7 @@
       </Appearance>
       <Input Universe="0" Channel="4101"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="194">
        <Channel Fixture="20">5</Channel>
       </Level>
       <Playback>
@@ -4232,7 +4273,7 @@
      </Appearance>
      <Input Universe="0" Channel="4104"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="24">
+     <Level LowLimit="0" HighLimit="255" Value="0">
       <Channel Fixture="20">0</Channel>
      </Level>
      <Playback>
@@ -4376,13 +4417,59 @@
      <Font>Default</Font>
     </Appearance>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="75">
+    <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="22">0</Channel>
     </Level>
     <Playback>
      <Function>4294967295</Function>
     </Playback>
    </Slider>
+   <Frame Caption="Whitepar" ID="59">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="480" Y="1505" Width="150" Height="300"/>
+    <AllowChildren>False</AllowChildren>
+    <AllowResize>False</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Slider Caption="Dim" ID="62" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="0" Y="65" Width="75" Height="220"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0"/>
+     <Playback>
+      <Function>146</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="WW" ID="63" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="70" Y="70" Width="75" Height="205"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0"/>
+     <Playback>
+      <Function>163</Function>
+     </Playback>
+    </Slider>
+   </Frame>
   </Frame>
   <Properties>
    <Size Width="1080" Height="1920"/>
