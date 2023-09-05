@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.7</Version>
+  <Author></Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <Universe Name="polyp1" ID="0" Passthrough="True">
+    <Input Plugin="MIDI" UID="input" Line="1" Profile="AKAI LPD8"/>
+    <Output Plugin="ArtNet" UID="10.0.100.26" Line="1">
+     <PluginParameters outputIP="10.0.100.200"/>
+    </Output>
+    <Feedback Plugin="MIDI" UID="input" Line="1"/>
+   </Universe>
+   <Universe Name="polyp2" ID="1">
+    <Input Plugin="MIDI" UID="input" Line="1" Profile="Akai APC20"/>
+    <Output Plugin="ArtNet" UID="10.0.100.26" Line="1">
+     <PluginParameters outputIP="10.0.100.201" outputUni="0"/>
+    </Output>
+    <Feedback Plugin="MIDI" UID="input" Line="1"/>
+   </Universe>
+   <Universe Name="polyp3" ID="2">
+    <Input Plugin="Loopback" UID="Loopback 1" Line="0"/>
+    <Output Plugin="ArtNet" UID="10.0.100.26" Line="1">
+     <PluginParameters outputIP="10.0.100.202" outputUni="0"/>
+    </Output>
+    <Feedback Plugin="MIDI" UID="input" Line="1"/>
+   </Universe>
+   <Universe Name="polyp4" ID="3">
+    <Output Plugin="ArtNet" UID="10.0.100.26" Line="1">
+     <PluginParameters outputIP="10.0.100.203" outputUni="0"/>
+    </Output>
+   </Universe>
+   <Universe Name="polyp5" ID="4">
+    <Output Plugin="ArtNet" UID="10.0.100.26" Line="1">
+     <PluginParameters outputIP="10.0.100.204" outputUni="0"/>
+    </Output>
+   </Universe>
+   <Universe Name="polyp6" ID="5">
+    <Output Plugin="ArtNet" UID="10.0.100.26" Line="1">
+     <PluginParameters outputIP="10.0.100.205" outputUni="0"/>
+    </Output>
+   </Universe>
+   <Universe Name="polyp7" ID="6">
+    <Output Plugin="ArtNet" UID="10.0.100.26" Line="1">
+     <PluginParameters outputIP="10.0.100.206" outputUni="0"/>
+    </Output>
+   </Universe>
+   <Universe Name="polyp8" ID="7">
+    <Output Plugin="ArtNet" UID="10.0.100.26" Line="1">
+     <PluginParameters outputIP="10.0.100.207" outputUni="0"/>
+    </Output>
+   </Universe>
+   <Universe Name="polyp9" ID="8">
+    <Output Plugin="ArtNet" UID="10.0.100.26" Line="1">
+     <PluginParameters outputIP="10.0.100.208" outputUni="0"/>
+    </Output>
+   </Universe>
+   <Universe Name="polyp10" ID="9">
+    <Output Plugin="ArtNet" UID="10.0.100.26" Line="1">
+     <PluginParameters outputIP="10.0.100.209" outputUni="0"/>
+    </Output>
+   </Universe>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>station</Manufacturer>
+   <Model>polyp</Model>
+   <Mode>Default</Mode>
+   <ID>0</ID>
+   <Name>polyp 1</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>station</Manufacturer>
+   <Model>polyp</Model>
+   <Mode>Default</Mode>
+   <ID>1</ID>
+   <Name>polyp 2</Name>
+   <Universe>1</Universe>
+   <Address>0</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>station</Manufacturer>
+   <Model>polyp</Model>
+   <Mode>Default</Mode>
+   <ID>2</ID>
+   <Name>polyp 3</Name>
+   <Universe>2</Universe>
+   <Address>0</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>station</Manufacturer>
+   <Model>polyp</Model>
+   <Mode>Default</Mode>
+   <ID>3</ID>
+   <Name>polyp 4</Name>
+   <Universe>3</Universe>
+   <Address>0</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>station</Manufacturer>
+   <Model>polyp</Model>
+   <Mode>Default</Mode>
+   <ID>4</ID>
+   <Name>polyp 5</Name>
+   <Universe>4</Universe>
+   <Address>0</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>station</Manufacturer>
+   <Model>polyp</Model>
+   <Mode>Default</Mode>
+   <ID>5</ID>
+   <Name>polyp 6</Name>
+   <Universe>5</Universe>
+   <Address>0</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>station</Manufacturer>
+   <Model>polyp</Model>
+   <Mode>Default</Mode>
+   <ID>6</ID>
+   <Name>polyp 7</Name>
+   <Universe>6</Universe>
+   <Address>0</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>station</Manufacturer>
+   <Model>polyp</Model>
+   <Mode>Default</Mode>
+   <ID>7</ID>
+   <Name>polyp 8</Name>
+   <Universe>7</Universe>
+   <Address>0</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>station</Manufacturer>
+   <Model>polyp</Model>
+   <Mode>Default</Mode>
+   <ID>8</ID>
+   <Name>polyp 9</Name>
+   <Universe>8</Universe>
+   <Address>0</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>station</Manufacturer>
+   <Model>polyp</Model>
+   <Mode>Default</Mode>
+   <ID>9</ID>
+   <Name>polyp 10</Name>
+   <Universe>9</Universe>
+   <Address>0</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Function ID="0" Type="EFX" Name="New EFX 0">
+   <Fixture>
+    <ID>0</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>9</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>45</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>90</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>135</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>180</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>225</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>270</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>6</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>315</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>7</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>8</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>45</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="10000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Eight</Algorithm>
+   <Width>100</Width>
+   <Height>100</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="1" Type="Chaser" Name="in/out">
+   <Speed FadeIn="2000" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="3000" FadeOut="0">12</Step>
+   <Step Number="1" FadeIn="0" Hold="12000" FadeOut="0">13</Step>
+  </Function>
+  <Function ID="2" Type="Scene" Name="polyp auto">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0</FixtureVal>
+   <FixtureVal ID="9">0,0</FixtureVal>
+   <FixtureVal ID="1">0,0</FixtureVal>
+   <FixtureVal ID="2">0,0</FixtureVal>
+   <FixtureVal ID="3">0,0</FixtureVal>
+   <FixtureVal ID="4">0,0</FixtureVal>
+   <FixtureVal ID="5">0,0</FixtureVal>
+   <FixtureVal ID="6">0,0</FixtureVal>
+   <FixtureVal ID="7">0,0</FixtureVal>
+   <FixtureVal ID="8">0,0</FixtureVal>
+  </Function>
+  <Function ID="3" Type="Chaser" Name="serial in">
+   <Speed FadeIn="0" FadeOut="0" Duration="1500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0">16</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">17</Step>
+   <Step Number="2" FadeIn="0" Hold="1000" FadeOut="0">18</Step>
+   <Step Number="3" FadeIn="0" Hold="1000" FadeOut="0">19</Step>
+   <Step Number="4" FadeIn="0" Hold="1000" FadeOut="0">20</Step>
+   <Step Number="5" FadeIn="0" Hold="1000" FadeOut="0">21</Step>
+   <Step Number="6" FadeIn="0" Hold="1000" FadeOut="0">22</Step>
+   <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0">23</Step>
+   <Step Number="8" FadeIn="0" Hold="1000" FadeOut="0">24</Step>
+   <Step Number="9" FadeIn="0" Hold="1000" FadeOut="0">35</Step>
+   <Step Number="10" FadeIn="0" Hold="1500" FadeOut="0">13</Step>
+  </Function>
+  <Function ID="4" Type="Scene" Name="all out fast">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">1,250,2,127</FixtureVal>
+   <FixtureVal ID="9">1,250,2,127</FixtureVal>
+   <FixtureVal ID="1">1,250,2,127</FixtureVal>
+   <FixtureVal ID="2">1,250,2,127</FixtureVal>
+   <FixtureVal ID="3">1,250,2,127</FixtureVal>
+   <FixtureVal ID="4">1,250,2,127</FixtureVal>
+   <FixtureVal ID="5">1,250,2,127</FixtureVal>
+   <FixtureVal ID="6">1,250,2,127</FixtureVal>
+   <FixtureVal ID="7">1,250,2,127</FixtureVal>
+   <FixtureVal ID="8">1,250,2,127</FixtureVal>
+  </Function>
+  <Function ID="5" Type="Scene" Name="bopping out">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">1,250,2,127</FixtureVal>
+   <FixtureVal ID="9">1,250,2,127</FixtureVal>
+   <FixtureVal ID="1">1,250,2,127</FixtureVal>
+   <FixtureVal ID="2">1,250,2,127</FixtureVal>
+   <FixtureVal ID="3">1,250,2,127</FixtureVal>
+   <FixtureVal ID="4">1,250,2,127</FixtureVal>
+   <FixtureVal ID="5">1,250,2,127</FixtureVal>
+   <FixtureVal ID="6">1,250,2,127</FixtureVal>
+   <FixtureVal ID="7">1,250,2,127</FixtureVal>
+   <FixtureVal ID="8">1,250,2,127</FixtureVal>
+  </Function>
+  <Function ID="6" Type="Scene" Name="bopping in">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">1,205,2,153</FixtureVal>
+   <FixtureVal ID="9">1,205,2,153</FixtureVal>
+   <FixtureVal ID="1">1,205,2,153</FixtureVal>
+   <FixtureVal ID="2">1,205,2,153</FixtureVal>
+   <FixtureVal ID="3">1,205,2,153</FixtureVal>
+   <FixtureVal ID="4">1,205,2,153</FixtureVal>
+   <FixtureVal ID="5">1,205,2,153</FixtureVal>
+   <FixtureVal ID="6">1,205,2,153</FixtureVal>
+   <FixtureVal ID="7">1,205,2,153</FixtureVal>
+   <FixtureVal ID="8">1,205,2,153</FixtureVal>
+  </Function>
+  <Function ID="7" Type="Chaser" Name="bopping">
+   <Speed FadeIn="0" FadeOut="0" Duration="999"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">6</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">5</Step>
+  </Function>
+  <Function ID="8" Type="Chaser" Name="in/out 2">
+   <Speed FadeIn="2000" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+  </Function>
+  <Function ID="9" Type="Chaser" Name="in/out 1">
+   <Speed FadeIn="2000" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+  </Function>
+  <Function ID="12" Type="Scene" Name="all in">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">1,10,2,250</FixtureVal>
+   <FixtureVal ID="9">1,10,2,250</FixtureVal>
+   <FixtureVal ID="1">1,10,2,250</FixtureVal>
+   <FixtureVal ID="2">1,10,2,250</FixtureVal>
+   <FixtureVal ID="3">1,10,2,250</FixtureVal>
+   <FixtureVal ID="4">1,10,2,250</FixtureVal>
+   <FixtureVal ID="5">1,10,2,250</FixtureVal>
+   <FixtureVal ID="6">1,10,2,250</FixtureVal>
+   <FixtureVal ID="7">1,10,2,250</FixtureVal>
+   <FixtureVal ID="8">1,10,2,250</FixtureVal>
+  </Function>
+  <Function ID="13" Type="Scene" Name="all out slow">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">1,250,2,10</FixtureVal>
+   <FixtureVal ID="9">1,250,2,10</FixtureVal>
+   <FixtureVal ID="1">1,250,2,10</FixtureVal>
+   <FixtureVal ID="2">1,250,2,10</FixtureVal>
+   <FixtureVal ID="3">1,250,2,10</FixtureVal>
+   <FixtureVal ID="4">1,250,2,10</FixtureVal>
+   <FixtureVal ID="5">1,250,2,10</FixtureVal>
+   <FixtureVal ID="6">1,250,2,10</FixtureVal>
+   <FixtureVal ID="7">1,250,2,10</FixtureVal>
+   <FixtureVal ID="8">1,250,2,10</FixtureVal>
+  </Function>
+  <Function ID="14" Type="Scene" Name="polyp control">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,1</FixtureVal>
+   <FixtureVal ID="9">0,1</FixtureVal>
+   <FixtureVal ID="1">0,1</FixtureVal>
+   <FixtureVal ID="2">0,1</FixtureVal>
+   <FixtureVal ID="3">0,1</FixtureVal>
+   <FixtureVal ID="4">0,1</FixtureVal>
+   <FixtureVal ID="5">0,1</FixtureVal>
+   <FixtureVal ID="6">0,1</FixtureVal>
+   <FixtureVal ID="7">0,1</FixtureVal>
+   <FixtureVal ID="8">0,1</FixtureVal>
+  </Function>
+  <Function ID="15" Type="Scene" Name="polyp speed half">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">2,127</FixtureVal>
+   <FixtureVal ID="9">2,127</FixtureVal>
+   <FixtureVal ID="1">2,127</FixtureVal>
+   <FixtureVal ID="2">2,127</FixtureVal>
+   <FixtureVal ID="3">2,127</FixtureVal>
+   <FixtureVal ID="4">2,127</FixtureVal>
+   <FixtureVal ID="5">2,127</FixtureVal>
+   <FixtureVal ID="6">2,127</FixtureVal>
+   <FixtureVal ID="7">2,127</FixtureVal>
+   <FixtureVal ID="8">2,127</FixtureVal>
+  </Function>
+  <Function ID="16" Type="Scene" Name="1 in">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">1,10,2,250</FixtureVal>
+  </Function>
+  <Function ID="17" Type="Scene" Name="2 in">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">1,10,2,250</FixtureVal>
+  </Function>
+  <Function ID="18" Type="Scene" Name="3 in">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">1,10,2,250</FixtureVal>
+  </Function>
+  <Function ID="19" Type="Scene" Name="4 in">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">1,10,2,250</FixtureVal>
+  </Function>
+  <Function ID="20" Type="Scene" Name="5 in">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">1,10,2,250</FixtureVal>
+  </Function>
+  <Function ID="21" Type="Scene" Name="6 in">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="5">1,10,2,250</FixtureVal>
+  </Function>
+  <Function ID="22" Type="Scene" Name="7 in">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">1,10,2,250</FixtureVal>
+  </Function>
+  <Function ID="23" Type="Scene" Name="8 in">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">1,10,2,250</FixtureVal>
+  </Function>
+  <Function ID="24" Type="Scene" Name="9 in">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">1,10,2,250</FixtureVal>
+  </Function>
+  <Function ID="26" Type="Scene" Name="1 out">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">1,250,2,10</FixtureVal>
+  </Function>
+  <Function ID="27" Type="Scene" Name="2 out">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">1,250,2,10</FixtureVal>
+  </Function>
+  <Function ID="28" Type="Scene" Name="3 out">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">1,250,2,10</FixtureVal>
+  </Function>
+  <Function ID="29" Type="Scene" Name="4 out">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">1,250,2,10</FixtureVal>
+  </Function>
+  <Function ID="30" Type="Scene" Name="5 out">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">1,250,2,10</FixtureVal>
+  </Function>
+  <Function ID="31" Type="Scene" Name="6 out">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="5">1,250,2,10</FixtureVal>
+  </Function>
+  <Function ID="32" Type="Scene" Name="7 out">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">1,250,2,10</FixtureVal>
+  </Function>
+  <Function ID="33" Type="Scene" Name="8 out">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">1,250,2,10</FixtureVal>
+  </Function>
+  <Function ID="34" Type="Scene" Name="9 out">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">1,250,2,10</FixtureVal>
+  </Function>
+  <Function ID="35" Type="Scene" Name="10 in">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">1,250,2,10</FixtureVal>
+  </Function>
+  <Function ID="36" Type="Scene" Name="10 out">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">1,250,2,10</FixtureVal>
+  </Function>
+  <Function ID="37" Type="Chaser" Name="welle">
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">16</Step>
+   <Step Number="1" FadeIn="0" Hold="2000" FadeOut="0">17</Step>
+   <Step Number="2" FadeIn="0" Hold="2000" FadeOut="0">18</Step>
+   <Step Number="3" FadeIn="0" Hold="2000" FadeOut="0">19</Step>
+   <Step Number="4" FadeIn="0" Hold="2000" FadeOut="0">20</Step>
+   <Step Number="5" FadeIn="0" Hold="2000" FadeOut="0">21</Step>
+   <Step Number="6" FadeIn="0" Hold="2000" FadeOut="0">22</Step>
+   <Step Number="7" FadeIn="0" Hold="2000" FadeOut="0">23</Step>
+   <Step Number="8" FadeIn="0" Hold="2000" FadeOut="0">24</Step>
+   <Step Number="9" FadeIn="0" Hold="2000" FadeOut="0">35</Step>
+   <Step Number="10" FadeIn="0" Hold="2000" FadeOut="0">26</Step>
+   <Step Number="11" FadeIn="0" Hold="2000" FadeOut="0">27</Step>
+   <Step Number="12" FadeIn="0" Hold="2000" FadeOut="0">28</Step>
+   <Step Number="13" FadeIn="0" Hold="2000" FadeOut="0">29</Step>
+   <Step Number="14" FadeIn="0" Hold="2000" FadeOut="0">30</Step>
+   <Step Number="15" FadeIn="0" Hold="2000" FadeOut="0">31</Step>
+   <Step Number="16" FadeIn="0" Hold="2000" FadeOut="0">32</Step>
+   <Step Number="17" FadeIn="0" Hold="2000" FadeOut="0">33</Step>
+   <Step Number="18" FadeIn="0" Hold="2000" FadeOut="0">34</Step>
+   <Step Number="19" FadeIn="0" Hold="12000" FadeOut="0">36</Step>
+  </Function>
+  <Monitor DisplayMode="0" ShowLabels="0">
+   <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
+   <ChannelStyle>0</ChannelStyle>
+   <ValueStyle>0</ValueStyle>
+   <Grid Width="5" Height="3" Depth="5" Units="0"/>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+   <Button Caption="in/out 1" ID="1" Icon="">
+    <WindowState Visible="True" X="80" Y="110" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Cantarell,10,-1,5,81,0,0,0,0,0</Font>
+    </Appearance>
+    <Function ID="9"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <SoloFrame Caption="" ID="5">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="800" Y="115" Width="250" Height="75"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>False</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="all in" ID="6" Icon="">
+     <WindowState Visible="True" X="10" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="12"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="all out slow" ID="7" Icon="">
+     <WindowState Visible="True" X="60" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="13"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="all out fast" ID="22" Icon="">
+     <WindowState Visible="True" X="110" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </SoloFrame>
+   <SoloFrame Caption="" ID="8">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="1040" Y="200" Width="120" Height="70"/>
+    <AllowChildren>False</AllowChildren>
+    <AllowResize>False</AllowResize>
+    <ShowHeader>False</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="polyp auto" ID="9" Icon="">
+     <WindowState Visible="True" X="10" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="2"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="polyp control" ID="10" Icon="">
+     <WindowState Visible="True" X="60" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="14"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </SoloFrame>
+   <Button Caption="polyp control" ID="11" Icon="">
+    <WindowState Visible="True" X="1065" Y="65" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="14"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Frame Caption="" ID="0">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="260" Y="380" Width="170" Height="170"/>
+    <AllowChildren>False</AllowChildren>
+    <AllowResize>False</AllowResize>
+    <ShowHeader>False</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="polyp 1 out" ID="2" Icon="">
+     <WindowState Visible="True" X="10" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="polyp 1 speed full" ID="3" Icon="">
+     <WindowState Visible="True" X="60" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="polyp 1 speed half" ID="4" Icon="">
+     <WindowState Visible="True" X="110" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="polyp 2 in" ID="12" Icon="">
+     <WindowState Visible="True" X="10" Y="60" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="polyp 2 out" ID="13" Icon="">
+     <WindowState Visible="True" X="60" Y="60" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="polyp 3 in" ID="14" Icon="">
+     <WindowState Visible="True" X="110" Y="60" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="polyp 3 out" ID="15" Icon="">
+     <WindowState Visible="True" X="10" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Button 16" ID="16" Icon="">
+     <WindowState Visible="True" X="60" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Button 17" ID="17" Icon="">
+     <WindowState Visible="True" X="110" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </Frame>
+   <Button Caption="welle" ID="18" Icon="">
+    <WindowState Visible="True" X="715" Y="100" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="37"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="New EFX 0" ID="19" Icon="">
+    <WindowState Visible="True" X="530" Y="105" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="0"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="polyp speed half" ID="20" Icon="">
+    <WindowState Visible="True" X="775" Y="335" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="15"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="serial in" ID="21" Icon="">
+    <WindowState Visible="True" X="715" Y="150" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="3"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="bopping" ID="23" Icon="">
+    <WindowState Visible="True" X="715" Y="200" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="7"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <SpeedDial Caption="Duration" ID="24">
+    <WindowState Visible="True" X="230" Y="60" Width="200" Height="175"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Visibility>65604</Visibility>
+    <AbsoluteValue Minimum="0" Maximum="1000"/>
+    <Time>999</Time>
+    <Function FadeIn="0" FadeOut="0" Duration="6">7</Function>
+   </SpeedDial>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>
